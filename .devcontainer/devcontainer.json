@@ -1,0 +1,65 @@
+{
+  "name": "medical-ontology-retrieval",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+  "forwardPorts": [
+    8501,
+    11434
+  ],
+  "portsAttributes": {
+    "8501": {
+      "label": "Streamlit demo",
+      "onAutoForward": "notify"
+    },
+    "11434": {
+      "label": "Ollama API",
+      "onAutoForward": "silent"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "charliermarsh.ruff",
+        "ms-azuretools.vscode-docker",
+        "github.vscode-pull-request-github",
+        "github.vscode-github-actions",
+        "atlassian.atlascode",
+        "eamodio.gitlens",
+        "redhat.vscode-yaml",
+        "tamasfe.even-better-toml",
+        "editorconfig.editorconfig",
+        "yzhang.markdown-all-in-one",
+        "james-yu.latex-workshop",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "files.autoSave": "onFocusChange",
+        "editor.formatOnSave": true,
+        "[python]": {
+          "editor.defaultFormatter": "charliermarsh.ruff",
+          "editor.codeActionsOnSave": {
+            "source.organizeImports.ruff": "always",
+            "source.fixAll.ruff": "explicit"
+          }
+        }
+      }
+    }
+  },
+  "containerEnv": {
+    "OLLAMA_BASE_URL": "http://host.docker.internal:11434",
+    "LLM_MODEL": "vicuna:7b-v1.5-q5_1",
+    "EMBEDDING_MODEL": "bge-m3"
+  },
+  "runArgs": [
+    "--add-host=host.docker.internal:host-gateway"
+  ],
+  "postCreateCommand": "python -m pip install -e . && pre-commit install --hook-type pre-commit --hook-type pre-push && test -f config/local.yaml || cp config/local.example.yaml config/local.yaml; python scripts/check_environment.py",
+  "remoteUser": "root"
+}

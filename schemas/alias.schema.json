@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/alias.schema.json",
+  "title": "Ontology Alias Record",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "alias",
+    "normalized_alias",
+    "code",
+    "canonical_name",
+    "system",
+    "alias_type",
+    "quality"
+  ],
+  "properties": {
+    "alias": {"type": "string", "minLength": 1},
+    "normalized_alias": {"type": "string", "minLength": 1},
+    "code": {"type": "string", "minLength": 1},
+    "canonical_name": {"type": "string", "minLength": 1},
+    "system": {"enum": ["ICD10_VI", "RXNORM_2026"]},
+    "alias_type": {"type": "string", "minLength": 1},
+    "quality": {"enum": ["high", "medium", "weak"]},
+    "language": {"type": ["string", "null"]},
+    "source": {"type": ["string", "null"]},
+    "source_version": {"type": ["string", "null"]}
+  }
+}

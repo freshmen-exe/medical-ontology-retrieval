@@ -1,0 +1,2266 @@
+﻿Space Name,Space Key,Work Item ID,Parent,Work Type,Summary,Description,Assignee,Planned Owner,Priority,Component,Sprint,Start Date,Deadline,Due Date,Original Estimate,Fix Version,Status,Labels,Labels,Labels,Labels
+Medical Ontology Retrieval,MOR,1000,,Epic,Infrastructure and Project Governance,"GOAL
+Establish one standardized development and collaboration environment so the team only needs to implement project code and tests.
+
+SCOPE
+- Coordinate all tasks and deliverables in this workstream.
+
+ACCEPTANCE CRITERIA
+- All child work items meet their Definition of Done.
+- Epic outcome is integrated into the release candidate.
+
+EXPECTED EVIDENCE
+- Jira epic Infrastructure and Project Governance
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,infra,Sprint 5 - Release Candidate,2026-07-12 09:00,2026-07-28 23:00,2026-07-28,0,v0.3-rc,Backlog,component-infra,priority-p0,epic,
+Medical Ontology Retrieval,MOR,1001,1000,Task,Conduct initial team kickoff meeting,"GOAL
+Align the entire team before implementation starts.
+
+SCOPE
+- Review the original task statement.
+- Confirm fixed models, ontology targets, roles, schedule, Git/Jira rules, and communication channels.
+- Record decisions, questions, and action items.
+
+ACCEPTANCE CRITERIA
+- All five members attend or acknowledge the written minutes.
+- Roles and first tasks are accepted.
+- Open questions have owners and deadlines.
+
+EXPECTED EVIDENCE
+- planning/meetings/2026-07-12-kickoff.md
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Dương Huệ Mẫn; Võ Huỳnh Quốc Thái; Nguyễn Hoàng Thái; Lương Minh Quân,P0,infra,Sprint 0 - Kickoff and Setup,2026-07-12 09:00,2026-07-12 10:30,2026-07-12,5400,v0.1-mvp,Done,component-infra,priority-p0,meeting,kickoff
+Medical Ontology Retrieval,MOR,1002,1001,Sub-task,"Confirm scope, fixed models, and non-goals","GOAL
+Prevent scope drift from the first day.
+
+SCOPE
+- Confirm vicuna:7b-v1.5-q5_1 and bge-m3.
+- Confirm Vietnamese ICD-10 and RxNorm 2026.
+- Confirm self-coded core algorithms and excluded libraries.
+
+ACCEPTANCE CRITERIA
+- Meeting minutes record all decisions.
+- No conflicting model or ontology target remains.
+
+EXPECTED EVIDENCE
+- planning/meetings/2026-07-12-kickoff.md
+
+DEPENDENCIES
+- 1001
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,infra,Sprint 0 - Kickoff and Setup,2026-07-12 09:10,2026-07-12 09:30,2026-07-12,1080,v0.1-mvp,Selected for Development,component-infra,priority-p0,decision,
+Medical Ontology Retrieval,MOR,1003,1001,Sub-task,Confirm role ownership and reviewer responsibilities,"GOAL
+Make ownership explicit and prevent duplicate or abandoned work.
+
+SCOPE
+- Review role-first and person-first task maps.
+- Confirm backup reviewers and escalation path.
+
+ACCEPTANCE CRITERIA
+- Every workstream has one accountable owner.
+- Each member knows their first assigned Jira item.
+
+EXPECTED EVIDENCE
+- planning/meetings/2026-07-12-kickoff.md
+
+DEPENDENCIES
+- 1001
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,infra,Sprint 0 - Kickoff and Setup,2026-07-12 09:30,2026-07-12 09:50,2026-07-12,1080,v0.1-mvp,Selected for Development,component-infra,priority-p0,decision,
+Medical Ontology Retrieval,MOR,1004,1001,Sub-task,Confirm team cadence and communication rules,"GOAL
+Define a predictable operating rhythm.
+
+SCOPE
+- Confirm daily planning, 16:00 async update, nightly integration check, and sprint review cadence.
+- Confirm blocker escalation rules.
+
+ACCEPTANCE CRITERIA
+- Cadence appears in meeting minutes and team documentation.
+- Communication channel is named.
+
+EXPECTED EVIDENCE
+- planning/meetings/2026-07-12-kickoff.md
+
+DEPENDENCIES
+- 1001
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P1,infra,Sprint 0 - Kickoff and Setup,2026-07-12 09:50,2026-07-12 10:10,2026-07-12,1080,v0.1-mvp,Selected for Development,component-infra,priority-p1,decision,
+Medical Ontology Retrieval,MOR,1005,1000,Task,Create GitHub organization and repository,"GOAL
+Create the canonical code repository.
+
+SCOPE
+- Create organization if needed.
+- Create repository medical-ontology-retrieval.
+- Upload this scaffold without generated model/data artifacts.
+- Invite all members with appropriate permissions.
+
+ACCEPTANCE CRITERIA
+- All members can clone and push branches.
+- README renders correctly.
+- Default branch is main.
+
+EXPECTED EVIDENCE
+- GitHub repository URL recorded in README and Jira project links
+
+DEPENDENCIES
+- 1001
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,infra,Sprint 0 - Kickoff and Setup,2026-07-12 10:30,2026-07-12 14:00,2026-07-12,5400,v0.1-mvp,Selected for Development,component-infra,priority-p0,github,
+Medical Ontology Retrieval,MOR,1006,1005,Sub-task,Configure protected main branch and merge policy,"GOAL
+Prevent unreviewed or failing code from entering main.
+
+SCOPE
+- Require pull requests.
+- Require one approval.
+- Require CI checks.
+- Disable force pushes and direct deletions.
+- Enable squash merge and automatically delete merged branches.
+
+ACCEPTANCE CRITERIA
+- Direct pushes to main are blocked.
+- A test pull request demonstrates the rule.
+
+EXPECTED EVIDENCE
+- Repository branch protection screenshot or link
+
+DEPENDENCIES
+- 1005
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,infra,Sprint 0 - Kickoff and Setup,2026-07-12 14:00,2026-07-12 16:00,2026-07-12,3600,v0.1-mvp,Selected for Development,component-infra,priority-p0,github,governance
+Medical Ontology Retrieval,MOR,1007,1000,Task,Create Jira Scrum project MOR,"GOAL
+Create the single source of truth for sprint planning, tasks, bugs, owners, and deadlines.
+
+SCOPE
+- Create Jira Software Scrum project/space with key MOR.
+- Configure issue types Epic, Task, Bug, and Sub-task.
+- Configure lean workflow statuses.
+- Create components, versions, and custom planning fields described in the import guide.
+
+ACCEPTANCE CRITERIA
+- Scrum backlog and board are visible.
+- All required fields exist.
+- Project key is MOR.
+
+EXPECTED EVIDENCE
+- Jira project URL recorded in README and planning/jira/README.md
+
+DEPENDENCIES
+- 1001
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,infra,Sprint 0 - Kickoff and Setup,2026-07-12 10:30,2026-07-12 15:30,2026-07-12,5400,v0.1-mvp,Selected for Development,component-infra,priority-p0,jira,
+Medical Ontology Retrieval,MOR,1008,1007,Sub-task,"Create sprints, versions, components, and workflow statuses","GOAL
+Prepare Jira before task import.
+
+SCOPE
+- Create seven named sprints from planning/jira/sprint_calendar.csv.
+- Create versions v0.1-mvp, v0.2-core, v0.3-rc, v1.0-submission.
+- Create components data, model, pipeline, qa, infra, docs, demo.
+- Create workflow statuses Backlog, Selected for Development, In Progress, Blocked, In Review, QA / Testing, Done.
+
+ACCEPTANCE CRITERIA
+- Names exactly match the import files.
+- Board columns map to the intended statuses.
+
+EXPECTED EVIDENCE
+- Jira configuration screenshot
+
+DEPENDENCIES
+- 1007
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,infra,Sprint 0 - Kickoff and Setup,2026-07-12 15:30,2026-07-12 17:30,2026-07-12,5400,v0.1-mvp,Selected for Development,component-infra,priority-p0,jira,configuration
+Medical Ontology Retrieval,MOR,1009,1007,Sub-task,Import detailed Scrum backlog from CSV,"GOAL
+Populate the complete project backlog without manual ticket creation.
+
+SCOPE
+- Use the External System Import or new CSV import flow that supports hierarchy.
+- Map Work Item ID, Parent, Work Type, Summary, Description, Priority, component, dates, estimate, version, status, and labels.
+- Validate before import.
+
+ACCEPTANCE CRITERIA
+- All epics, tasks, and sub-tasks appear with correct hierarchy.
+- Kickoff meeting is recorded as Done.
+- No duplicate items exist.
+
+EXPECTED EVIDENCE
+- Jira import log and imported backlog
+
+DEPENDENCIES
+- 1008
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,infra,Sprint 0 - Kickoff and Setup,2026-07-12 17:30,2026-07-12 19:30,2026-07-12,5400,v0.1-mvp,Selected for Development,component-infra,priority-p0,jira,import
+Medical Ontology Retrieval,MOR,1010,1000,Task,Verify VS Code Dev Container on every machine,"GOAL
+Ensure every developer receives the same Python, dependencies, extensions, formatting, and test tools automatically.
+
+SCOPE
+- Install Docker Desktop, VS Code, and Dev Containers extension.
+- Reopen repository in container.
+- Verify Ruff format on save and Auto Save on focus change.
+- Verify pre-commit hooks are installed.
+- Run environment checker.
+
+ACCEPTANCE CRITERIA
+- All members report a successful container startup or a documented local fallback.
+- No member installs Black or isort.
+- Shared settings apply automatically.
+
+EXPECTED EVIDENCE
+- planning/setup/team_environment_signoff.csv
+
+DEPENDENCIES
+- 1005
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân; Khang,P0,infra,Sprint 0 - Kickoff and Setup,2026-07-12 16:00,2026-07-13 12:00,2026-07-13,10800,v0.1-mvp,Selected for Development,component-infra,priority-p0,docker,vscode
+Medical Ontology Retrieval,MOR,1011,1010,Sub-task,Record environment sign-off for all members,"GOAL
+Track who can run the standardized environment and who needs Colab fallback.
+
+SCOPE
+- Record OS, Docker status, Dev Container status, Ollama capability, and Colab fallback status.
+- Create blockers for failed setups.
+
+ACCEPTANCE CRITERIA
+- Five member rows are present.
+- Every failure has an owner and next action.
+
+EXPECTED EVIDENCE
+- planning/setup/team_environment_signoff.csv
+
+DEPENDENCIES
+- 1010
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân,P1,infra,Sprint 0 - Kickoff and Setup,2026-07-13 12:00,2026-07-13 16:00,2026-07-13,3600,v0.1-mvp,Selected for Development,component-infra,priority-p1,onboarding,
+Medical Ontology Retrieval,MOR,1012,1000,Task,Upload and register original competition statement,"GOAL
+Preserve the authoritative statement and derived notes in traceable locations.
+
+SCOPE
+- Store PDF and Markdown under docs/problem_statement/original/.
+- Complete SOURCE.md.
+- Keep summaries and assumptions under derived/.
+
+ACCEPTANCE CRITERIA
+- Original files are committed if redistribution is permitted.
+- Source/provenance fields are complete.
+- Derived notes never overwrite the original.
+
+EXPECTED EVIDENCE
+- docs/problem_statement/original/
+
+DEPENDENCIES
+- 1005
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,docs,Sprint 0 - Kickoff and Setup,2026-07-12 14:00,2026-07-13 10:00,2026-07-13,3600,v0.1-mvp,Selected for Development,component-docs,priority-p0,documentation,competition
+Medical Ontology Retrieval,MOR,1013,1000,Task,"Freeze architecture, schema, and module contracts v0","GOAL
+Give each workstream stable interfaces so implementation can proceed independently.
+
+SCOPE
+- Review entity, candidate, alias, ground-truth, and output schemas.
+- Confirm package boundaries and public functions/classes.
+- Confirm config keys and fallback behavior.
+- Record architecture decisions.
+
+ACCEPTANCE CRITERIA
+- Schema and API docs have version v0.
+- Model, Data, Pipeline, and QA owners approve them.
+- Any unresolved item is tracked in Jira.
+
+EXPECTED EVIDENCE
+- docs/13_api_spec.md and schemas/
+
+DEPENDENCIES
+- 1001
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,infra,Sprint 0 - Kickoff and Setup,2026-07-13 08:00,2026-07-14 18:00,2026-07-14,18000,v0.1-mvp,Selected for Development,component-infra,priority-p0,architecture,
+Medical Ontology Retrieval,MOR,1014,1000,Task,Maintain daily coordination and blocker triage,"GOAL
+Keep execution synchronized and resolve blockers before they consume a full day.
+
+SCOPE
+- Run short planning and integration checks.
+- Review Jira status accuracy.
+- Escalate blockers after two focused hours.
+- Cut or reassign work when deadlines are threatened.
+
+ACCEPTANCE CRITERIA
+- Daily updates are present.
+- No blocker remains unowned overnight.
+- Major decisions are recorded in ADRs or Jira.
+
+EXPECTED EVIDENCE
+- Jira board, meeting notes, and ADRs
+
+DEPENDENCIES
+- 1007
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,infra,Sprint 5 - Release Candidate,2026-07-13 08:00,2026-07-28 22:30,2026-07-28,57600,v0.3-rc,Backlog,component-infra,priority-p0,management,
+Medical Ontology Retrieval,MOR,2000,,Epic,Data and Ontology Knowledge Base,"GOAL
+Acquire, normalize, select, alias, validate, and maintain Vietnamese ICD-10 and RxNorm 2026 data.
+
+SCOPE
+- Coordinate all tasks and deliverables in this workstream.
+
+ACCEPTANCE CRITERIA
+- All child work items meet their Definition of Done.
+- Epic outcome is integrated into the release candidate.
+
+EXPECTED EVIDENCE
+- Jira epic Data and Ontology Knowledge Base
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn,P0,data,Sprint 5 - Release Candidate,2026-07-12 09:00,2026-07-28 20:00,2026-07-28,0,v0.3-rc,Backlog,component-data,priority-p0,epic,
+Medical Ontology Retrieval,MOR,2001,2000,Task,Acquire official Vietnamese ICD-10 source files,"GOAL
+Obtain the authoritative Vietnamese ICD-10 material specified by the organizer.
+
+SCOPE
+- Download Circular 06/2026/TT-BYT and official appendix.
+- Record URLs, access time, filenames, and SHA-256 checksums.
+- Record redistribution constraints.
+
+ACCEPTANCE CRITERIA
+- Files exist locally under data/raw/icd10_vi_2026/.
+- SOURCE.md is complete.
+- No WHO browser or ICD-10-CM source is substituted.
+
+EXPECTED EVIDENCE
+- data/raw/icd10_vi_2026/SOURCE.md
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn,P0,data,Sprint 0 - Kickoff and Setup,2026-07-13 08:00,2026-07-14 18:00,2026-07-14,9000,v0.1-mvp,Selected for Development,component-data,priority-p0,source,icd10-vi
+Medical Ontology Retrieval,MOR,2002,2000,Task,Acquire and pin official RxNorm 2026 release,"GOAL
+Use one exact official RxNorm 2026 monthly release as the drug ontology source.
+
+SCOPE
+- Select one 2026 full monthly release.
+- Record exact release date, archive location, license/access conditions, and checksum.
+- Document required RRF files.
+
+ACCEPTANCE CRITERIA
+- Release is uniquely pinned.
+- SOURCE.md and source registry are complete.
+- Multiple release months are not mixed.
+
+EXPECTED EVIDENCE
+- data/raw/rxnorm_2026/SOURCE.md
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn,P0,data,Sprint 0 - Kickoff and Setup,2026-07-13 10:00,2026-07-14 21:00,2026-07-14,10800,v0.1-mvp,Selected for Development,component-data,priority-p0,source,rxnorm
+Medical Ontology Retrieval,MOR,2003,2000,Task,Define normalized ontology schemas and parser contracts,"GOAL
+Create stable records for ICD codes, RxNorm concepts, aliases, provenance, and parse issues.
+
+SCOPE
+- Define required and optional fields.
+- Define UTF-8 and normalization rules.
+- Define parse-error log format.
+- Update JSON Schema files.
+
+ACCEPTANCE CRITERIA
+- Data, Pipeline, and QA approve the schemas.
+- Sample records validate against schemas.
+
+EXPECTED EVIDENCE
+- schemas/alias.schema.json and docs/06_data_workflow_and_sources.md
+
+DEPENDENCIES
+- 1013
+- 2001
+- 2002
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn; Lương Minh Quân,P0,data,Sprint 1 - Data and Extraction MVP,2026-07-14 08:00,2026-07-15 11:00,2026-07-15,10800,v0.1-mvp,Backlog,component-data,priority-p0,schema,
+Medical Ontology Retrieval,MOR,2004,2000,Task,Implement Vietnamese ICD-10 parser,"GOAL
+Convert the official Vietnamese ICD-10 source into deterministic normalized JSONL records.
+
+SCOPE
+- Map source columns and hierarchy fields.
+- Preserve code and Vietnamese canonical name.
+- Log malformed rows instead of silently dropping them.
+- Export deterministic sorted output.
+
+ACCEPTANCE CRITERIA
+- Parser is repeatable.
+- Random samples match the official lookup source.
+- Record and issue counts are reported.
+
+EXPECTED EVIDENCE
+- scripts/parse_icd10_vi.py and data/processed/icd10_vi_codes_full.jsonl
+
+DEPENDENCIES
+- 2001
+- 2003
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn; Lương Minh Quân,P0,data,Sprint 1 - Data and Extraction MVP,2026-07-15 08:00,2026-07-15 23:00,2026-07-15,25200,v0.1-mvp,Backlog,component-data,priority-p0,parser,
+Medical Ontology Retrieval,MOR,2005,2004,Sub-task,Write ICD source-column and hierarchy specification,"GOAL
+Remove ambiguity before parser implementation.
+
+SCOPE
+- Document columns, hierarchy rows, continuation rows, and known PDF/table issues.
+
+ACCEPTANCE CRITERIA
+- Specification includes examples of each row type.
+- Open questions are resolved or logged.
+
+EXPECTED EVIDENCE
+- docs/06_data_workflow_and_sources.md
+
+DEPENDENCIES
+- 2001
+- 2003
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn,P0,data,Sprint 1 - Data and Extraction MVP,2026-07-15 08:00,2026-07-15 12:00,2026-07-15,7200,v0.1-mvp,Backlog,component-data,priority-p0,specification,
+Medical Ontology Retrieval,MOR,2006,2004,Sub-task,Code ICD parser and JSONL writer,"GOAL
+Implement the approved deterministic parser.
+
+SCOPE
+- Read approved input format.
+- Normalize whitespace without changing code meaning.
+- Write JSONL and parse-issue log.
+
+ACCEPTANCE CRITERIA
+- Script runs from repository root.
+- Output validates against schema.
+- No absolute paths.
+
+EXPECTED EVIDENCE
+- scripts/parse_icd10_vi.py
+
+DEPENDENCIES
+- 2005
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân,P0,data,Sprint 1 - Data and Extraction MVP,2026-07-15 12:00,2026-07-15 20:00,2026-07-15,14400,v0.1-mvp,Backlog,component-data,priority-p0,implementation,
+Medical Ontology Retrieval,MOR,2007,2004,Sub-task,Verify ICD parser samples and counts,"GOAL
+Confirm the parsed data represents the official source accurately.
+
+SCOPE
+- Cross-check a stratified sample.
+- Review parse issues.
+- Record chapter and code counts.
+
+ACCEPTANCE CRITERIA
+- Sample verification is documented.
+- P0 parse errors are filed as bugs.
+
+EXPECTED EVIDENCE
+- experiments/icd_parser_validation.md
+
+DEPENDENCIES
+- 2006
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn,P0,data,Sprint 1 - Data and Extraction MVP,2026-07-15 20:00,2026-07-15 23:00,2026-07-15,5400,v0.1-mvp,Backlog,component-data,priority-p0,validation,
+Medical Ontology Retrieval,MOR,2008,2000,Task,Implement RxNorm 2026 RRF parser,"GOAL
+Convert the pinned RxNorm release into normalized concept records and selected source strings.
+
+SCOPE
+- Parse required RRF fields.
+- Filter approved TTY values and active/non-suppressed records.
+- Preserve RXCUI, TTY, canonical name, and provenance.
+- Write counts by TTY.
+
+ACCEPTANCE CRITERIA
+- Parser is deterministic.
+- Output validates against schema.
+- Sample RXCUIs match official API/lookup results.
+
+EXPECTED EVIDENCE
+- scripts/parse_rxnorm_2026.py and data/processed/rxnorm_2026_concepts_full.jsonl
+
+DEPENDENCIES
+- 2002
+- 2003
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn; Lương Minh Quân,P0,data,Sprint 1 - Data and Extraction MVP,2026-07-15 13:00,2026-07-16 23:00,2026-07-16,28800,v0.1-mvp,Backlog,component-data,priority-p0,parser,
+Medical Ontology Retrieval,MOR,2009,2008,Sub-task,Approve RxNorm TTY and suppression filters,"GOAL
+Define which RxNorm concepts enter the project KB.
+
+SCOPE
+- Document selected TTY values.
+- Document suppression and release filters.
+- Define ingredient versus clinical-drug handling.
+
+ACCEPTANCE CRITERIA
+- Model and Data owners approve filters.
+- Filter rationale is documented.
+
+EXPECTED EVIDENCE
+- docs/06_data_workflow_and_sources.md
+
+DEPENDENCIES
+- 2002
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn,P0,data,Sprint 1 - Data and Extraction MVP,2026-07-15 13:00,2026-07-16 11:00,2026-07-16,7200,v0.1-mvp,Backlog,component-data,priority-p0,specification,
+Medical Ontology Retrieval,MOR,2010,2008,Sub-task,Code RxNorm RRF parser and writer,"GOAL
+Implement the approved RxNorm parse and filtering specification.
+
+SCOPE
+- Read pipe-delimited RRF safely.
+- Handle trailing delimiters and encoding.
+- Write canonical records and source aliases.
+
+ACCEPTANCE CRITERIA
+- Script runs from repository root.
+- Output is deterministic and schema-valid.
+- Counts by TTY are emitted.
+
+EXPECTED EVIDENCE
+- scripts/parse_rxnorm_2026.py
+
+DEPENDENCIES
+- 2009
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân,P0,data,Sprint 1 - Data and Extraction MVP,2026-07-16 11:00,2026-07-16 20:00,2026-07-16,16200,v0.1-mvp,Backlog,component-data,priority-p0,implementation,
+Medical Ontology Retrieval,MOR,2011,2008,Sub-task,Verify RxNorm samples and record counts,"GOAL
+Confirm parser correctness before alias generation.
+
+SCOPE
+- Cross-check sample RXCUIs and TTYs.
+- Review inactive/suppressed filtering.
+- Record counts and anomalies.
+
+ACCEPTANCE CRITERIA
+- Validation note is complete.
+- P0/P1 data defects are filed.
+
+EXPECTED EVIDENCE
+- experiments/rxnorm_parser_validation.md
+
+DEPENDENCIES
+- 2010
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn,P0,data,Sprint 1 - Data and Extraction MVP,2026-07-16 20:00,2026-07-16 23:00,2026-07-16,5400,v0.1-mvp,Backlog,component-data,priority-p0,validation,
+Medical Ontology Retrieval,MOR,2012,2000,Task,Select core ICD and RxNorm project scope,"GOAL
+Choose a high-value ontology subset that is large enough for the task and manageable for self-coded retrieval.
+
+SCOPE
+- Define inclusion and exclusion criteria.
+- Select common clinical diagnosis/drug domains.
+- Record excluded categories and future expansion policy.
+- Report selected code and concept counts.
+
+ACCEPTANCE CRITERIA
+- Selection is reproducible from full normalized data.
+- Reasons and counts are documented.
+- Core scope is approved by Tech Lead.
+
+EXPECTED EVIDENCE
+- data/processed/icd10_vi_codes_core.jsonl and data/processed/rxnorm_2026_codes_core.jsonl
+
+DEPENDENCIES
+- 2007
+- 2011
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn; Khang,P0,data,Sprint 1 - Data and Extraction MVP,2026-07-16 20:00,2026-07-17 15:00,2026-07-17,10800,v0.1-mvp,Backlog,component-data,priority-p0,scope,
+Medical Ontology Retrieval,MOR,2013,2000,Task,Generate ICD and RxNorm aliases,"GOAL
+Produce alias-level records for dense and sparse retrieval without manually writing every alias.
+
+SCOPE
+- Generate official-name and safe mechanical variants.
+- Normalize punctuation, case, spacing, units, and approved accent variants.
+- Merge reviewed abbreviations.
+- Never collapse clinically distinct RxNorm or ICD concepts.
+- Separate ambiguous or weak aliases.
+
+ACCEPTANCE CRITERIA
+- Every alias points to a valid core code.
+- Duplicates and collisions are visible.
+- Unsafe shortening is excluded from core aliases.
+
+EXPECTED EVIDENCE
+- data/processed/icd10_vi_aliases_core.jsonl and data/processed/rxnorm_2026_aliases_core.jsonl
+
+DEPENDENCIES
+- 2012
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn; Lương Minh Quân,P0,data,Sprint 2 - Retrieval Baselines,2026-07-17 15:00,2026-07-18 20:00,2026-07-18,25200,v0.2-core,Backlog,component-data,priority-p0,aliases,
+Medical Ontology Retrieval,MOR,2014,2013,Sub-task,Specify safe and unsafe alias transformations,"GOAL
+Define deterministic rules without converting symptoms or related concepts into aliases.
+
+SCOPE
+- List safe transformations.
+- List transformations requiring review.
+- List prohibited semantic shortening.
+
+ACCEPTANCE CRITERIA
+- Specification includes ICD and RxNorm examples.
+- Model and QA owners approve risk rules.
+
+EXPECTED EVIDENCE
+- docs/06_data_workflow_and_sources.md
+
+DEPENDENCIES
+- 2012
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn,P0,data,Sprint 1 - Data and Extraction MVP,2026-07-17 15:00,2026-07-17 20:00,2026-07-17,7200,v0.1-mvp,Backlog,component-data,priority-p0,specification,
+Medical Ontology Retrieval,MOR,2015,2013,Sub-task,Code ICD alias generator,"GOAL
+Generate approved Vietnamese ICD alias variants.
+
+SCOPE
+- Apply safe normalization rules.
+- Preserve canonical source text and provenance.
+- Emit collision report.
+
+ACCEPTANCE CRITERIA
+- Output validates against alias schema.
+- Repeated runs are identical.
+
+EXPECTED EVIDENCE
+- scripts/generate_icd_aliases.py
+
+DEPENDENCIES
+- 2014
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân,P0,data,Sprint 2 - Retrieval Baselines,2026-07-18 08:00,2026-07-18 13:00,2026-07-18,9000,v0.2-core,Backlog,component-data,priority-p0,implementation,
+Medical Ontology Retrieval,MOR,2016,2013,Sub-task,Code RxNorm alias generator,"GOAL
+Generate approved RxNorm name, dose-spacing, and source-string variants.
+
+SCOPE
+- Respect TTY distinctions.
+- Normalize dosage units safely.
+- Do not map ingredient-only aliases to clinical-drug codes.
+
+ACCEPTANCE CRITERIA
+- Output validates against alias schema.
+- Collision and ambiguity reports are produced.
+
+EXPECTED EVIDENCE
+- scripts/generate_rxnorm_aliases.py
+
+DEPENDENCIES
+- 2014
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân,P0,data,Sprint 2 - Retrieval Baselines,2026-07-18 10:00,2026-07-18 16:00,2026-07-18,10800,v0.2-core,Backlog,component-data,priority-p0,implementation,
+Medical Ontology Retrieval,MOR,2017,2013,Sub-task,Review alias quality and split weak aliases,"GOAL
+Keep the production alias KB precise.
+
+SCOPE
+- Review collisions, short aliases, ambiguous abbreviations, and clinical distinctions.
+- Move questionable aliases to weak_aliases.jsonl.
+
+ACCEPTANCE CRITERIA
+- Core aliases meet quality policy.
+- Weak aliases are not loaded by default.
+
+EXPECTED EVIDENCE
+- data/candidates/weak_aliases.jsonl
+
+DEPENDENCIES
+- 2015
+- 2016
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn,P0,data,Sprint 2 - Retrieval Baselines,2026-07-18 16:00,2026-07-18 20:00,2026-07-18,7200,v0.2-core,Backlog,component-data,priority-p0,review,
+Medical Ontology Retrieval,MOR,2018,2000,Task,Validate data and provenance release v0,"GOAL
+Approve data before indexing and retrieval evaluation.
+
+SCOPE
+- Validate schema, missing fields, duplicates, code collisions, source versions, and deterministic sorting.
+- Check representative records manually.
+- Update source registry and data notes.
+
+ACCEPTANCE CRITERIA
+- Validation script/report passes.
+- P0 defects are zero.
+- Data v0 is tagged in changelog.
+
+EXPECTED EVIDENCE
+- scripts/validate_aliases.py and experiments/data_validation_v0.md
+
+DEPENDENCIES
+- 2013
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn; Nguyễn Hoàng Thái,P0,data,Sprint 2 - Retrieval Baselines,2026-07-18 20:00,2026-07-19 20:00,2026-07-19,18000,v0.2-core,Backlog,component-data,priority-p0,validation,
+Medical Ontology Retrieval,MOR,2019,2000,Task,Maintain ontology data from error analysis,"GOAL
+Make targeted data fixes based on reproducible retrieval and end-to-end failures.
+
+SCOPE
+- Add missing safe aliases.
+- Remove noisy aliases.
+- Record every change and linked QA case.
+- Avoid unreviewed bulk expansion.
+
+ACCEPTANCE CRITERIA
+- Each change has a reproducing case.
+- Regression case passes after the change.
+- Data changelog is current.
+
+EXPECTED EVIDENCE
+- data/changelog.md and experiments/error_analysis.md
+
+DEPENDENCIES
+- 2018
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Dương Huệ Mẫn; Nguyễn Hoàng Thái,P1,data,Sprint 5 - Release Candidate,2026-07-20 08:00,2026-07-28 20:00,2026-07-28,32400,v0.3-rc,Backlog,component-data,priority-p1,maintenance,
+Medical Ontology Retrieval,MOR,3000,,Epic,Entity Extraction and Assertions,"GOAL
+Implement exact-span medical entity extraction, label assignment, and assertions using team-coded rules plus the fixed LLM.
+
+SCOPE
+- Coordinate all tasks and deliverables in this workstream.
+
+ACCEPTANCE CRITERIA
+- All child work items meet their Definition of Done.
+- Epic outcome is integrated into the release candidate.
+
+EXPECTED EVIDENCE
+- Jira epic Entity Extraction and Assertions
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Võ Huỳnh Quốc Thái,P0,model,Sprint 4 - Hardening and Demo,2026-07-12 09:00,2026-07-25 20:00,2026-07-25,0,v0.3-rc,Backlog,component-model,priority-p0,epic,
+Medical Ontology Retrieval,MOR,3001,3000,Task,Finalize extraction and assertion specification,"GOAL
+Define the behavioral contract shared by rule extraction, LLM extraction, merge logic, and QA.
+
+SCOPE
+- Define five labels.
+- Define exact-span and position rules.
+- Define isNegated, isFamily, isHistorical.
+- Define overlap, duplicate, and context-window policies.
+
+ACCEPTANCE CRITERIA
+- Specification is unambiguous and linked to task statement.
+- QA can derive test cases from it.
+- Pipeline interfaces are stable.
+
+EXPECTED EVIDENCE
+- docs/07_model_workflow.md and docs/problem_statement/derived/output_schema.md
+
+DEPENDENCIES
+- 1013
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Võ Huỳnh Quốc Thái,P0,model,Sprint 1 - Data and Extraction MVP,2026-07-14 08:00,2026-07-15 18:00,2026-07-15,14400,v0.1-mvp,Backlog,component-model,priority-p0,specification,
+Medical Ontology Retrieval,MOR,3002,3000,Task,Implement Ollama model client,"GOAL
+Provide one robust client for fixed generation and embedding models.
+
+SCOPE
+- Implement health check, generation, embedding, timeout, retry, and clear errors.
+- Read base URL and model names from config/environment.
+- Do not hard-code Colab or local URLs.
+
+ACCEPTANCE CRITERIA
+- Client handles unavailable Ollama gracefully.
+- JSON response parsing is deterministic.
+- No domain extraction logic is embedded in the client.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/clients/ollama_client.py
+
+DEPENDENCIES
+- 1013
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái,P0,model,Sprint 1 - Data and Extraction MVP,2026-07-15 10:00,2026-07-16 18:00,2026-07-16,14400,v0.1-mvp,Backlog,component-model,priority-p0,ollama,
+Medical Ontology Retrieval,MOR,3003,3000,Task,Implement rule-based entity extractor,"GOAL
+Extract only high-confidence patterns and produce rule hints/entities without replacing the LLM on ambiguous text.
+
+SCOPE
+- Implement medicine/dose, lab/result, abbreviation/ontology match, and assertion-cue rules.
+- Preserve source spans.
+- Define precedence and confidence.
+- Avoid symptom-to-diagnosis inference.
+
+ACCEPTANCE CRITERIA
+- Rules are modular and configurable.
+- Conflicts are deterministic.
+- QA smoke cases can reproduce every rule.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/extraction/rule_extractor.py and label_rules.py
+
+DEPENDENCIES
+- 3001
+- 2003
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái; Khang,P0,model,Sprint 2 - Retrieval Baselines,2026-07-16 18:00,2026-07-18 20:00,2026-07-18,21600,v0.2-core,Backlog,component-model,priority-p0,rule-extraction,
+Medical Ontology Retrieval,MOR,3004,3003,Sub-task,Specify extraction patterns and precedence,"GOAL
+Define which rules are safe enough to emit entities or hints.
+
+SCOPE
+- Document regex/pattern categories.
+- Define precedence and overlap behavior.
+- Define rule confidence levels.
+
+ACCEPTANCE CRITERIA
+- Specification is reviewed by QA and Pipeline.
+- Unsafe medical inference is explicitly prohibited.
+
+EXPECTED EVIDENCE
+- docs/07_model_workflow.md
+
+DEPENDENCIES
+- 3001
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,model,Sprint 1 - Data and Extraction MVP,2026-07-16 18:00,2026-07-17 12:00,2026-07-17,7200,v0.1-mvp,Backlog,component-model,priority-p0,specification,
+Medical Ontology Retrieval,MOR,3005,3003,Sub-task,Code rule extractor and hint generation,"GOAL
+Implement the approved rule specification.
+
+SCOPE
+- Load resources through public loaders.
+- Return exact offsets and evidence source.
+- Keep rules independent and testable.
+
+ACCEPTANCE CRITERIA
+- No absolute paths.
+- No ontology code lookup is performed for non-mappable labels.
+- Output matches extraction contract.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/extraction/rule_extractor.py
+
+DEPENDENCIES
+- 3004
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái,P0,model,Sprint 2 - Retrieval Baselines,2026-07-17 12:00,2026-07-18 16:00,2026-07-18,12600,v0.2-core,Backlog,component-model,priority-p0,implementation,
+Medical Ontology Retrieval,MOR,3006,3003,Sub-task,Review rule conflicts and false-positive risks,"GOAL
+Prevent rules from introducing systematic label errors.
+
+SCOPE
+- Review ambiguous abbreviations, overlapping matches, dose-only text, and negation boundaries.
+
+ACCEPTANCE CRITERIA
+- Risks and resolutions are documented.
+- P0 conflicts are fixed or disabled.
+
+EXPECTED EVIDENCE
+- experiments/rule_extractor_review.md
+
+DEPENDENCIES
+- 3005
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,model,Sprint 2 - Retrieval Baselines,2026-07-18 16:00,2026-07-18 20:00,2026-07-18,5400,v0.2-core,Backlog,component-model,priority-p0,review,
+Medical Ontology Retrieval,MOR,3007,3000,Task,Implement LLM entity extractor and prompt builder,"GOAL
+Use the fixed LLM to extract exact entity text, label, and assertions without generating ontology codes.
+
+SCOPE
+- Build system prompt and few-shot examples.
+- Pass optional rule hints.
+- Parse structured JSON.
+- Reject hallucinated or non-exact spans.
+- Return assertions for relevant labels.
+
+ACCEPTANCE CRITERIA
+- Extractor has deterministic configuration.
+- Invalid model output is handled safely.
+- Original text is preserved exactly.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/extraction/llm_extractor.py and prompts/
+
+DEPENDENCIES
+- 3001
+- 3002
+- 3003
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Võ Huỳnh Quốc Thái,P0,model,Sprint 2 - Retrieval Baselines,2026-07-18 08:00,2026-07-19 20:00,2026-07-19,21600,v0.2-core,Backlog,component-model,priority-p0,llm-extraction,
+Medical Ontology Retrieval,MOR,3008,3000,Task,Implement assertion post-processing,"GOAL
+Correct clear negation, historical, and family cues after LLM extraction while preserving ambiguous cases.
+
+SCOPE
+- Implement context-window cue rules.
+- Define priority between LLM prediction and deterministic cues.
+- Never change exact entity text.
+
+ACCEPTANCE CRITERIA
+- Clear cue cases are corrected deterministically.
+- Ambiguous cases remain documented for QA.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/extraction/assertion_detector.py
+
+DEPENDENCIES
+- 3007
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Võ Huỳnh Quốc Thái,P1,model,Sprint 2 - Retrieval Baselines,2026-07-19 13:00,2026-07-20 16:00,2026-07-20,14400,v0.2-core,Backlog,component-model,priority-p1,assertions,
+Medical Ontology Retrieval,MOR,3009,3000,Task,Complete extraction baseline integration,"GOAL
+Expose one stable extraction API combining rules, LLM, assertions, and exact spans.
+
+SCOPE
+- Integrate rule and LLM results with pipeline merge contract.
+- Define fallback when LLM is unavailable.
+- Emit structured diagnostics.
+
+ACCEPTANCE CRITERIA
+- Baseline runs on QA sample notes.
+- No code mapping occurs during extraction.
+- Known limitations are documented.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/pipeline/infer_pipeline.py extraction stage
+
+DEPENDENCIES
+- 3003
+- 3007
+- 3008
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Lương Minh Quân; Võ Huỳnh Quốc Thái,P0,model,Sprint 3 - Core Integration,2026-07-20 16:00,2026-07-21 18:00,2026-07-21,18000,v0.2-core,Backlog,component-model,priority-p0,integration,
+Medical Ontology Retrieval,MOR,4000,,Epic,Hybrid Retrieval and Candidate Mapping,"GOAL
+Implement dense and sparse retrieval, code-level fusion, routing, and candidate ranking from scratch.
+
+SCOPE
+- Coordinate all tasks and deliverables in this workstream.
+
+ACCEPTANCE CRITERIA
+- All child work items meet their Definition of Done.
+- Epic outcome is integrated into the release candidate.
+
+EXPECTED EVIDENCE
+- Jira epic Hybrid Retrieval and Candidate Mapping
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái,P0,model,Sprint 4 - Hardening and Demo,2026-07-12 09:00,2026-07-26 18:00,2026-07-26,0,v0.3-rc,Backlog,component-model,priority-p0,epic,
+Medical Ontology Retrieval,MOR,4001,4000,Task,Implement embedding client wrapper and vector normalization,"GOAL
+Provide deterministic bge-m3 embeddings and normalized NumPy arrays for indexing and querying.
+
+SCOPE
+- Batch aliases safely.
+- Validate dimensions.
+- Normalize vectors once.
+- Cache model outputs by content/config hash.
+
+ACCEPTANCE CRITERIA
+- Embedding dimension and dtype are recorded.
+- Identical input returns reusable cached output.
+- Errors identify model and batch.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/retrieval/embeddings.py
+
+DEPENDENCIES
+- 3002
+- 2013
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái,P0,model,Sprint 2 - Retrieval Baselines,2026-07-17 08:00,2026-07-18 13:00,2026-07-18,14400,v0.2-core,Backlog,component-model,priority-p0,embedding,
+Medical Ontology Retrieval,MOR,4002,4000,Task,Implement exact dense search baseline,"GOAL
+Establish the correctness reference for dense retrieval and later HNSW evaluation.
+
+SCOPE
+- Store normalized float32 matrix and metadata.
+- Compute query dot products with NumPy.
+- Return deterministic top-k alias results.
+- Handle invalid dimensions.
+
+ACCEPTANCE CRITERIA
+- Results match brute-force expectations on QA fixtures.
+- Latency and memory are measurable.
+- API conforms to retrieval contract.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/retrieval/exact_search.py and dense_search.py
+
+DEPENDENCIES
+- 4001
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái,P0,model,Sprint 2 - Retrieval Baselines,2026-07-18 13:00,2026-07-19 23:00,2026-07-19,21600,v0.2-core,Backlog,component-model,priority-p0,dense,
+Medical Ontology Retrieval,MOR,4003,4000,Task,Implement shared lexical normalization and tokenizer,"GOAL
+Provide one deterministic text normalization contract for sparse retrieval.
+
+SCOPE
+- Normalize Unicode, case, whitespace, punctuation, dose spacing, and optional accent variants.
+- Preserve medically meaningful characters.
+
+ACCEPTANCE CRITERIA
+- Normalization behavior is documented.
+- QA tests cover boundary cases.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/data/normalization.py
+
+DEPENDENCIES
+- 2003
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái,P0,model,Sprint 2 - Retrieval Baselines,2026-07-18 08:00,2026-07-19 12:00,2026-07-19,10800,v0.2-core,Backlog,component-model,priority-p0,normalization,
+Medical Ontology Retrieval,MOR,4004,4000,Task,Implement TF-IDF and character n-gram retrieval,"GOAL
+Create a self-coded lexical baseline robust to spelling and abbreviation variants.
+
+SCOPE
+- Build vocabulary and document frequencies.
+- Compute sparse weights without scikit-learn.
+- Support word and character features as configured.
+- Return deterministic ranked aliases.
+
+ACCEPTANCE CRITERIA
+- Scores match hand-calculated fixtures.
+- Index can be saved and loaded.
+- Memory and latency are measured.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/retrieval/tfidf.py and sparse_search.py
+
+DEPENDENCIES
+- 4003
+- 2018
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái,P0,model,Sprint 2 - Retrieval Baselines,2026-07-19 12:00,2026-07-20 14:00,2026-07-20,18000,v0.2-core,Backlog,component-model,priority-p0,sparse,
+Medical Ontology Retrieval,MOR,4005,4000,Task,Implement BM25 retrieval,"GOAL
+Add a second self-coded sparse ranker for exact terminology and abbreviations.
+
+SCOPE
+- Implement BM25 term weighting and length normalization.
+- Expose k1 and b configuration.
+- Return deterministic ranked aliases.
+
+ACCEPTANCE CRITERIA
+- Scores pass QA fixtures.
+- Parameters and formula are documented.
+- Benchmark includes BM25.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/retrieval/bm25.py
+
+DEPENDENCIES
+- 4003
+- 2018
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái,P1,model,Sprint 2 - Retrieval Baselines,2026-07-19 15:00,2026-07-20 20:00,2026-07-20,18000,v0.2-core,Backlog,component-model,priority-p1,sparse,
+Medical Ontology Retrieval,MOR,4006,4000,Task,Implement alias-to-code grouping and Reciprocal Rank Fusion,"GOAL
+Fuse dense and sparse rankings fairly at code level.
+
+SCOPE
+- Keep best alias rank/evidence per code.
+- Implement configurable RRF.
+- Do not sum all aliases for a code.
+- Return evidence and ranks for debugging.
+
+ACCEPTANCE CRITERIA
+- Hand-calculated RRF fixtures pass.
+- Codes with more aliases do not receive artificial advantage.
+- Stable tie-breaking is defined.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/retrieval/rrf.py and mapping/candidate_ranker.py
+
+DEPENDENCIES
+- 4002
+- 4004
+- 4005
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái,P0,model,Sprint 3 - Core Integration,2026-07-20 20:00,2026-07-21 15:00,2026-07-21,14400,v0.2-core,Backlog,component-model,priority-p0,rrf,
+Medical Ontology Retrieval,MOR,4007,4000,Task,Implement ICD/RxNorm code mapper and routing,"GOAL
+Expose one mapping API that routes diagnosis to ICD and medicine to RxNorm, then runs hybrid retrieval.
+
+SCOPE
+- Reject non-mappable labels.
+- Expand reviewed abbreviations without changing output text.
+- Run dense and sparse retrieval.
+- Fuse and return final top-k candidates.
+
+ACCEPTANCE CRITERIA
+- Diagnosis never queries RxNorm.
+- Medicine never queries ICD.
+- Other labels receive no candidates.
+- Candidate codes exist in the correct KB.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/mapping/code_mapper.py
+
+DEPENDENCIES
+- 4006
+- 2018
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái; Lương Minh Quân,P0,model,Sprint 3 - Core Integration,2026-07-21 12:00,2026-07-22 17:00,2026-07-22,18000,v0.2-core,Backlog,component-model,priority-p0,mapping,
+Medical Ontology Retrieval,MOR,4008,4000,Task,"Benchmark dense, sparse, and hybrid retrieval baselines","GOAL
+Measure whether hybrid retrieval improves candidate recall over individual rankers.
+
+SCOPE
+- Run Recall@1/5/10, MRR, latency, and error breakdown.
+- Compare exact dense, TF-IDF, BM25, and RRF.
+- Record config and data version.
+
+ACCEPTANCE CRITERIA
+- Results are reproducible.
+- RRF inclusion decision is evidence-based.
+- Failures are added to error analysis.
+
+EXPECTED EVIDENCE
+- experiments/retrieval_baseline_results.csv and experiments/ablation.md
+
+DEPENDENCIES
+- 4007
+- 7004
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái; Nguyễn Hoàng Thái,P0,model,Sprint 3 - Core Integration,2026-07-21 15:00,2026-07-22 22:00,2026-07-22,18000,v0.2-core,Backlog,component-model,priority-p0,benchmark,
+Medical Ontology Retrieval,MOR,4009,4000,Task,Decide whether to implement constrained LLM reranker,"GOAL
+Avoid adding reranking unless measurable retrieval ambiguity remains after RRF.
+
+SCOPE
+- Review baseline errors and runtime.
+- Define success threshold and timebox.
+- Record implement/defer decision.
+
+ACCEPTANCE CRITERIA
+- Decision is documented.
+- If implemented, LLM can select only supplied candidates and has RRF fallback.
+
+EXPECTED EVIDENCE
+- docs/adr/0005-llm-reranker-decision.md
+
+DEPENDENCIES
+- 4008
+- 5007
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Võ Huỳnh Quốc Thái,P2,model,Sprint 4 - Hardening and Demo,2026-07-24 18:00,2026-07-25 12:00,2026-07-25,5400,v0.3-rc,Backlog,component-model,priority-p2,decision,optional
+Medical Ontology Retrieval,MOR,5000,,Epic,Self-Coded HNSW Search,"GOAL
+Implement HNSW from theory, compare it with exact NumPy search, and integrate it only if reliable.
+
+SCOPE
+- Coordinate all tasks and deliverables in this workstream.
+
+ACCEPTANCE CRITERIA
+- All child work items meet their Definition of Done.
+- Epic outcome is integrated into the release candidate.
+
+EXPECTED EVIDENCE
+- Jira epic Self-Coded HNSW Search
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái,P0,model,Sprint 4 - Hardening and Demo,2026-07-12 09:00,2026-07-24 22:00,2026-07-24,0,v0.3-rc,Backlog,component-model,priority-p0,epic,
+Medical Ontology Retrieval,MOR,5001,5000,Task,Write HNSW design and invariants,"GOAL
+Translate the HNSW paper into an implementable design before coding.
+
+SCOPE
+- Define node levels, graph representation, entry point, search layer, insertion, neighbor selection/pruning, and parameters.
+- Define deterministic test strategy.
+
+ACCEPTANCE CRITERIA
+- Design maps each algorithm step to planned methods.
+- Complexity and memory assumptions are recorded.
+- Tech Lead approves the design.
+
+EXPECTED EVIDENCE
+- docs/hnsw_design.md
+
+DEPENDENCIES
+- 4002
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái; Khang,P0,model,Sprint 3 - Core Integration,2026-07-21 08:00,2026-07-22 10:00,2026-07-22,10800,v0.2-core,Backlog,component-model,priority-p0,hnsw,design
+Medical Ontology Retrieval,MOR,5002,5000,Task,Implement HNSW core data structures and random levels,"GOAL
+Create graph storage, vector metadata, entry point, maximum level, and level sampling.
+
+SCOPE
+- Support M and M0.
+- Use seeded random generation for tests.
+- Validate vector dimensions.
+
+ACCEPTANCE CRITERIA
+- Small graph can be created deterministically.
+- Layer membership is internally consistent.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/retrieval/hnsw.py
+
+DEPENDENCIES
+- 5001
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái,P0,model,Sprint 3 - Core Integration,2026-07-22 10:00,2026-07-22 13:00,2026-07-22,10800,v0.2-core,Backlog,component-model,priority-p0,hnsw,
+Medical Ontology Retrieval,MOR,5003,5000,Task,Implement greedy descent and search-layer algorithm,"GOAL
+Implement upper-layer greedy navigation and ef-based candidate search.
+
+SCOPE
+- Use correct cosine distance for normalized vectors.
+- Maintain candidate and result heaps.
+- Stop according to HNSW search condition.
+
+ACCEPTANCE CRITERIA
+- Search returns nearest nodes on controlled fixtures.
+- No duplicate visits corrupt results.
+- ef_search is configurable.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/retrieval/hnsw.py
+
+DEPENDENCIES
+- 5002
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái,P0,model,Sprint 3 - Core Integration,2026-07-22 13:00,2026-07-22 22:00,2026-07-22,18000,v0.2-core,Backlog,component-model,priority-p0,hnsw,
+Medical Ontology Retrieval,MOR,5004,5000,Task,Implement insertion and bidirectional connections,"GOAL
+Insert nodes from upper layers to layer zero and connect neighbors bidirectionally.
+
+SCOPE
+- Use ef_construction.
+- Update entry point and maximum level when required.
+- Maintain graph invariants.
+
+ACCEPTANCE CRITERIA
+- Sequential insertion builds a searchable graph.
+- Connections are symmetric before pruning policy.
+- Insertion tests pass.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/retrieval/hnsw.py
+
+DEPENDENCIES
+- 5003
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái,P0,model,Sprint 3 - Core Integration,2026-07-23 08:00,2026-07-23 17:00,2026-07-23,18000,v0.2-core,Backlog,component-model,priority-p0,hnsw,
+Medical Ontology Retrieval,MOR,5005,5000,Task,Implement neighbor selection and pruning,"GOAL
+Enforce degree limits while preserving useful graph diversity.
+
+SCOPE
+- Implement a documented heuristic or exact nearest selection.
+- Use M for upper layers and M0 for layer zero.
+- Prune reverse connections consistently.
+
+ACCEPTANCE CRITERIA
+- Degree limits hold after insertion.
+- Search quality does not collapse on fixtures.
+- Policy is documented.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/retrieval/hnsw.py
+
+DEPENDENCIES
+- 5004
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Võ Huỳnh Quốc Thái,P0,model,Sprint 3 - Core Integration,2026-07-23 17:00,2026-07-23 23:00,2026-07-23,14400,v0.2-core,Backlog,component-model,priority-p0,hnsw,
+Medical Ontology Retrieval,MOR,5006,5000,Task,Review HNSW correctness and API,"GOAL
+Verify theoretical correctness before performance benchmarking.
+
+SCOPE
+- Review each algorithm stage against the paper.
+- Review invariants, edge cases, and public API.
+- Record blocking defects.
+
+ACCEPTANCE CRITERIA
+- No known P0 correctness defect remains.
+- Review note links code and paper sections.
+
+EXPECTED EVIDENCE
+- experiments/hnsw_design_review.md
+
+DEPENDENCIES
+- 5005
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,model,Sprint 4 - Hardening and Demo,2026-07-24 08:00,2026-07-24 12:00,2026-07-24,10800,v0.3-rc,Backlog,component-model,priority-p0,review,
+Medical Ontology Retrieval,MOR,5007,5000,Task,Benchmark exact search versus HNSW,"GOAL
+Measure recall, latency, build time, and memory before deciding production use.
+
+SCOPE
+- Run controlled datasets and project alias vectors.
+- Measure Recall@1/5/10, average and percentile latency, build time, and approximate memory.
+- Record M, M0, ef_construction, ef_search, N, and dimension.
+
+ACCEPTANCE CRITERIA
+- Results are reproducible.
+- Exact search is the ground truth.
+- Use/fallback decision is documented.
+
+EXPECTED EVIDENCE
+- experiments/hnsw_results.csv and docs/adr/0006-hnsw-use-decision.md
+
+DEPENDENCIES
+- 5006
+- 7004
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Nguyễn Hoàng Thái; Võ Huỳnh Quốc Thái,P0,qa,Sprint 4 - Hardening and Demo,2026-07-24 12:00,2026-07-24 22:00,2026-07-24,18000,v0.3-rc,Backlog,component-qa,priority-p0,benchmark,hnsw
+Medical Ontology Retrieval,MOR,6000,,Epic,End-to-End Pipeline and Demo,"GOAL
+Integrate data, extraction, retrieval, validation, CLI, batch output, Streamlit, and Colab into one reliable workflow.
+
+SCOPE
+- Coordinate all tasks and deliverables in this workstream.
+
+ACCEPTANCE CRITERIA
+- All child work items meet their Definition of Done.
+- Epic outcome is integrated into the release candidate.
+
+EXPECTED EVIDENCE
+- Jira epic End-to-End Pipeline and Demo
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân,P0,pipeline,Sprint 5 - Release Candidate,2026-07-12 09:00,2026-07-28 23:00,2026-07-28,0,v0.3-rc,Backlog,component-pipeline,priority-p0,epic,
+Medical Ontology Retrieval,MOR,6001,6000,Task,Implement configuration loading and typed schemas,"GOAL
+Provide one validated configuration and internal object contract across all modules.
+
+SCOPE
+- Load default YAML and environment overrides.
+- Define typed entity, assertion, alias, candidate, and result structures.
+- Validate required paths and values.
+
+ACCEPTANCE CRITERIA
+- Configuration errors are explicit.
+- Public types match schemas and API docs.
+- No module reads arbitrary global paths.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/config.py and schema.py
+
+DEPENDENCIES
+- 1013
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân; Khang,P0,pipeline,Sprint 1 - Data and Extraction MVP,2026-07-14 08:00,2026-07-15 18:00,2026-07-15,18000,v0.1-mvp,Backlog,component-pipeline,priority-p0,configuration,
+Medical Ontology Retrieval,MOR,6002,6000,Task,Implement data loaders and artifact IO contracts,"GOAL
+Load JSONL ontology, alias, evaluation, and artifact metadata consistently.
+
+SCOPE
+- Implement streaming JSONL read/write.
+- Validate fields and encoding.
+- Return typed records.
+- Define artifact metadata format.
+
+ACCEPTANCE CRITERIA
+- Malformed data produces actionable errors.
+- Loaders do not silently coerce invalid records.
+- Paths come from config.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/data/loaders.py and utils/io.py
+
+DEPENDENCIES
+- 6001
+- 2003
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân,P0,pipeline,Sprint 1 - Data and Extraction MVP,2026-07-15 08:00,2026-07-16 18:00,2026-07-16,18000,v0.1-mvp,Backlog,component-pipeline,priority-p0,loaders,
+Medical Ontology Retrieval,MOR,6003,6000,Task,Implement preprocessing and source-text preservation,"GOAL
+Prepare model/rule inputs without destroying original character offsets.
+
+SCOPE
+- Keep raw text immutable.
+- Create derived normalized view with offset mapping if required.
+- Implement context-window helper.
+
+ACCEPTANCE CRITERIA
+- Exact spans can always be mapped back to raw text.
+- Unicode and repeated-substring cases are handled.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/utils/text.py and pipeline preprocessing stage
+
+DEPENDENCIES
+- 6001
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân,P0,pipeline,Sprint 1 - Data and Extraction MVP,2026-07-16 08:00,2026-07-17 18:00,2026-07-17,14400,v0.1-mvp,Backlog,component-pipeline,priority-p0,preprocessing,
+Medical Ontology Retrieval,MOR,6004,6000,Task,Implement entity merge and overlap resolution,"GOAL
+Combine rule and LLM outputs deterministically.
+
+SCOPE
+- Deduplicate exact entities.
+- Resolve nested/overlapping spans by documented policy.
+- Preserve evidence and confidence.
+- Do not merge distinct repeated mentions.
+
+ACCEPTANCE CRITERIA
+- Merge behavior passes QA fixtures.
+- Tie-breaking is deterministic.
+- Diagnostics identify discarded entities.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/pipeline/merge_entities.py
+
+DEPENDENCIES
+- 3003
+- 3007
+- 6003
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân; Khang,P0,pipeline,Sprint 2 - Retrieval Baselines,2026-07-19 08:00,2026-07-20 18:00,2026-07-20,18000,v0.2-core,Backlog,component-pipeline,priority-p0,merge,
+Medical Ontology Retrieval,MOR,6005,6000,Task,Implement span alignment and entity validation,"GOAL
+Ensure every exported entity is an exact source span with a valid label/assertion structure.
+
+SCOPE
+- Align exact and repeated occurrences.
+- Reject hallucinated text.
+- Validate label and assertion applicability.
+- Emit reasons for rejected entities.
+
+ACCEPTANCE CRITERIA
+- raw_text[start:end] equals entity text for every accepted entity.
+- No invalid label or assertion object passes.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/validation/span_aligner.py and schema_validator.py
+
+DEPENDENCIES
+- 6003
+- 7001
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân; Nguyễn Hoàng Thái,P0,pipeline,Sprint 3 - Core Integration,2026-07-19 12:00,2026-07-21 12:00,2026-07-21,21600,v0.2-core,Backlog,component-pipeline,priority-p0,validation,
+Medical Ontology Retrieval,MOR,6006,6000,Task,Implement mapping orchestration and candidate validation,"GOAL
+Attach candidates only to valid diagnosis and medicine entities through the approved mapper.
+
+SCOPE
+- Route by entity type.
+- Pass entity context to optional reranker only after RRF.
+- Validate code existence, system, duplicates, and final count.
+- Fallback to RRF if reranker fails.
+
+ACCEPTANCE CRITERIA
+- No candidates appear on symptoms or lab entities.
+- All codes belong to the correct KB.
+- Failures are logged without corrupting output.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/pipeline/mapping_step.py and validation/candidate_validator.py
+
+DEPENDENCIES
+- 4007
+- 6005
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân; Võ Huỳnh Quốc Thái,P0,pipeline,Sprint 3 - Core Integration,2026-07-21 12:00,2026-07-23 18:00,2026-07-23,21600,v0.2-core,Backlog,component-pipeline,priority-p0,mapping,
+Medical Ontology Retrieval,MOR,6007,6000,Task,Implement final formatter and command-line inference,"GOAL
+Produce exact task-schema JSON for text, single file, and directory inputs.
+
+SCOPE
+- Implement final field inclusion rules.
+- Support text, input file, and input directory.
+- Write deterministic UTF-8 JSON.
+- Return non-zero exit codes for fatal errors.
+
+ACCEPTANCE CRITERIA
+- CLI runs from repository root.
+- Output passes schema validator.
+- Directory filenames are preserved as required.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/infer.py and pipeline/formatter.py
+
+DEPENDENCIES
+- 6006
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân,P0,pipeline,Sprint 4 - Hardening and Demo,2026-07-22 08:00,2026-07-24 18:00,2026-07-24,25200,v0.3-rc,Backlog,component-pipeline,priority-p0,cli,
+Medical Ontology Retrieval,MOR,6008,6000,Task,Complete end-to-end MVP integration,"GOAL
+Reach a usable core system before advanced tuning.
+
+SCOPE
+- Run raw note through extraction, validation, mapping, and formatting.
+- Use exact search fallback where HNSW is unavailable.
+- Log timings and failures.
+
+ACCEPTANCE CRITERIA
+- At least five QA notes run end to end.
+- Output is schema-valid.
+- Known errors are assigned in Jira.
+
+EXPECTED EVIDENCE
+- experiments/e2e_mvp_results.md
+
+DEPENDENCIES
+- 3009
+- 4007
+- 6005
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Lương Minh Quân; Võ Huỳnh Quốc Thái,P0,pipeline,Sprint 3 - Core Integration,2026-07-21 08:00,2026-07-21 23:00,2026-07-21,25200,v0.2-core,Backlog,component-pipeline,priority-p0,mvp,integration
+Medical Ontology Retrieval,MOR,6009,6000,Task,"Implement index build, save, load, and cache orchestration","GOAL
+Avoid rebuilding embeddings and indexes on every run.
+
+SCOPE
+- Hash data/model/config inputs.
+- Build exact/sparse/HNSW artifacts.
+- Write metadata and load validation.
+- Invalidate stale artifacts safely.
+
+ACCEPTANCE CRITERIA
+- Cached indexes load successfully.
+- Stale or incompatible artifacts are rejected.
+- Build commands are documented.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/indexing/ and scripts/build_indexes.py
+
+DEPENDENCIES
+- 4002
+- 4004
+- 4005
+- 2018
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân; Võ Huỳnh Quốc Thái,P1,pipeline,Sprint 4 - Hardening and Demo,2026-07-22 08:00,2026-07-24 20:00,2026-07-24,21600,v0.3-rc,Backlog,component-pipeline,priority-p1,indexing,
+Medical Ontology Retrieval,MOR,6010,6000,Task,Implement Streamlit demo shell and result views,"GOAL
+Provide a reliable thin UI over the shared pipeline without duplicating application logic.
+
+SCOPE
+- Import run_pipeline from package.
+- Accept clinical text.
+- Display entities, assertions, candidates, diagnostics, and final JSON.
+- Expose configuration status and clear errors.
+
+ACCEPTANCE CRITERIA
+- app.py contains UI only.
+- Local Dev Container demo runs.
+- Same pipeline is used by CLI and Streamlit.
+
+EXPECTED EVIDENCE
+- app.py
+
+DEPENDENCIES
+- 6007
+- 6008
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân,P1,demo,Sprint 4 - Hardening and Demo,2026-07-23 12:00,2026-07-25 20:00,2026-07-25,21600,v0.3-rc,Backlog,component-demo,priority-p1,streamlit,
+Medical Ontology Retrieval,MOR,6011,6000,Task,Complete Colab Ollama and Streamlit runtime notebook,"GOAL
+Allow weak machines to clone any branch, install the project, pull fixed models, and expose Streamlit through Cloudflare.
+
+SCOPE
+- Clone chosen repository branch.
+- Install package and Colab dependencies.
+- Install/start Ollama.
+- Pull fixed models only if missing.
+- Run Streamlit from repository root.
+- Expose port 8501 with cloudflared.
+
+ACCEPTANCE CRITERIA
+- Notebook works in a fresh Colab runtime.
+- Branch selection is configurable.
+- No project source files are generated inside notebook cells.
+
+EXPECTED EVIDENCE
+- notebooks/colab_ollama_streamlit.ipynb
+
+DEPENDENCIES
+- 6010
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân; Khang,P1,demo,Sprint 4 - Hardening and Demo,2026-07-24 08:00,2026-07-25 22:00,2026-07-25,18000,v0.3-rc,Backlog,component-demo,priority-p1,colab,ollama
+Medical Ontology Retrieval,MOR,6012,6000,Task,Implement batch packaging for competition output,"GOAL
+Create the required output directory and zip package deterministically.
+
+SCOPE
+- Process numbered input files.
+- Write matching JSON filenames.
+- Validate every file before zipping.
+- Reject missing/extra filenames.
+
+ACCEPTANCE CRITERIA
+- output.zip has correct internal structure.
+- Packaging is reproducible.
+- Validation summary is written.
+
+EXPECTED EVIDENCE
+- scripts/package_output.py
+
+DEPENDENCIES
+- 6007
+- 7007
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Lương Minh Quân,P0,pipeline,Sprint 4 - Hardening and Demo,2026-07-25 08:00,2026-07-26 20:00,2026-07-26,14400,v0.3-rc,Backlog,component-pipeline,priority-p0,submission,
+Medical Ontology Retrieval,MOR,6013,6000,Task,Produce and approve release candidate,"GOAL
+Create a stable candidate containing all required core functionality and known limitations.
+
+SCOPE
+- Build indexes from frozen data.
+- Run fast, integration, retrieval, and E2E suites.
+- Run Streamlit and batch packaging.
+- Record configuration and artifact versions.
+
+ACCEPTANCE CRITERIA
+- No P0 bug remains.
+- P1 bugs are fixed or explicitly waived by Tech Lead.
+- RC tag/commit is recorded.
+
+EXPECTED EVIDENCE
+- release/v0.3-rc checklist and Jira release
+
+DEPENDENCIES
+- 6012
+- 7008
+- 5007
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Lương Minh Quân; Võ Huỳnh Quốc Thái; Nguyễn Hoàng Thái; Dương Huệ Mẫn,P0,pipeline,Sprint 5 - Release Candidate,2026-07-26 20:00,2026-07-27 23:00,2026-07-27,36000,v0.3-rc,Backlog,component-pipeline,priority-p0,release-candidate,
+Medical Ontology Retrieval,MOR,6014,6000,Task,Freeze code and submission runtime,"GOAL
+Stop feature work and approve the final code/runtime package.
+
+SCOPE
+- Fix only release-blocking defects.
+- Run full final checklist.
+- Record model, data, config, and commit versions.
+- Protect submission tag.
+
+ACCEPTANCE CRITERIA
+- Final code is tagged.
+- Output package passes final validation.
+- No uncommitted or undocumented change remains.
+
+EXPECTED EVIDENCE
+- docs/21_release_submission_checklist.md and Git tag
+
+DEPENDENCIES
+- 6013
+- 7009
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,pipeline,Sprint 5 - Release Candidate,2026-07-28 08:00,2026-07-28 23:00,2026-07-28,21600,v0.3-rc,Backlog,component-pipeline,priority-p0,freeze,
+Medical Ontology Retrieval,MOR,7000,,Epic,"QA, Testing, and Evaluation","GOAL
+Create the test assets, automated checks, evaluation datasets, metrics, regression suite, and release gate.
+
+SCOPE
+- Coordinate all tasks and deliverables in this workstream.
+
+ACCEPTANCE CRITERIA
+- All child work items meet their Definition of Done.
+- Epic outcome is integrated into the release candidate.
+
+EXPECTED EVIDENCE
+- Jira epic QA, Testing, and Evaluation
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Nguyễn Hoàng Thái,P0,qa,Sprint 5 - Release Candidate,2026-07-12 09:00,2026-07-28 22:00,2026-07-28,0,v0.3-rc,Backlog,component-qa,priority-p0,epic,
+Medical Ontology Retrieval,MOR,7001,7000,Task,Finalize QA strategy and test architecture,"GOAL
+Define what QA creates, how tests are organized, and which gates block a merge or release.
+
+SCOPE
+- Define unit, integration, E2E, Ollama, retrieval, and manual demo testing.
+- Define pytest markers and fixture policy.
+- Define defect severity and triage.
+
+ACCEPTANCE CRITERIA
+- QA plan is linked from README.
+- Test ownership is clear.
+- CI and pre-push scopes are agreed.
+
+EXPECTED EVIDENCE
+- docs/09_testing_and_qa.md
+
+DEPENDENCIES
+- 1013
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Nguyễn Hoàng Thái; Khang,P0,qa,Sprint 1 - Data and Extraction MVP,2026-07-13 08:00,2026-07-15 12:00,2026-07-15,14400,v0.1-mvp,Backlog,component-qa,priority-p0,qa-plan,
+Medical Ontology Retrieval,MOR,7002,7000,Task,Create QA fixture structure and unit tests for deterministic utilities,"GOAL
+Create team-owned tests for normalization, loaders, schema, offsets, ranking primitives, and formatters.
+
+SCOPE
+- Write isolated fixtures.
+- Use plain pytest assertions and parametrization.
+- Avoid Ollama in fast tests.
+- Cover invalid inputs and boundary cases.
+
+ACCEPTANCE CRITERIA
+- Fast tests are deterministic.
+- Tests fail when expected behavior is intentionally broken.
+- CI discovers and runs them.
+
+EXPECTED EVIDENCE
+- tests/unit/ and tests/fixtures/
+
+DEPENDENCIES
+- 7001
+- 6001
+- 6002
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Nguyễn Hoàng Thái,P0,qa,Sprint 2 - Retrieval Baselines,2026-07-15 12:00,2026-07-18 20:00,2026-07-18,28800,v0.2-core,Backlog,component-qa,priority-p0,unit-tests,
+Medical Ontology Retrieval,MOR,7003,7000,Task,Create curated mapping query evaluation set,"GOAL
+Evaluate mapper quality with independently reviewed easy, ambiguous, abbreviation, dose, spelling, and hard-negative queries.
+
+SCOPE
+- Generate smoke cases automatically from aliases only as a supplement.
+- Curate meaningful cases manually.
+- Separate ICD and RxNorm.
+- Record expected code and rationale.
+
+ACCEPTANCE CRITERIA
+- Expected codes are independently verified.
+- No query is derived from the exact same alias without being labeled as smoke.
+- Coverage includes hard negatives and ambiguity.
+
+EXPECTED EVIDENCE
+- data/eval/mapping_queries.jsonl
+
+DEPENDENCIES
+- 2012
+- 7001
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Nguyễn Hoàng Thái; Dương Huệ Mẫn,P0,qa,Sprint 2 - Retrieval Baselines,2026-07-17 08:00,2026-07-20 16:00,2026-07-20,21600,v0.2-core,Backlog,component-qa,priority-p0,evaluation-data,
+Medical Ontology Retrieval,MOR,7004,7000,Task,Implement retrieval metrics and evaluation runner tests,"GOAL
+Measure Recall@k, MRR, and latency consistently across retrieval implementations.
+
+SCOPE
+- Define metric edge cases.
+- Validate metric functions on hand-computed examples.
+- Record config/data version with every run.
+
+ACCEPTANCE CRITERIA
+- Metrics pass hand-calculated tests.
+- Runner produces stable CSV output.
+- Empty/missing predictions are handled.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/evaluation/metrics.py and retrieval_eval.py; tests/unit/test_metrics.py
+
+DEPENDENCIES
+- 7001
+- 7003
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Nguyễn Hoàng Thái; Võ Huỳnh Quốc Thái,P0,qa,Sprint 3 - Core Integration,2026-07-19 08:00,2026-07-21 12:00,2026-07-21,18000,v0.2-core,Backlog,component-qa,priority-p0,metrics,
+Medical Ontology Retrieval,MOR,7005,7000,Task,Create clinical snippets and exact-span ground truth,"GOAL
+Build an internal end-to-end evaluation set independent from model output.
+
+SCOPE
+- Create easy and hard Vietnamese clinical snippets.
+- Annotate exact text, position, label, assertions, and candidates.
+- Include negation, family, history, abbreviations, repeated mentions, labs, and hard negatives.
+- Double-review critical cases.
+
+ACCEPTANCE CRITERIA
+- Ground truth validates against schema.
+- At least 30 snippets exist, with at least 20 fully reviewed.
+- Disagreements are recorded and resolved.
+
+EXPECTED EVIDENCE
+- data/eval/clinical_snippets.jsonl and ground_truth.jsonl
+
+DEPENDENCIES
+- 3001
+- 7001
+- 2007
+- 2011
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Nguyễn Hoàng Thái; Dương Huệ Mẫn,P0,qa,Sprint 3 - Core Integration,2026-07-17 08:00,2026-07-22 18:00,2026-07-22,36000,v0.2-core,Backlog,component-qa,priority-p0,ground-truth,
+Medical Ontology Retrieval,MOR,7006,7000,Task,Create integration and end-to-end automated tests,"GOAL
+Test module boundaries and final schema behavior without relying on production data or external models in fast CI.
+
+SCOPE
+- Build small in-memory alias fixtures.
+- Test extraction merge, mapping routing, validation, and formatter integration.
+- Mark Ollama-dependent tests separately.
+
+ACCEPTANCE CRITERIA
+- Fast integration tests run in CI.
+- Ollama tests can be selected manually.
+- Failure messages identify the broken stage.
+
+EXPECTED EVIDENCE
+- tests/integration/ and tests/e2e/
+
+DEPENDENCIES
+- 7002
+- 6008
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Nguyễn Hoàng Thái,P0,qa,Sprint 4 - Hardening and Demo,2026-07-21 08:00,2026-07-24 18:00,2026-07-24,28800,v0.3-rc,Backlog,component-qa,priority-p0,integration-tests,
+Medical Ontology Retrieval,MOR,7007,7000,Task,Implement final output validator and submission checks,"GOAL
+Block invalid schema, spans, candidates, filenames, and archive structure.
+
+SCOPE
+- Validate raw_text slice equality.
+- Validate allowed fields and types.
+- Validate candidate ontology membership.
+- Validate numbered output files and zip contents.
+
+ACCEPTANCE CRITERIA
+- Invalid output cannot be packaged silently.
+- Validation report lists every file/error.
+- Known competition examples pass.
+
+EXPECTED EVIDENCE
+- src/medical_ontology/validation/output_validator.py and tests/
+
+DEPENDENCIES
+- 6007
+- 7005
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Nguyễn Hoàng Thái; Lương Minh Quân,P0,qa,Sprint 4 - Hardening and Demo,2026-07-23 08:00,2026-07-25 18:00,2026-07-25,21600,v0.3-rc,Backlog,component-qa,priority-p0,validation,
+Medical Ontology Retrieval,MOR,7008,7000,Task,Run full regression and error-analysis cycle,"GOAL
+Turn observed failures into assigned, reproducible fixes before release candidate.
+
+SCOPE
+- Run retrieval and E2E evaluation.
+- Classify extraction, label, assertion, span, mapping, data, schema, and runtime errors.
+- Create Jira bugs with evidence and owner.
+- Add regression cases for fixed defects.
+
+ACCEPTANCE CRITERIA
+- Every P0/P1 failure has a Jira bug or approved waiver.
+- Error analysis is current.
+- Fixed defects have regression tests.
+
+EXPECTED EVIDENCE
+- experiments/error_analysis.md and Jira bugs
+
+DEPENDENCIES
+- 7004
+- 7005
+- 7006
+- 7007
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Nguyễn Hoàng Thái; Dương Huệ Mẫn; Khang,P0,qa,Sprint 4 - Hardening and Demo,2026-07-24 08:00,2026-07-26 22:00,2026-07-26,32400,v0.3-rc,Backlog,component-qa,priority-p0,regression,
+Medical Ontology Retrieval,MOR,7009,7000,Task,Perform final release and submission QA,"GOAL
+Approve the exact code, artifacts, demo, and output package for freeze.
+
+SCOPE
+- Run final tests and validators from a clean environment.
+- Rebuild artifacts from frozen data/config.
+- Verify Streamlit and Colab paths.
+- Verify output archive and release checklist.
+
+ACCEPTANCE CRITERIA
+- All mandatory checks pass.
+- No P0/P1 release blocker remains.
+- QA approval is recorded in Jira.
+
+EXPECTED EVIDENCE
+- docs/21_release_submission_checklist.md
+
+DEPENDENCIES
+- 6013
+- 7008
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Nguyễn Hoàng Thái; Khang,P0,qa,Sprint 5 - Release Candidate,2026-07-27 08:00,2026-07-28 22:00,2026-07-28,28800,v0.3-rc,Backlog,component-qa,priority-p0,release-qa,
+Medical Ontology Retrieval,MOR,8000,,Epic,"Report, Slides, Video, and Submission","GOAL
+Produce evidence-based final deliverables from frozen code, data, experiments, and demo.
+
+SCOPE
+- Coordinate all tasks and deliverables in this workstream.
+
+ACCEPTANCE CRITERIA
+- All child work items meet their Definition of Done.
+- Epic outcome is integrated into the release candidate.
+
+EXPECTED EVIDENCE
+- Jira epic Report, Slides, Video, and Submission
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,docs,Sprint 6 - Final Deliverables,2026-07-12 09:00,2026-08-02 23:00,2026-08-02,0,v1.0-submission,Backlog,component-docs,priority-p0,epic,
+Medical Ontology Retrieval,MOR,8001,8000,Task,"Maintain report skeleton, source registry, and experiment manifest","GOAL
+Capture sources, decisions, metrics, limitations, and figure/table inputs during implementation instead of reconstructing them at the end.
+
+SCOPE
+- Register sources before use.
+- Record experiment config and data version.
+- Keep report section placeholders and evidence links current.
+
+ACCEPTANCE CRITERIA
+- Every report claim has a source or experiment evidence.
+- No final result depends on an undocumented run.
+
+EXPECTED EVIDENCE
+- references/ and reports/latex/
+
+DEPENDENCIES
+- 1001
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Dương Huệ Mẫn; Võ Huỳnh Quốc Thái; Nguyễn Hoàng Thái; Lương Minh Quân,P1,docs,Sprint 5 - Release Candidate,2026-07-13 08:00,2026-07-28 20:00,2026-07-28,28800,v0.3-rc,Backlog,component-docs,priority-p1,reporting,
+Medical Ontology Retrieval,MOR,8002,8000,Task,"Write problem, data, and methodology sections","GOAL
+Document the task, data provenance, architecture, extraction, retrieval, HNSW, validation, and implementation constraints accurately.
+
+SCOPE
+- Use frozen source registry and architecture docs.
+- Assign section owners by technical ownership.
+- Use BibTeX citations.
+
+ACCEPTANCE CRITERIA
+- Sections compile in LaTeX.
+- Technical descriptions match code.
+- Data sources and versions are explicit.
+
+EXPECTED EVIDENCE
+- reports/latex/sections/02_problem.tex through 04_method.tex
+
+DEPENDENCIES
+- 6014
+- 8001
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Dương Huệ Mẫn; Võ Huỳnh Quốc Thái; Lương Minh Quân,P0,docs,Sprint 6 - Final Deliverables,2026-07-29 08:00,2026-07-30 22:00,2026-07-30,64800,v1.0-submission,Backlog,component-docs,priority-p0,latex,
+Medical Ontology Retrieval,MOR,8003,8000,Task,"Write experiments, results, limitations, and conclusion","GOAL
+Report reproducible evaluation, ablation, HNSW comparison, failures, and limitations without overstating results.
+
+SCOPE
+- Use frozen CSV outputs.
+- Include retrieval, extraction, assertion, and E2E metrics.
+- Explain exact versus HNSW trade-offs.
+- List limitations and future work.
+
+ACCEPTANCE CRITERIA
+- All numbers match committed experiment files.
+- No unsupported claim remains.
+- Limitations are candid.
+
+EXPECTED EVIDENCE
+- reports/latex/sections/05_experiments.tex through 08_conclusion.tex
+
+DEPENDENCIES
+- 8002
+- 7009
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Võ Huỳnh Quốc Thái; Nguyễn Hoàng Thái,P0,docs,Sprint 6 - Final Deliverables,2026-07-30 08:00,2026-07-31 22:00,2026-07-31,50400,v1.0-submission,Backlog,component-docs,priority-p0,latex,
+Medical Ontology Retrieval,MOR,8004,8000,Task,"Create final figures, tables, and architecture diagrams","GOAL
+Create report- and slide-ready visuals from frozen evidence.
+
+SCOPE
+- Create system workflow, data flow, retrieval flow, HNSW, metrics, latency, and ablation visuals.
+- Store editable source where applicable.
+- Use consistent labels.
+
+ACCEPTANCE CRITERIA
+- Figures are legible and referenced.
+- Tables are generated from final data or checked manually.
+- No contradictory metrics.
+
+EXPECTED EVIDENCE
+- reports/latex/figures/ and reports/latex/tables/
+
+DEPENDENCIES
+- 7009
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Võ Huỳnh Quốc Thái; Nguyễn Hoàng Thái,P1,docs,Sprint 6 - Final Deliverables,2026-07-29 12:00,2026-07-31 18:00,2026-07-31,36000,v1.0-submission,Backlog,component-docs,priority-p1,figures,
+Medical Ontology Retrieval,MOR,8005,8000,Task,Build final presentation deck,"GOAL
+Create a concise deck covering problem, method, implementation depth, experiments, demo, and limitations.
+
+SCOPE
+- Use the agreed outline.
+- Keep terminology consistent with report.
+- Include contribution/role slide.
+- Rehearse timing.
+
+ACCEPTANCE CRITERIA
+- Deck is complete and reviewed.
+- Every figure is readable.
+- No unsupported claim.
+
+EXPECTED EVIDENCE
+- slides/pptx/final_presentation.pptx and slides/exports/
+
+DEPENDENCIES
+- 8003
+- 8004
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; all reviewers,P0,docs,Sprint 6 - Final Deliverables,2026-07-31 08:00,2026-08-01 20:00,2026-08-01,36000,v1.0-submission,Backlog,component-docs,priority-p0,slides,
+Medical Ontology Retrieval,MOR,8006,8000,Task,Write and rehearse demo video script,"GOAL
+Define a repeatable demo showing setup, input, extracted entities, candidates, JSON, and limitations.
+
+SCOPE
+- Choose stable demo cases.
+- Define narration and screen sequence.
+- Prepare fallback recording plan.
+
+ACCEPTANCE CRITERIA
+- Script fits target duration.
+- All demo cases are in committed examples.
+- Fallback assets are ready.
+
+EXPECTED EVIDENCE
+- videos/script.md and videos/demo_checklist.md
+
+DEPENDENCIES
+- 6014
+- 7009
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Lương Minh Quân; Nguyễn Hoàng Thái,P1,demo,Sprint 6 - Final Deliverables,2026-07-30 08:00,2026-07-31 18:00,2026-07-31,18000,v1.0-submission,Backlog,component-demo,priority-p1,video,
+Medical Ontology Retrieval,MOR,8007,8000,Task,Record and edit final demo video,"GOAL
+Produce a clear final video from the frozen application.
+
+SCOPE
+- Record stable local or Colab demo.
+- Show architecture and outputs.
+- Edit audio, cuts, captions, and ending.
+
+ACCEPTANCE CRITERIA
+- Final video plays correctly.
+- No secrets or personal data appear.
+- Content matches frozen release.
+
+EXPECTED EVIDENCE
+- videos/final/
+
+DEPENDENCIES
+- 8006
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Lương Minh Quân,P0,demo,Sprint 6 - Final Deliverables,2026-08-01 08:00,2026-08-02 16:00,2026-08-02,28800,v1.0-submission,Backlog,component-demo,priority-p0,video,
+Medical Ontology Retrieval,MOR,8008,8000,Task,Perform final documentation and repository audit,"GOAL
+Ensure a reviewer can reproduce, understand, and evaluate the project from the repository.
+
+SCOPE
+- Check README commands and links.
+- Check setup, data notices, licenses, source registry, report references, and release notes.
+- Remove temporary/generated files.
+
+ACCEPTANCE CRITERIA
+- All links work.
+- No secret or large prohibited artifact is committed.
+- Clean-clone instructions are verified.
+
+EXPECTED EVIDENCE
+- README.md, docs/, references/, CHANGELOG.md
+
+DEPENDENCIES
+- 8003
+- 6014
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang; Nguyễn Hoàng Thái,P0,docs,Sprint 6 - Final Deliverables,2026-08-01 12:00,2026-08-02 18:00,2026-08-02,21600,v1.0-submission,Backlog,component-docs,priority-p0,documentation,
+Medical Ontology Retrieval,MOR,8009,8000,Task,Create final release and submission package,"GOAL
+Deliver all required artifacts before the internal deadline.
+
+SCOPE
+- Create GitHub release/tag.
+- Attach or link report, slides, video, and approved output package as permitted.
+- Verify final checklist and backups.
+
+ACCEPTANCE CRITERIA
+- All deliverables exist and open.
+- Submission evidence is saved.
+- Team receives final links.
+
+EXPECTED EVIDENCE
+- GitHub Release v1.0-submission and submission evidence
+
+DEPENDENCIES
+- 8005
+- 8007
+- 8008
+
+WORKING RULE
+- Keep the Jira status and blocker field current.
+- Link the pull request, document, dataset, metric, or other evidence before moving to Done.
+- Use the Jira key in the branch name, commits, and pull request title when code is involved.",,Khang,P0,docs,Sprint 6 - Final Deliverables,2026-08-02 18:00,2026-08-02 23:00,2026-08-02,14400,v1.0-submission,Backlog,component-docs,priority-p0,submission,

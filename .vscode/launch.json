@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "CLI: sample inference",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "medical_ontology.infer",
+      "args": [
+        "--text",
+        "BN tiền sử GERD, hiện không sốt, đang dùng pcm 500mg."
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Streamlit demo",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "app.py"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

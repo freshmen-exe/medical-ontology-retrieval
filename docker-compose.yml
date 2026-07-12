@@ -1,0 +1,31 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /workspace
+    command: >-
+      python -m streamlit run app.py
+      --server.address=0.0.0.0
+      --server.port=8501
+    environment:
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      LLM_MODEL: ${LLM_MODEL:-vicuna:7b-v1.5-q5_1}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-bge-m3}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/workspace
+    tty: true
+    stdin_open: true
+
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /workspace
+    command: python scripts/pre_pr.py
+    volumes:
+      - .:/workspace

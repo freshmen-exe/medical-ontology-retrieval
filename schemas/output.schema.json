@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/output.schema.json",
+  "title": "Submission Output",
+  "type": "array",
+  "items": {"$ref": "entity.schema.json"}
+}

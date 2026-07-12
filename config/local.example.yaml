@@ -1,0 +1,3 @@
+# Copy this to config/local.yaml and edit for your own machine.
+models:
+  ollama_base_url: "http://localhost:11434"

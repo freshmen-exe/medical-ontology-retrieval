@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/ground_truth.schema.json",
+  "title": "Ground Truth Case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "text", "entities"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "text": {"type": "string"},
+    "difficulty": {"enum": ["easy", "medium", "hard"]},
+    "entities": {
+      "type": "array",
+      "items": {"$ref": "entity.schema.json"}
+    }
+  }
+}

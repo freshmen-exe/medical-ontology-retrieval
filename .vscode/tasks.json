@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Project: Format",
+      "type": "shell",
+      "command": "python -m ruff check . --fix && python -m ruff format .",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Project: Lint",
+      "type": "shell",
+      "command": "python -m ruff format . --check && python -m ruff check .",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Project: Fast tests",
+      "type": "shell",
+      "command": "python scripts/run_fast_tests.py",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Project: Pre-PR checks",
+      "type": "shell",
+      "command": "python scripts/pre_pr.py",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Project: Streamlit demo",
+      "type": "shell",
+      "command": "python -m streamlit run app.py",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}

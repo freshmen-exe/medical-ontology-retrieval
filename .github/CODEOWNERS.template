@@ -1,0 +1,17 @@
+# Rename this file to .github/CODEOWNERS after replacing placeholders with real GitHub handles.
+# The Tech Lead remains the fallback reviewer for repository-wide changes.
+
+* @TECH_LEAD_GITHUB_HANDLE
+
+/data/ @DATA_OWNER_GITHUB_HANDLE @QA_OWNER_GITHUB_HANDLE
+/references/ @DATA_OWNER_GITHUB_HANDLE
+/src/medical_ontology/extraction/ @MODEL_OWNER_GITHUB_HANDLE
+/src/medical_ontology/retrieval/ @MODEL_OWNER_GITHUB_HANDLE
+/src/medical_ontology/mapping/ @MODEL_OWNER_GITHUB_HANDLE
+/src/medical_ontology/pipeline/ @PIPELINE_OWNER_GITHUB_HANDLE
+/src/medical_ontology/validation/ @QA_OWNER_GITHUB_HANDLE @PIPELINE_OWNER_GITHUB_HANDLE
+/tests/ @QA_OWNER_GITHUB_HANDLE
+/reports/ @TECH_LEAD_GITHUB_HANDLE
+/slides/ @TECH_LEAD_GITHUB_HANDLE
+/videos/ @TECH_LEAD_GITHUB_HANDLE
+/.github/ @TECH_LEAD_GITHUB_HANDLE

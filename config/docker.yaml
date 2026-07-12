@@ -1,0 +1,4 @@
+models:
+  llm: "vicuna:7b-v1.5-q5_1"
+  embedding: "bge-m3"
+  ollama_base_url: "http://host.docker.internal:11434"

@@ -1,0 +1,23 @@
+models:
+  llm: "mock"
+  embedding: "mock"
+  ollama_base_url: "http://localhost:11434"
+
+extraction:
+  use_llm: false
+  assertion_context_chars: 60
+
+retrieval:
+  dense_top_alias: 5
+  sparse_top_alias: 5
+  rrf_k: 60
+  internal_top_code: 5
+  final_candidates: 3
+  use_hnsw: false
+  use_llm_reranker: false
+
+paths:
+  icd_aliases: "tests/fixtures/sample_aliases/icd_aliases.jsonl"
+  rxnorm_aliases: "tests/fixtures/sample_aliases/rxnorm_aliases.jsonl"
+  abbreviations: "tests/fixtures/sample_aliases/abbreviations.jsonl"
+  artifacts_dir: "artifacts/test"
