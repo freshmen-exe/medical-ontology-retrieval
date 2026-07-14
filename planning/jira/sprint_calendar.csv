@@ -1,8 +1,0 @@
-﻿Sprint,Start,End,Goal,Planned Team Capacity Hours
-Sprint 0 - Kickoff and Setup,2026-07-12 09:00,2026-07-14 23:00,"Complete team kickoff, repository/tooling verification, source acquisition, and architecture contracts.",68
-Sprint 1 - Data and Extraction MVP,2026-07-15 08:00,2026-07-17 23:00,"Produce parsers, normalized data v0, extraction specification, and CLI/package skeleton readiness.",90
-Sprint 2 - Retrieval Baselines,2026-07-18 08:00,2026-07-20 23:00,"Complete aliases, rule and LLM extraction v0, exact dense search, sparse retrieval, and initial QA assets.",94
-Sprint 3 - Core Integration,2026-07-21 08:00,2026-07-23 23:00,"Complete RRF, code mapper, end-to-end core pipeline, validators, and most HNSW implementation.",90
-Sprint 4 - Hardening and Demo,2026-07-24 08:00,2026-07-26 23:00,"Benchmark HNSW, harden the pipeline, expand QA, and complete Streamlit and Colab demo paths.",94
-Sprint 5 - Release Candidate,2026-07-27 08:00,2026-07-28 23:00,"Produce release candidate, fix P0/P1 defects, validate batch output, and freeze code.",60
-Sprint 6 - Final Deliverables,2026-07-29 08:00,2026-08-02 23:00,"Complete LaTeX report, slides, demo video, release notes, and final submission package.",140

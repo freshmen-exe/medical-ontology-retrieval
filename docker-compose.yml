@@ -1,31 +1,135 @@
 services:
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    working_dir: /workspace
-    command: >-
-      python -m streamlit run app.py
-      --server.address=0.0.0.0
-      --server.port=8501
+  dev:
+    image: mcr.microsoft.com/devcontainers/python:3.11
+    env_file:
+      - path: .env
+        required: false
     environment:
-      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
-      LLM_MODEL: ${LLM_MODEL:-vicuna:7b-v1.5-q5_1}
-      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-bge-m3}
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-    ports:
-      - "8501:8501"
+      LLM_BASE_URL: http://llm-server:8080/v1
+      LLM_API_KEY: ${LLM_API_KEY:-local-internal-key}
+      LLM_MODEL: medical-extractor
+      EMBEDDING_BASE_URL: http://embedding-server:8081/v1
+      EMBEDDING_API_KEY: ${EMBEDDING_API_KEY:-local-internal-key}
+      EMBEDDING_MODEL: qwen3-embedding-0.6b
+      EMBEDDING_DIMENSION: "1024"
     volumes:
       - .:/workspace
+    working_dir: /workspace
+    networks:
+      - medical-internal
+    command: ["sleep", "infinity"]
+    # Tối ưu hóa I/O và Shared Memory cho PyTorch DataLoader & VectorDB
     tty: true
     stdin_open: true
+    ipc: host
+    privileged: true
+    # Cấp quyền cho Python Container gọi trực tiếp phần cứng GPU
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
 
-  test:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    working_dir: /workspace
-    command: python scripts/pre_pr.py
+  llm-server:
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda13-b9982
+    environment:
+      LLAMA_CACHE: /models
+      HF_TOKEN: ${HF_TOKEN:-}
+    command:
+      - -hf
+      - unsloth/Qwen3.5-4B-GGUF:Q4_K_M
+      - --no-mmproj
+      - --alias
+      - medical-extractor
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8080"
+      - --ctx-size
+      - "4096"
+      - --n-gpu-layers
+      - all
+      - --parallel
+      - "1"
+      - --batch-size
+      - "128"
+      - --ubatch-size
+      - "64"
+      - --flash-attn
+      - auto
+      - --cache-type-k
+      - q8_0
+      - --cache-type-v
+      - q8_0
+      - --jinja
+      - --reasoning
+      - auto
+      - --no-webui
+      - --metrics
+      - --api-key
+      - ${LLM_API_KEY:-local-internal-key}
     volumes:
-      - .:/workspace
+      - model-cache:/models
+    networks:
+      - medical-internal
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail --silent http://127.0.0.1:8080/health | grep --quiet ok"]
+      interval: 15s
+      timeout: 5s
+      retries: 60
+      start_period: 120s
+    restart: unless-stopped
+
+  embedding-server:
+    image: ghcr.io/ggml-org/llama.cpp:server-b9982
+    environment:
+      LLAMA_CACHE: /models
+      HF_TOKEN: ${HF_TOKEN:-}
+    command:
+      - -hf
+      - Qwen/Qwen3-Embedding-0.6B-GGUF:Q8_0
+      - --alias
+      - qwen3-embedding-0.6b
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8081"
+      - --embedding
+      - --pooling
+      - last
+      - --ctx-size
+      - "2048"
+      - --n-gpu-layers
+      - "0"
+      - --parallel
+      - "1"
+      - --no-webui
+      - --api-key
+      - ${EMBEDDING_API_KEY:-local-internal-key}
+    volumes:
+      - model-cache:/models
+    networks:
+      - medical-internal
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail --silent http://127.0.0.1:8081/health | grep --quiet ok"]
+      interval: 15s
+      timeout: 5s
+      retries: 60
+      start_period: 60s
+    restart: unless-stopped
+
+networks:
+  medical-internal:
+    driver: bridge
+
+volumes:
+  model-cache:
