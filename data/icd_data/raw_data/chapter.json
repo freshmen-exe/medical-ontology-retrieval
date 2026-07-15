@@ -1,0 +1,418 @@
+{
+    "name": "chapter",
+    "array": [
+        {
+            "id": "I",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [
+                "các bệnh được ghi nhận là bệnh truyền nhiễm hoặc bệnh lây truyền",
+                "sử dụng mã bổ sung ( U82-U85 ) để xác định tình trạng kháng các thuốc kháng sinh"
+            ],
+            "exclude": [
+                "người mang mầm bệnh hoặc nghi ngờ mang mầm bệnh nhiễm trùng ( Z22 .-)",
+                "một số nhiễm trùng khu trú - xem các chương hệ cơ quan liên quan",
+                "bệnh nhiễm trùng và ký sinh trùng gây biến chứng trong thai kỳ, lúc sinh con và hậu sản [ngoại trừ uốn ván sản khoa] ( O98 .-)",
+                "bệnh nhiễm trùng và ký sinh trùng đặc hiệu ở giai đoạn chu sinh [ngoại trừ uốn ván sơ sinh, giang mai bẩm sinh, nhiễm lậu cầu chu sinh và bệnh do nhiễm HIV chu sinh] ( P35-P39 )",
+                "cúm và nhiễm trùng hô hấp cấp khác ( J00 - J22 )"
+            ],
+            "terms": [
+                "Bệnh nhiễm trùng và ký sinh trùng"
+            ]
+        },
+        {
+            "id": "II",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [],
+            "terms": [
+                "U tân sinh"
+            ]
+        },
+        {
+            "id": "III",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [
+                "bệnh tự miễn (toàn thân) không xác định ( M35.9 )",
+                "một số bệnh lý khởi phát từ thời kỳ chu sinh ( P00-P96 )",
+                "các biến chứng lúc mang thai, sinh đẻ và hậu sản ( O00-O99 )",
+                "các dị tật, dị dạng bẩm sinh và bất thường nhiễm sắc thể ( Q00-Q99 )",
+                "các bệnh nội tiết, dinh dưỡng và chuyển hoá ( E00-E90 )",
+                "bệnh do nhiễm vi rút gây suy giảm miễn dịch ở người [HIV] ( B20-B24 )",
+                "chấn thương, ngộ độc và một số hậu quả khác do nguyên nhân ngoại sinh ( S00-T98 )",
+                "u tân sinh ( C00-D48 )",
+                "triệu chứng cơ năng, thực thể, và bất thường về lâm sàng và cận lâm sàng, không phân loại nơi khác ( R00-R99 )"
+            ],
+            "terms": [
+                "Bệnh máu, cơ quan tạo máu và các bệnh lý liên quan đến cơ chế miễn dịch"
+            ]
+        },
+        {
+            "id": "IV",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [
+                "biến chứng lúc mang thai, sinh đẻ và hậu sản ( O00-O99 )",
+                "triệu chứng cơ năng, thực thể và những bất thường lâm sàng, cận lâm sàng, không phân loại nơi khác ( R00-R99 )",
+                "rối loạn nội tiết và chuyển hoá thoáng qua đặc hiệu ở thai nhi và trẻ sơ sinh ( P70-P74 )"
+            ],
+            "terms": [
+                "Bệnh nội tiết, dinh dưỡng và chuyển hoá"
+            ]
+        },
+        {
+            "id": "V",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [
+                "rối loạn phát triển tâm lý"
+            ],
+            "exclude": [
+                "triệu chứng cơ năng, thực thể và những biểu hiện lâm sàng - cận lâm sàng bất thường, chưa được phân loại nơi khác ( R00-R99 )"
+            ],
+            "terms": [
+                "Rối loạn tâm thần và hành vi"
+            ]
+        },
+        {
+            "id": "VI",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [
+                "một số bệnh lý khởi phát từ thời kỳ chu sinh ( P00-P96 )",
+                "một số bệnh nhiễm trùng và ký sinh trùng ( A00-B99 )",
+                "các biến chứng trong thời kỳ mang thai, lúc sinh đẻ và thời kỳ hậu sản ( O00-O99 )",
+                "các dị tật, dị dạng bẩm sinh và bất thường nhiễm sắc thể ( Q00-Q99 )",
+                "các bệnh nội tiết, dinh dưỡng và chuyển hoá ( E00-E90 )",
+                "chấn thương, ngộ độc và một số hậu quả khác do nguyên nhân ngoại sinh ( S00-T98 )",
+                "u tân sinh ( C00-D48 )",
+                "triệu chứng cơ năng, thực thể, và bất thường về lâm sàng và cận lâm sàng, không phân loại nơi khác ( R00-R99 )"
+            ],
+            "terms": [
+                "Bệnh hệ thần kinh"
+            ]
+        },
+        {
+            "id": "VII",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [
+                "một số bệnh lý khởi phát từ thời kỳ chu sinh ( P00-P96 )",
+                "một số bệnh nhiễm trùng và ký sinh trùng ( A00-B99 )",
+                "các biến chứng trong thời kỳ mang thai, lúc sinh đẻ và thời kỳ hậu sản ( O00-O99 )",
+                "các dị tật, dị dạng bẩm sinh và bất thường nhiễm sắc thể ( Q00-Q99 )",
+                "các bệnh nội tiết, dinh dưỡng và chuyển hoá ( E00-E90 )",
+                "chấn thương, ngộ độc và một số hậu quả khác do nguyên nhân ngoại sinh ( S00-T98 )",
+                "u tân sinh ( C00-D48 )",
+                "triệu chứng cơ năng, thực thể, và bất thường về lâm sàng và cận lâm sàng, không phân loại nơi khác ( R00-R99 )"
+            ],
+            "terms": [
+                "Bệnh mắt và phần phụ của mắt"
+            ]
+        },
+        {
+            "id": "VIII",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [
+                "một số bệnh lý khởi phát từ thời kỳ chu sinh ( P00-P96 )",
+                "một số bệnh nhiễm trùng và ký sinh trùng ( A00-B99 )",
+                "các biến chứng trong thời kỳ mang thai, lúc sinh đẻ và thời kỳ hậu sản ( O00-O99 )",
+                "các dị tật, dị dạng bẩm sinh và bất thường nhiễm sắc thể ( Q00-Q99 )",
+                "các bệnh nội tiết, dinh dưỡng và chuyển hoá ( E00-E90 )",
+                "chấn thương, ngộ độc và một số hậu quả khác do nguyên nhân ngoại sinh ( S00-T98 )",
+                "u tân sinh ( C00-D48 )",
+                "triệu chứng cơ năng, thực thể, và bất thường về lâm sàng và cận lâm sàng, không phân loại nơi khác ( R00-R99 )"
+            ],
+            "terms": [
+                "Bệnh tai và xương chũm"
+            ]
+        },
+        {
+            "id": "IX",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [
+                "một số bệnh lý khởi phát từ thời kỳ chu sinh ( P00-P96 )",
+                "một số bệnh nhiễm trùng và ký sinh trùng ( A00-B99 )",
+                "các biến chứng lúc mang thai, sinh đẻ và hậu sản ( O00-O99 )",
+                "các dị tật, dị dạng bẩm sinh và bất thường nhiễm sắc thể ( Q00-Q99 )",
+                "các bệnh nội tiết, dinh dưỡng và chuyển hoá ( E00-E90 )",
+                "chấn thương, ngộ độc và một số hậu quả khác do nguyên nhân ngoại sinh ( S00-T98 )",
+                "u tân sinh ( C00-D48 )",
+                "triệu chứng cơ năng, thực thể, và bất thường về lâm sàng và cận lâm sàng, không phân loại nơi khác ( R00-R99 )",
+                "rối loạn mô liên kết toàn thân ( M30-M36 )",
+                "cơn thiếu máu não thoáng qua và các hội chứng liên quan ( G45 .-)"
+            ],
+            "terms": [
+                "Bệnh hệ tuần hoàn"
+            ]
+        },
+        {
+            "id": "X",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [
+                "Một số bệnh lý khởi phát từ thời kỳ chu sinh ( P00-P96 )",
+                "Một số bệnh nhiễm trùng và ký sinh trùng ( A00-B99 )",
+                "Các biến chứng trong thời kỳ mang thai, lúc sinh đẻ và thời kỳ hậu sản ( O00-O99 )",
+                "Các dị tật, dị dạng bẩm sinh và bất thường nhiễm sắc thể ( Q00-Q99 )",
+                "Các bệnh nội tiết, dinh dưỡng và chuyển hoá ( E00-E90 )",
+                "Chấn thương, ngộ độc và một số hậu quả khác do nguyên nhân ngoại sinh ( S00-T98 )",
+                "U tân sinh ( C00-D48 )",
+                "Triệu chứng cơ năng, thực thể, và bất thường về lâm sàng và cận lâm sàng, không phân loại nơi khác ( R00-R99 )"
+            ],
+            "terms": [
+                "Bệnh hệ hô hấp"
+            ]
+        },
+        {
+            "id": "XI",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [
+                "một số bệnh lý khởi phát từ thời kỳ chu sinh ( P00-P96 )",
+                "một số bệnh nhiễm trùng và ký sinh trùng ( A00-B99 )",
+                "các biến chứng trong thời kỳ mang thai, lúc sinh đẻ và thời kỳ hậu sản ( O00-O99 )",
+                "các dị tật, dị dạng bẩm sinh và bất thường nhiễm sắc thể ( Q00-Q99 )",
+                "các bệnh nội tiết, dinh dưỡng và chuyển hoá ( E00-E90 )",
+                "chấn thương, ngộ độc và một số hậu quả khác do nguyên nhân ngoại sinh ( S00-T98 )",
+                "u tân sinh ( C00-D48 )",
+                "triệu chứng cơ năng, thực thể, và bất thường về lâm sàng và cận lâm sàng, không phân loại nơi khác ( R00-R99 )"
+            ],
+            "terms": [
+                "Bệnh hệ tiêu hoá"
+            ]
+        },
+        {
+            "id": "XII",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [
+                "một số bệnh lý khởi phát từ thời kỳ chu sinh ( P00-P96 )",
+                "một số bệnh nhiễm trùng và ký sinh trùng ( A00-B99 )",
+                "các biến chứng trong thời kỳ mang thai, lúc sinh đẻ và thời kỳ hậu sản ( O00-O99 )",
+                "các dị tật, dị dạng bẩm sinh và bất thường nhiễm sắc thể ( Q00-Q99 )",
+                "các bệnh nội tiết, dinh dưỡng và chuyển hoá ( E00-E90 )",
+                "chấn thương, ngộ độc và một số hậu quả khác do nguyên nhân ngoại sinh ( S00-T98 )",
+                "u tân sinh ( C00-D48 )",
+                "triệu chứng cơ năng, thực thể, và bất thường về lâm sàng và cận lâm sàng, không phân loại nơi khác ( R00-R99 )",
+                "u mỡ sắc tố tăng tế bào lưới ( I89.8 )",
+                "bệnh tổ chức liên kết ( M30-M36 )"
+            ],
+            "terms": [
+                "Bệnh da và tổ chức dưới da"
+            ]
+        },
+        {
+            "id": "XIII",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [
+                "một số bệnh lý khởi phát từ thời kỳ chu sinh ( P00-P96 )",
+                "một số bệnh lý khớp thái dương hàm ( K07.6 )",
+                "một số bệnh nhiễm trùng và ký sinh trùng ( A00-B99 )",
+                "hội chứng chèn ép khoang ( T79.6 )",
+                "các biến chứng lúc mang thai, sinh đẻ và hậu sản ( O00-O99 )",
+                "các dị tật, dị dạng bẩm sinh và bất thường nhiễm sắc thể ( Q00-Q99 )",
+                "các bệnh nội tiết, dinh dưỡng và chuyển hoá ( E00-E90 )",
+                "chấn thương, ngộ độc và một số hậu quả khác do nguyên nhân ngoại sinh ( S00-T98 )",
+                "u tân sinh ( C00-D48 )",
+                "triệu chứng cơ năng, thực thể, và bất thường về lâm sàng và cận lâm sàng, không phân loại nơi khác ( R00-R99 )"
+            ],
+            "terms": [
+                "Bệnh hệ cơ, xương, khớp và mô liên kết"
+            ]
+        },
+        {
+            "id": "XIV",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [
+                "một số bệnh lý khởi phát từ thời kỳ chu sinh ( P00-P96 )",
+                "một số bệnh nhiễm trùng và ký sinh trùng ( A00-B99 )",
+                "các biến chứng trong thời kỳ mang thai, lúc sinh đẻ và thời kỳ hậu sản ( O00-O99 )",
+                "các dị tật, dị dạng bẩm sinh và bất thường nhiễm sắc thể ( Q00-Q99 )",
+                "các bệnh nội tiết, dinh dưỡng và chuyển hoá ( E00-E90 )",
+                "chấn thương, ngộ độc và một số hậu quả khác do nguyên nhân ngoại sinh ( S00-T98 )",
+                "u tân sinh ( C00-D48 )",
+                "triệu chứng cơ năng, thực thể, và bất thường về lâm sàng và cận lâm sàng, không phân loại nơi khác ( R00-R99 )"
+            ],
+            "terms": [
+                "Bệnh hệ tiết niệu, sinh dục"
+            ]
+        },
+        {
+            "id": "XV",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [
+                "Các bệnh hoặc tổn thương gây biến chứng cho quá trình mang thai, khi đẻ và sau đẻ đã được phân loại:",
+                "các nguyên nhân ngoại sinh (gây tử vong) ( V01 - Y89 )",
+                "tổn thương, ngộ độc và một số hậu quả của các nguyên nhân ngoại sinh khác ( S00 - T88.1 , T88.6 - T98 )",
+                "rối loạn tâm thần và hành vi xảy ra sau đẻ ( F53 .-)",
+                "uốn ván sản khoa ( A34 )",
+                "hoại tử tuyến yên sau đẻ ( E23.0 )",
+                "loãng xương sau đẻ ( M83.0 )",
+                "theo dõi:",
+                "thai nghén có nguy cơ cao ( Z35 .-)",
+                "thai nghén bình thường ( Z34 .-)"
+            ],
+            "terms": [
+                "Mang thai, sinh đẻ và hậu sản"
+            ]
+        },
+        {
+            "id": "XVI",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [
+                "các bệnh lý có nguồn gốc từ thời kỳ chu sinh thậm chí gây tử vong hay mắc bệnh sau này"
+            ],
+            "exclude": [
+                "các dị tật, dị dạng bẩm sinh và bất thường nhiễm sắc thể ( Q00-Q99 )",
+                "bệnh nội tiết, dinh dưỡng, chuyển hóa ( E00- E90 )",
+                "chấn thương, ngộ độc và một số hậu quả khác do nguyên nhân ngoại sinh ( S00-T98 )",
+                "ung thư ( C00-D48 )",
+                "uốn ván sơ sinh ( A33 )",
+                "ho gà ( A37 .-)"
+            ],
+            "terms": [
+                "Một số bệnh lý khởi phát trong thời kỳ chu sinh"
+            ]
+        },
+        {
+            "id": "XVII",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [
+                "rối loạn chuyển hoá bẩm sinh ( E70-E90 )"
+            ],
+            "terms": [
+                "Dị tật bẩm sinh, biến dạng và bất thường về nhiễm sắc thể"
+            ]
+        },
+        {
+            "id": "XVIII",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [
+                "những biểu hiện bất thường khi khám sàng lọc các bà mẹ trước khi sinh ( O28 .-)",
+                "các trạng thái bệnh phát sinh trong giai đoạn chu sinh ( P00-P96 )"
+            ],
+            "terms": [
+                "Các triệu chứng cơ năng, thực thể và bất thường về lâm sàng và cận lâm sàng không phân loại nơi khác"
+            ]
+        },
+        {
+            "id": "XIX",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
+            "include": [],
+            "exclude": [
+                "chấn thương khi sinh ( P10-P15 )",
+                "chấn thương sản khoa ( O70 - O71 )",
+                "gãy can lệch ( M84.0 )",
+                "gãy xương không liền [khớp giả] ( M84.1 )",
+                "gãy xương bệnh lý ( M84.4 )",
+                "gãy xương bệnh lý có loãng xương ( M80 .-)",
+                "gãy mỏi ( M84.3 )"
+            ],
+            "terms": [
+                "Tổn thương, ngộ độc và một số hậu quả do nguyên nhân ngoại sinh"
+            ]
+        }
+    ]
+}
