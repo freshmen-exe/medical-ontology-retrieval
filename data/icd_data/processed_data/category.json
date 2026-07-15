@@ -1,737 +1,5897 @@
 {
-    "name": "block",
+    "name": "category",
     "array": [
         {
-            "id": "section:A00-A09:0",
-            "text": "benh nhiem trung duong ruot"
+            "id": "category:A00:0",
+            "text": "benh ta"
         },
         {
-            "id": "section:A15-A19:0",
-            "text": "benh lao"
+            "id": "category:A01:0",
+            "text": "benh thuong han va pho thuong han"
         },
         {
-            "id": "section:A20-A28:0",
-            "text": "benh nhiem khuan do dong vat truyen sang nguoi"
+            "id": "category:A02:0",
+            "text": "nhiem salmonella khac"
         },
         {
-            "id": "section:A30-A49:0",
-            "text": "benh nhiem khuan khac"
+            "id": "category:A03:0",
+            "text": "benh ly truc khuan"
         },
         {
-            "id": "section:A50-A64:0",
-            "text": "benh nhiem trung lay truyen chu yeu qua duong tinh duc"
+            "id": "category:A04:0",
+            "text": "nhiem khuan duong ruot do vi khuan khac"
         },
         {
-            "id": "section:A65-A69:0",
+            "id": "category:A05:0",
+            "text": "nhiem doc thuc an do vi khuan khac khong phan loai noi khac"
+        },
+        {
+            "id": "category:A06:0",
+            "text": "benh do amip"
+        },
+        {
+            "id": "category:A07:0",
+            "text": "benh duong ruot do don bao khac"
+        },
+        {
+            "id": "category:A08:0",
+            "text": "nhiem trung duong ruot do vi rut va tac nhan xac dinh khac"
+        },
+        {
+            "id": "category:A09:0",
+            "text": "viem da day ruot khac va viem dai trang do nhiem trung va nguyen nhan khong xac dinh"
+        },
+        {
+            "id": "category:A15:0",
+            "text": "lao ho hap co khang dinh ve vi khuan hoc va mo hoc"
+        },
+        {
+            "id": "category:A16:0",
+            "text": "lao duong ho hap khong khang dinh ve vi khuan hoc hoac mo hoc"
+        },
+        {
+            "id": "category:A17:0",
+            "text": "lao he than kinh"
+        },
+        {
+            "id": "category:A18:0",
+            "text": "lao cac co quan khac"
+        },
+        {
+            "id": "category:A19:0",
+            "text": "lao ke"
+        },
+        {
+            "id": "category:A20:0",
+            "text": "dich hach"
+        },
+        {
+            "id": "category:A21:0",
+            "text": "benh tularemia"
+        },
+        {
+            "id": "category:A22:0",
+            "text": "benh than"
+        },
+        {
+            "id": "category:A23:0",
+            "text": "benh do brucella"
+        },
+        {
+            "id": "category:A24:0",
+            "text": "benh do burkholderia mallei va benh do burkholderia pseudomallei"
+        },
+        {
+            "id": "category:A25:0",
+            "text": "sot do chuot can"
+        },
+        {
+            "id": "category:A26:0",
+            "text": "benh viem quang do do erysipelothrix rhusiopathiae"
+        },
+        {
+            "id": "category:A27:0",
+            "text": "benh do leptospira"
+        },
+        {
+            "id": "category:A28:0",
+            "text": "benh nhiem trung khac do dong vat truyen sang nguoi khong phan loai noi khac"
+        },
+        {
+            "id": "category:A30:0",
+            "text": "benh phong benh hansen"
+        },
+        {
+            "id": "category:A31:0",
+            "text": "nhiem khuan do mycobacteria khac"
+        },
+        {
+            "id": "category:A32:0",
+            "text": "nhiem khuan do listeria monocytogenes"
+        },
+        {
+            "id": "category:A33:0",
+            "text": "benh uon van so sinh"
+        },
+        {
+            "id": "category:A34:0",
+            "text": "benh uon van san khoa"
+        },
+        {
+            "id": "category:A35:0",
+            "text": "benh uon van khac"
+        },
+        {
+            "id": "category:A36:0",
+            "text": "benh bach hau"
+        },
+        {
+            "id": "category:A37:0",
+            "text": "benh ho ga"
+        },
+        {
+            "id": "category:A38:0",
+            "text": "benh tinh hong nhiet"
+        },
+        {
+            "id": "category:A39:0",
+            "text": "nhiem trung do nao mo cau"
+        },
+        {
+            "id": "category:A40:0",
+            "text": "nhiem khuan huyet do lien cau"
+        },
+        {
+            "id": "category:A41:0",
+            "text": "nhiem khuan huyet khac"
+        },
+        {
+            "id": "category:A42:0",
+            "text": "benh do nhiem nam actinomyces"
+        },
+        {
+            "id": "category:A43:0",
+            "text": "benh do nocardia"
+        },
+        {
+            "id": "category:A44:0",
+            "text": "benh do bartonella"
+        },
+        {
+            "id": "category:A46:0",
+            "text": "viem quang"
+        },
+        {
+            "id": "category:A48:0",
+            "text": "benh nhiem khuan khac khong phan loai noi khac"
+        },
+        {
+            "id": "category:A49:0",
+            "text": "tinh trang nhiem khuan o cac vi tri khong xac dinh"
+        },
+        {
+            "id": "category:A50:0",
+            "text": "giang mai bam sinh"
+        },
+        {
+            "id": "category:A51:0",
+            "text": "giang mai som"
+        },
+        {
+            "id": "category:A52:0",
+            "text": "giang mai muon"
+        },
+        {
+            "id": "category:A53:0",
+            "text": "giang mai khac va khong xac dinh"
+        },
+        {
+            "id": "category:A54:0",
+            "text": "benh lau"
+        },
+        {
+            "id": "category:A55:0",
+            "text": "viem hach lympho do chlamydia benh hot xoai"
+        },
+        {
+            "id": "category:A56:0",
+            "text": "benh khac do chlamydia lay truyen qua duong tinh duc"
+        },
+        {
+            "id": "category:A57:0",
+            "text": "benh ha cam mem"
+        },
+        {
+            "id": "category:A58:0",
+            "text": "u hat o ben"
+        },
+        {
+            "id": "category:A59:0",
+            "text": "u hat o ben"
+        },
+        {
+            "id": "category:A60:0",
+            "text": "benh do vi rut herpes herpes simplex o da quanh hau mon va truc trang"
+        },
+        {
+            "id": "category:A63:0",
+            "text": "benh lay khac chu yeu qua duong tinh duc khong phan loai noi khac"
+        },
+        {
+            "id": "category:A64:0",
+            "text": "benh lay truyen qua duong tinh duc khong xac dinh"
+        },
+        {
+            "id": "category:A65:0",
+            "text": "giang mai khong lay qua duong tinh duc"
+        },
+        {
+            "id": "category:A66:0",
+            "text": "ghe coc do nhiem treponema pertenue"
+        },
+        {
+            "id": "category:A67:0",
+            "text": "benh pinta benh do treponema carateum"
+        },
+        {
+            "id": "category:A68:0",
+            "text": "benh sot hoi quy"
+        },
+        {
+            "id": "category:A69:0",
             "text": "benh do xoan trung khac"
         },
         {
-            "id": "section:A70-A74:0",
-            "text": "cac benh khac do chlamydia"
+            "id": "category:A70:0",
+            "text": "benh do chlamydia psittaci"
         },
         {
-            "id": "section:A75-A79:0",
-            "text": "benh do rickettsia"
+            "id": "category:A71:0",
+            "text": "benh mat hot"
         },
         {
-            "id": "section:A80-A89:0",
-            "text": "nhiem vi rut o he than kinh trung uong"
+            "id": "category:A74:0",
+            "text": "benh khac do chlamydia"
         },
         {
-            "id": "section:A92-A99:0",
-            "text": "sot do vi rut lay truyen qua con trung va sot xuat huyet do vi rut"
+            "id": "category:A75:0",
+            "text": "benh sot phat ban"
         },
         {
-            "id": "section:B00-B09:0",
-            "text": "nhiem vi rut co dac diem ton thuong tai da va niem mac"
+            "id": "category:A77:0",
+            "text": "sot phat ban dang dom benh rickettsia do bo ve truyen"
         },
         {
-            "id": "section:B15-B19:0",
-            "text": "viem gan vi rut"
+            "id": "category:A78:0",
+            "text": "sot q"
         },
         {
-            "id": "section:B20-B24:0",
-            "text": "benh do nhiem vi rut suy giam mien dich o nguoi hiv"
+            "id": "category:A79:0",
+            "text": "cac benh rickettsia khac"
         },
         {
-            "id": "section:B25-B34:0",
-            "text": "cac benh nhiem vi rut khac"
+            "id": "category:A80:0",
+            "text": "benh bai liet cap"
         },
         {
-            "id": "section:B35-B49:0",
-            "text": "benh nhiem nam"
+            "id": "category:A81:0",
+            "text": "benh do vi rut khong dien hinh o he than kinh trung uong"
         },
         {
-            "id": "section:B50-B64:0",
-            "text": "benh do ky sinh trung don bao"
+            "id": "category:A82:0",
+            "text": "benh dai o nguoi"
         },
         {
-            "id": "section:B65-B83:0",
-            "text": "benh giun san"
+            "id": "category:A83:0",
+            "text": "benh viem nao vi rut do muoi truyen"
         },
         {
-            "id": "section:B85-B89:0",
-            "text": "benh chay ran benh ghe va nhiem ky sinh trung khac"
+            "id": "category:A84:0",
+            "text": "benh viem nao vi rut do bo ve truyen"
         },
         {
-            "id": "section:B90-B94:0",
-            "text": "di chung cua benh nhiem trung va ky sinh trung"
+            "id": "category:A85:0",
+            "text": "viem nao vi rut khac khong phan loai noi khac"
         },
         {
-            "id": "section:B95-B98:0",
-            "text": "vi khuan vi rut va cac tac nhan gay nhiem trung khac"
+            "id": "category:A86:0",
+            "text": "viem nao vi rut khong dac hieu"
         },
         {
-            "id": "section:B99-B99:0",
-            "text": "benh nhiem trung khac"
+            "id": "category:A87:0",
+            "text": "viem mang nao do vi rut"
         },
         {
-            "id": "section:D00-D09:0",
-            "text": "u tan sinh tai cho"
+            "id": "category:A88:0",
+            "text": "nhiem vi rut khac cua he than kinh trung uong khong phan loai noi khac"
         },
         {
-            "id": "section:D10-D36:0",
-            "text": "u lanh tinh"
+            "id": "category:A89:0",
+            "text": "nhiem vi rut khong xac dinh cua he than kinh trung uong"
         },
         {
-            "id": "section:D37-D48:0",
-            "text": "u tan sinh khong chac chan hoac chua ro tinh chat"
+            "id": "category:A92:0",
+            "text": "benh sot vi rut do muoi truyen khac"
         },
         {
-            "id": "section:D50-D53:0",
-            "text": "benh thieu mau dinh duong"
+            "id": "category:A93:0",
+            "text": "sot do vi rut lay truyen qua con trung khac khong phan loai noi khac"
         },
         {
-            "id": "section:D55-D59:0",
-            "text": "thieu mau tan mau"
+            "id": "category:A94:0",
+            "text": "sot vi rut khong xac dinh do tiet tuc truyen"
         },
         {
-            "id": "section:D60-D64:0",
-            "text": "suy tuy xuong va cac benh thieu mau khac"
+            "id": "category:A95:0",
+            "text": "sot vang"
         },
         {
-            "id": "section:D65-D69:0",
-            "text": "cac roi loan dong mau ban xuat huyet va tinh trang xuat huyet khac"
+            "id": "category:A96:0",
+            "text": "benh sot xuat huyet do vi rut arena"
         },
         {
-            "id": "section:D70-D77:0",
-            "text": "cac benh khac cua mau va co quan tao mau"
+            "id": "category:A97:0",
+            "text": "sot xuat huyet dengue"
         },
         {
-            "id": "section:D80-D89:0",
-            "text": "cac roi loan lien quan den co che mien dich"
+            "id": "category:A98:0",
+            "text": "benh sot xuat huyet do vi rut khac khong phan loai noi khac"
         },
         {
-            "id": "section:E00-E07:0",
-            "text": "benh tuyen giap"
+            "id": "category:A99:0",
+            "text": "benh sot xuat huyet do vi rut khong xac dinh"
         },
         {
-            "id": "section:E10-E14:0",
-            "text": "dai thao duong"
+            "id": "category:B00:0",
+            "text": "benh do nhiem vi rut herpes herpes simplex"
         },
         {
-            "id": "section:E15-E16:0",
-            "text": "cac roi loan khac ve su dieu hoa glucose va bai tiet cua tuy noi tiet"
+            "id": "category:B01:0",
+            "text": "thuy dau"
         },
         {
-            "id": "section:E20-E35:0",
-            "text": "roi loan cac tuyen noi tiet khac"
+            "id": "category:B02:0",
+            "text": "benh do herpes zoster"
         },
         {
-            "id": "section:E40-E46:0",
-            "text": "suy dinh duong"
+            "id": "category:B03:0",
+            "text": "dau mua"
         },
         {
-            "id": "section:E50-E64:0",
-            "text": "cac benh thieu dinh duong khac"
+            "id": "category:B04:0",
+            "text": "dau mua khi"
         },
         {
-            "id": "section:E65-E68:0",
-            "text": "beo phi va tinh trang thua dinh duong khac"
+            "id": "category:B05:0",
+            "text": "soi"
         },
         {
-            "id": "section:E70-E90:0",
-            "text": "roi loan chuyen hoa"
+            "id": "category:B06:0",
+            "text": "benh rubella soi duc"
         },
         {
-            "id": "section:F00-F09:0",
-            "text": "roi loan tam than thuc ton bao gom roi loan tam than trieu chung"
+            "id": "category:B07:0",
+            "text": "benh mun coc do vi rut"
         },
         {
-            "id": "section:F10-F19:0",
-            "text": "roi loan tam than va hanh vi do su dung chat tac dong tam than"
+            "id": "category:B08:0",
+            "text": "nhiem vi rut khac co bieu hien ton thuong tai da va niem mac khong phan loai noi khac"
         },
         {
-            "id": "section:F20-F29:0",
-            "text": "tam than phan liet roi loan loai phan liet va cac roi loan hoang tuong"
+            "id": "category:B09:0",
+            "text": "nhiem vi rut khong xac dinh co bieu hien ton thuong tai da va niem mac"
         },
         {
-            "id": "section:F30-F39:0",
-            "text": "roi loan khi sac cam xuc"
+            "id": "category:B15:0",
+            "text": "benh viem gan vi rut a cap tinh"
         },
         {
-            "id": "section:F40-F48:0",
-            "text": "cac roi loan benh tam can co lien quan den stress va roi loan dang co the"
+            "id": "category:B16:0",
+            "text": "benh viem gan vi rut b cap tinh"
         },
         {
-            "id": "section:F50-F59:0",
-            "text": "hoi chung hanh vi ket hop voi roi loan sinh ly va nhan to co the"
+            "id": "category:B17:0",
+            "text": "benh viem gan vi rut cap tinh khac"
         },
         {
-            "id": "section:F60-F69:0",
-            "text": "roi loan nhan cach va hanh vi o nguoi truong thanh"
+            "id": "category:B18:0",
+            "text": "viem gan vi rut man tinh"
         },
         {
-            "id": "section:F70-F79:0",
-            "text": "cham phat trien tri tue"
+            "id": "category:B19:0",
+            "text": "viem gan vi rut khong xac dinh"
         },
         {
-            "id": "section:F80-F89:0",
-            "text": "cac roi loan ve phat trien tam ly"
+            "id": "category:B20:0",
+            "text": "benh do vi rut gay suy giam mien dich o nguoi hiv dan den cac benh nhiem trung va ky sinh trung"
         },
         {
-            "id": "section:F90-F98:0",
-            "text": "cac roi loan hanh vi va cam xuc thuong khoi phat o tuoi tre em va thanh thieu nien"
+            "id": "category:B21:0",
+            "text": "benh do vi rut gay suy giam mien dich o nguoi hiv dan den cac u ac tinh"
         },
         {
-            "id": "section:F99-F99:0",
-            "text": "roi loan tam than khong biet dinh"
+            "id": "category:B22:0",
+            "text": "benh do vi rut gay suy giam mien dich o nguoi hiv dan den cac benh xac dinh khac"
         },
         {
-            "id": "section:G00-G09:0",
-            "text": "benh viem he than kinh trung uong"
+            "id": "category:B23:0",
+            "text": "benh do vi rut gay suy giam mien dich o nguoi hiv dan den benh ly khac"
         },
         {
-            "id": "section:G10-G14:0",
-            "text": "benh teo he thong anh huong chu yeu toi he than kinh trung uong"
+            "id": "category:B24:0",
+            "text": "benh do vi rut gay suy giam mien dich o nguoi hiv khong dac hieu"
         },
         {
-            "id": "section:G20-G26:0",
-            "text": "hoi chung ngoai thap va roi loan van dong"
+            "id": "category:B25:0",
+            "text": "nhiem vi rut cytomegalo"
         },
         {
-            "id": "section:G30-G32:0",
-            "text": "benh thoai hoa khac cua he than kinh"
+            "id": "category:B26:0",
+            "text": "benh quai bi"
         },
         {
-            "id": "section:G35-G37:0",
-            "text": "benh thoai hoa myelin cua he than kinh trung uong"
+            "id": "category:B27:0",
+            "text": "benh tang bach cau don nhan nhiem trung"
         },
         {
-            "id": "section:G40-G47:0",
-            "text": "benh chu ky va kich phat"
+            "id": "category:B30:0",
+            "text": "viem ket mac do vi rut"
         },
         {
-            "id": "section:G50-G59:0",
-            "text": "benh day re va dam roi than kinh"
+            "id": "category:B33:0",
+            "text": "benh nhiem vi rut khac chua phan loai"
         },
         {
-            "id": "section:G60-G64:0",
-            "text": "benh nhieu day than kinh va benh he than kinh ngoai bien khac"
+            "id": "category:B34:0",
+            "text": "nhiem vi rut o vi tri khong xac dinh"
         },
         {
-            "id": "section:G70-G73:0",
-            "text": "benh cua khop than kinh co va co"
+            "id": "category:B35:0",
+            "text": "benh nam o da"
         },
         {
-            "id": "section:G80-G83:0",
-            "text": "bai nao va nhung hoi chung liet khac"
+            "id": "category:B36:0",
+            "text": "cac benh nhiem nam nong o da khac"
         },
         {
-            "id": "section:G90-G99:0",
-            "text": "cac benh khac cua he than kinh"
+            "id": "category:B37:0",
+            "text": "benh do nam candida"
         },
         {
-            "id": "section:H00-H06:0",
-            "text": "benh cua mi mat le bo va hoc mat"
+            "id": "category:B38:0",
+            "text": "benh nhiem nam coccidioides"
         },
         {
-            "id": "section:H10-H13:0",
-            "text": "benh cua ket mac"
+            "id": "category:B39:0",
+            "text": "benh nhiem nam histoplasma"
         },
         {
-            "id": "section:H15-H22:0",
-            "text": "benh cung mac giac mac mong mat va the mi"
+            "id": "category:B40:0",
+            "text": "benh do nhiem nam blastomyces"
         },
         {
-            "id": "section:H25-H28:0",
-            "text": "benh the thuy tinh"
+            "id": "category:B41:0",
+            "text": "benh do nhiem nam paracoccidioides"
         },
         {
-            "id": "section:H30-H36:0",
-            "text": "benh hac mac va vong mac"
+            "id": "category:B42:0",
+            "text": "benh do nhiem nam sporotrichum"
         },
         {
-            "id": "section:H40-H42:0",
-            "text": "benh glocom"
+            "id": "category:B43:0",
+            "text": "benh do nhiem nam chromoblastomycosa nam mau va ap xe do phaeomyces"
         },
         {
-            "id": "section:H43-H45:0",
-            "text": "benh dich kinh va nhan cau"
+            "id": "category:B44:0",
+            "text": "benh nhiem nam aspergillus"
         },
         {
-            "id": "section:H46-H48:0",
-            "text": "benh than kinh thi va duong dan thi giac"
+            "id": "category:B45:0",
+            "text": "benh nhiem nam cryptococcus"
         },
         {
-            "id": "section:H49-H52:0",
-            "text": "benh co van nhan van nhan hai mat dieu tiet va khuc xa"
+            "id": "category:B46:0",
+            "text": "benh nhiem nam den zygomycota"
         },
         {
-            "id": "section:H53-H54:0",
-            "text": "roi loan thi giac va mu loa"
+            "id": "category:B47:0",
+            "text": "benh u nam"
         },
         {
-            "id": "section:H55-H59:0",
-            "text": "benh mat va phan phu"
+            "id": "category:B48:0",
+            "text": "benh nhiem nam khac khong phan loai noi khac"
         },
         {
-            "id": "section:H60-H62:0",
-            "text": "benh cua tai ngoai"
+            "id": "category:B49:0",
+            "text": "nhiem nam khong xac dinh"
         },
         {
-            "id": "section:H65-H75:0",
-            "text": "benh cua tai giua va xuong chum"
+            "id": "category:B50:0",
+            "text": "benh sot ret do plasmodium falciparum"
         },
         {
-            "id": "section:H80-H83:0",
-            "text": "benh cua tai trong"
+            "id": "category:B51:0",
+            "text": "benh sot ret do plasmodium vivax"
         },
         {
-            "id": "section:H90-H95:0",
-            "text": "benh khac cua tai"
+            "id": "category:B52:0",
+            "text": "benh sot ret do plasmodium malariae"
         },
         {
-            "id": "section:I00-I02:0",
-            "text": "thap khop cap"
+            "id": "category:B53:0",
+            "text": "benh sot ret khac duoc khang dinh ve ky sinh trung hoc"
         },
         {
-            "id": "section:I05-I09:0",
-            "text": "benh tim man tinh do thap"
+            "id": "category:B54:0",
+            "text": "benh sot ret khong dac hieu"
         },
         {
-            "id": "section:I10-I15:0",
-            "text": "benh ly tang huyet ap"
+            "id": "category:B55:0",
+            "text": "benh do leishmania"
         },
         {
-            "id": "section:I20-I25:0",
-            "text": "benh tim thieu mau cuc bo"
+            "id": "category:B56:0",
+            "text": "benh do nhiem trypanosoma chau phi"
         },
         {
-            "id": "section:I26-I28:0",
-            "text": "benh tim do phoi va benh tuan hoan phoi"
+            "id": "category:B57:0",
+            "text": "benh chagas"
         },
         {
-            "id": "section:I30-I52:0",
-            "text": "the benh tim khac"
+            "id": "category:B58:0",
+            "text": "benh do nhiem toxoplasma"
         },
         {
-            "id": "section:I60-I69:0",
-            "text": "benh mach mau nao"
+            "id": "category:B60:0",
+            "text": "benh do ky sinh trung don bao khac khong phan loai noi khac"
         },
         {
-            "id": "section:I70-I79:0",
-            "text": "benh dong mach tieu dong mach va mao mach"
+            "id": "category:B64:0",
+            "text": "benh do ky sinh trung don bao khong xac dinh"
         },
         {
-            "id": "section:I80-I89:0",
-            "text": "benh tinh mach mach bach huyet va hach bach huyet khong phan loai noi khac"
+            "id": "category:B65:0",
+            "text": "benh san mang bilharziasis"
         },
         {
-            "id": "section:I95-I99:0",
-            "text": "roi loan khac va khong xac dinh cua he tuan hoan"
+            "id": "category:B66:0",
+            "text": "benh nhiem san la khac"
         },
         {
-            "id": "section:J00-J06:0",
-            "text": "nhiem trung ho hap tren cap tinh"
+            "id": "category:B67:0",
+            "text": "benh do echinococcus"
         },
         {
-            "id": "section:J09-J18:0",
-            "text": "cum va viem phoi"
+            "id": "category:B68:0",
+            "text": "benh san day"
         },
         {
-            "id": "section:J20-J22:0",
-            "text": "nhiem trung duong ho hap duoi cap khac"
+            "id": "category:B69:0",
+            "text": "benh au trung san lon"
         },
         {
-            "id": "section:J30-J39:0",
+            "id": "category:B70:0",
+            "text": "benh nhiem san day ca diphyllobothrium va benh au trung san nhai sparganum"
+        },
+        {
+            "id": "category:B71:0",
+            "text": "nhiem san day khac"
+        },
+        {
+            "id": "category:B72:0",
+            "text": "benh giun dracunculus"
+        },
+        {
+            "id": "category:B73:0",
+            "text": "benh giun chi"
+        },
+        {
+            "id": "category:B74:0",
+            "text": "benh giun chi"
+        },
+        {
+            "id": "category:B75:0",
+            "text": "benh giun xoan trichinella"
+        },
+        {
+            "id": "category:B76:0",
+            "text": "benh giun moc"
+        },
+        {
+            "id": "category:B77:0",
+            "text": "benh giun dua"
+        },
+        {
+            "id": "category:B78:0",
+            "text": "benh giun luon"
+        },
+        {
+            "id": "category:B79:0",
+            "text": "benh giun toc"
+        },
+        {
+            "id": "category:B80:0",
+            "text": "benh giun kim"
+        },
+        {
+            "id": "category:B81:0",
+            "text": "nhiem giun duong ruot khac chua phan loai"
+        },
+        {
+            "id": "category:B82:0",
+            "text": "benh ky sinh trung duong ruot khong xac dinh"
+        },
+        {
+            "id": "category:B83:0",
+            "text": "benh giun san khac"
+        },
+        {
+            "id": "category:B85:0",
+            "text": "benh chay ran"
+        },
+        {
+            "id": "category:B86:0",
+            "text": "benh ghe"
+        },
+        {
+            "id": "category:B87:0",
+            "text": "benh gioi"
+        },
+        {
+            "id": "category:B88:0",
+            "text": "nhiem ky sinh trung khac"
+        },
+        {
+            "id": "category:B89:0",
+            "text": "benh do ky sinh trung khong xac dinh"
+        },
+        {
+            "id": "category:B90:0",
+            "text": "di chung do lao"
+        },
+        {
+            "id": "category:B91:0",
+            "text": "di chung cua benh bai liet"
+        },
+        {
+            "id": "category:B92:0",
+            "text": "di chung cua benh phong"
+        },
+        {
+            "id": "category:B94:0",
+            "text": "di chung cua benh nhiem trung va ky sinh trung khac va khong xac dinh"
+        },
+        {
+            "id": "category:B95:0",
+            "text": "lien cau va tu cau la nguyen nhan gay benh duoc phan loai o cac chuong khac"
+        },
+        {
+            "id": "category:B96:0",
+            "text": "tac nhan vi khuan xac dinh khac la nguyen nhan gay benh phan loai o chuong khac"
+        },
+        {
+            "id": "category:B97:0",
+            "text": "tac nhan vi rut gay cac benh phan loai o chuong khac"
+        },
+        {
+            "id": "category:B98:0",
+            "text": "tac nhan nhiem trung xac dinh khac gay cac benh phan loai o chuong khac"
+        },
+        {
+            "id": "category:B99:0",
+            "text": "cac benh nhiem trung khac va khong xac dinh"
+        },
+        {
+            "id": "category:C00:0",
+            "text": "u ac cua moi"
+        },
+        {
+            "id": "category:C01:0",
+            "text": "u ac cua day luoi"
+        },
+        {
+            "id": "category:C02:0",
+            "text": "u ac cua phan khac va khong xac dinh cua luoi"
+        },
+        {
+            "id": "category:C03:0",
+            "text": "u ac cua loi rang"
+        },
+        {
+            "id": "category:C04:0",
+            "text": "u ac cua san mieng"
+        },
+        {
+            "id": "category:C05:0",
+            "text": "u ac cua khau cai"
+        },
+        {
+            "id": "category:C06:0",
+            "text": "u ac cua phan khac va khong xac dinh cua mieng"
+        },
+        {
+            "id": "category:C07:0",
+            "text": "u ac tuyen mang tai"
+        },
+        {
+            "id": "category:C08:0",
+            "text": "u ac cua cac tuyen nuoc bot chinh khac va khong xac dinh"
+        },
+        {
+            "id": "category:C09:0",
+            "text": "u ac cua amidan"
+        },
+        {
+            "id": "category:C10:0",
+            "text": "u ac cua hong mieng"
+        },
+        {
+            "id": "category:C11:0",
+            "text": "u ac cua hong mui"
+        },
+        {
+            "id": "category:C12:0",
+            "text": "u ac cua xoang le"
+        },
+        {
+            "id": "category:C13:0",
+            "text": "u ac cua ha hong"
+        },
+        {
+            "id": "category:C14:0",
+            "text": "u ac vi tri khac va khong ro rang cua moi khoang mieng va hong"
+        },
+        {
+            "id": "category:C15:0",
+            "text": "u ac thuc quan"
+        },
+        {
+            "id": "category:C16:0",
+            "text": "u ac da day"
+        },
+        {
+            "id": "category:C17:0",
+            "text": "u ac ruot non"
+        },
+        {
+            "id": "category:C18:0",
+            "text": "u ac dai trang"
+        },
+        {
+            "id": "category:C19:0",
+            "text": "u ac cua doan noi truc trang dai trang sigma"
+        },
+        {
+            "id": "category:C20:0",
+            "text": "u ac truc trang"
+        },
+        {
+            "id": "category:C21:0",
+            "text": "u ac cua hau mon va ong hau mon"
+        },
+        {
+            "id": "category:C22:0",
+            "text": "u ac cua gan va duong mat trong gan"
+        },
+        {
+            "id": "category:C23:0",
+            "text": "u ac tui mat"
+        },
+        {
+            "id": "category:C24:0",
+            "text": "u ac cua phan khac va khong xac dinh cua duong mat"
+        },
+        {
+            "id": "category:C25:0",
+            "text": "u ac tuy"
+        },
+        {
+            "id": "category:C26:0",
+            "text": "u ac cua co quan tieu hoa khac va khong ro rang"
+        },
+        {
+            "id": "category:C30:0",
+            "text": "u ac cua khoang mui va tai giua"
+        },
+        {
+            "id": "category:C31:0",
+            "text": "u ac cua cac xoang phu"
+        },
+        {
+            "id": "category:C32:0",
+            "text": "u ac thanh quan"
+        },
+        {
+            "id": "category:C33:0",
+            "text": "u ac khi quan"
+        },
+        {
+            "id": "category:C34:0",
+            "text": "u ac cua phe quan va phoi"
+        },
+        {
+            "id": "category:C37:0",
+            "text": "u ac tuyen uc"
+        },
+        {
+            "id": "category:C38:0",
+            "text": "u ac cua tim trung that va mang phoi"
+        },
+        {
+            "id": "category:C39:0",
+            "text": "u ac o nhung vi tri khac va khong ro rang cua he ho hap va co quan trong long nguc"
+        },
+        {
+            "id": "category:C40:0",
+            "text": "u ac cua xuong va sun khop cua cac chi"
+        },
+        {
+            "id": "category:C41:0",
+            "text": "u ac cua xuong va sun khop o vi tri khac va khong xac dinh"
+        },
+        {
+            "id": "category:C43:0",
+            "text": "u hac to ac cua da"
+        },
+        {
+            "id": "category:C44:0",
+            "text": "u ac khac cua da"
+        },
+        {
+            "id": "category:C45:0",
+            "text": "u trung bieu mo"
+        },
+        {
+            "id": "category:C46:0",
+            "text": "ung thu mo lien ket kaposi"
+        },
+        {
+            "id": "category:C47:0",
+            "text": "u ac cua than kinh ngoai vi va than kinh tu chu"
+        },
+        {
+            "id": "category:C48:0",
+            "text": "u ac cua vung sau phuc mac va phuc mac"
+        },
+        {
+            "id": "category:C49:0",
+            "text": "u ac cua mo lien ket va mo mem khac"
+        },
+        {
+            "id": "category:C50:0",
+            "text": "u ac cua vu"
+        },
+        {
+            "id": "category:C51:0",
+            "text": "u ac am ho"
+        },
+        {
+            "id": "category:C52:0",
+            "text": "u ac cua am dao"
+        },
+        {
+            "id": "category:C53:0",
+            "text": "u ac cua co tu cung"
+        },
+        {
+            "id": "category:C54:0",
+            "text": "u ac cua than tu cung"
+        },
+        {
+            "id": "category:C55:0",
+            "text": "u ac tu cung phan khong xac dinh"
+        },
+        {
+            "id": "category:C56:0",
+            "text": "u ac buong trung"
+        },
+        {
+            "id": "category:C57:0",
+            "text": "u ac cua co quan sinh duc nu khac va khong xac dinh"
+        },
+        {
+            "id": "category:C58:0",
+            "text": "u ac cua rau thai nhau thai"
+        },
+        {
+            "id": "category:C60:0",
+            "text": "u ac cua duong vat"
+        },
+        {
+            "id": "category:C61:0",
+            "text": "u ac cua tuyen tien liet"
+        },
+        {
+            "id": "category:C62:0",
+            "text": "u ac cua tinh hoan"
+        },
+        {
+            "id": "category:C63:0",
+            "text": "u ac cua co quan sinh duc nam khac va khong xac dinh"
+        },
+        {
+            "id": "category:C64:0",
+            "text": "u ac cua than ngoai tru be than"
+        },
+        {
+            "id": "category:C65:0",
+            "text": "u ac cua be than"
+        },
+        {
+            "id": "category:C66:0",
+            "text": "u ac nieu quan"
+        },
+        {
+            "id": "category:C67:0",
+            "text": "u ac cua bang quang"
+        },
+        {
+            "id": "category:C68:0",
+            "text": "u ac cua co quan tiet nieu khac va khong xac dinh"
+        },
+        {
+            "id": "category:C69:0",
+            "text": "u ac cua mat va phan phu"
+        },
+        {
+            "id": "category:C70:0",
+            "text": "u ac cua mang nao"
+        },
+        {
+            "id": "category:C71:0",
+            "text": "u ac cua nao"
+        },
+        {
+            "id": "category:C72:0",
+            "text": "u ac cua tuy song than kinh so va cac phan khac cua he than kinh trung uong"
+        },
+        {
+            "id": "category:C73:0",
+            "text": "u ac cua tuyen giap"
+        },
+        {
+            "id": "category:C74:0",
+            "text": "u ac cua tuyen thuong than"
+        },
+        {
+            "id": "category:C75:0",
+            "text": "u ac cua cac tuyen noi tiet khac va cac co quan lien quan"
+        },
+        {
+            "id": "category:C76:0",
+            "text": "u ac co vi tri khac va khong ro rang"
+        },
+        {
+            "id": "category:C77:0",
+            "text": "u ac thu phat va khong xac dinh cua hach lympho"
+        },
+        {
+            "id": "category:C78:0",
+            "text": "u ac thu phat tai co quan ho hap va tieu hoa"
+        },
+        {
+            "id": "category:C79:0",
+            "text": "u ac thu phat co vi tri khac va khong xac dinh"
+        },
+        {
+            "id": "category:C80:0",
+            "text": "u ac tinh thu phat khong xac dinh vi tri"
+        },
+        {
+            "id": "category:C81:0",
+            "text": "u lympho hodgkin"
+        },
+        {
+            "id": "category:C82:0",
+            "text": "u lympho the nang"
+        },
+        {
+            "id": "category:C83:0",
+            "text": "u lympho khong hodgkin the lan toa"
+        },
+        {
+            "id": "category:C84:0",
+            "text": "u lympho te bao t nk truong thanh"
+        },
+        {
+            "id": "category:C85:0",
+            "text": "u lympho khong hodgkin loai khac va khong xac dinh"
+        },
+        {
+            "id": "category:C86:0",
+            "text": "loai khac va khong xac dinh cua u lympho te bao t nk"
+        },
+        {
+            "id": "category:C88:0",
+            "text": "benh tang sinh mien dich ac tinh"
+        },
+        {
+            "id": "category:C90:0",
+            "text": "da u tuy va cac u tuong bao"
+        },
+        {
+            "id": "category:C91:0",
+            "text": "benh bach cau dong lympho"
+        },
+        {
+            "id": "category:C92:0",
+            "text": "benh bach cau tuy"
+        },
+        {
+            "id": "category:C93:0",
+            "text": "benh bach cau mono"
+        },
+        {
+            "id": "category:C94:0",
+            "text": "benh bach cau cua dong te bao xac dinh khac"
+        },
+        {
+            "id": "category:C95:0",
+            "text": "benh bach cau co loai te bao khong xac dinh"
+        },
+        {
+            "id": "category:C96:0",
+            "text": "u ac khac va khong xac dinh cua he lympho he tao mau va mo lien quan"
+        },
+        {
+            "id": "category:C97:0",
+            "text": "u ac nhieu vi tri doc lap nguyen phat da o"
+        },
+        {
+            "id": "category:D00:0",
+            "text": "ung thu bieu mo tai cho cua khoang mieng thuc quan va da day"
+        },
+        {
+            "id": "category:D01:0",
+            "text": "ung thu bieu mo tai cho cua co quan tieu hoa khac va khong xac dinh"
+        },
+        {
+            "id": "category:D02:0",
+            "text": "ung thu bieu mo tai cho cua tai giua va he ho hap"
+        },
+        {
+            "id": "category:D03:0",
+            "text": "ung thu te bao hac to tai cho"
+        },
+        {
+            "id": "category:D04:0",
+            "text": "ung thu bieu mo tai cho cua da"
+        },
+        {
+            "id": "category:D05:0",
+            "text": "ung thu bieu mo tai cho cua vu"
+        },
+        {
+            "id": "category:D06:0",
+            "text": "ung thu bieu mo tai cho cua co tu cung"
+        },
+        {
+            "id": "category:D07:0",
+            "text": "ung thu bieu mo tai cho cua co quan sinh duc khac va khong xac dinh"
+        },
+        {
+            "id": "category:D09:0",
+            "text": "ung thu bieu mo tai cho o vi tri khac va khong xac dinh"
+        },
+        {
+            "id": "category:D10:0",
+            "text": "u lanh cua mieng va hong"
+        },
+        {
+            "id": "category:D11:0",
+            "text": "u lanh cua cac tuyen nuoc bot chinh"
+        },
+        {
+            "id": "category:D12:0",
+            "text": "u lanh cua dai trang truc trang hau mon va ong hau mon"
+        },
+        {
+            "id": "category:D13:0",
+            "text": "u lanh cua phan khac va khong ro rang cua he tieu hoa"
+        },
+        {
+            "id": "category:D14:0",
+            "text": "u lanh tai giua va he ho hap"
+        },
+        {
+            "id": "category:D15:0",
+            "text": "u lanh cua co quan khac va khong xac dinh trong long nguc"
+        },
+        {
+            "id": "category:D16:0",
+            "text": "u lanh cua xuong va sun khop"
+        },
+        {
+            "id": "category:D17:0",
+            "text": "u mo"
+        },
+        {
+            "id": "category:D18:0",
+            "text": "u mau va u bach huyet vi tri bat ky"
+        },
+        {
+            "id": "category:D19:0",
+            "text": "u lanh cua trung mo"
+        },
+        {
+            "id": "category:D20:0",
+            "text": "u lanh mo mem sau phuc mac va phuc mac"
+        },
+        {
+            "id": "category:D21:0",
+            "text": "u lanh khac cua mo lien ket va mo mem khac"
+        },
+        {
+            "id": "category:D22:0",
+            "text": "not ruoi"
+        },
+        {
+            "id": "category:D23:0",
+            "text": "u lanh khac cua da"
+        },
+        {
+            "id": "category:D24:0",
+            "text": "u lanh vu"
+        },
+        {
+            "id": "category:D25:0",
+            "text": "u co tron tu cung"
+        },
+        {
+            "id": "category:D26:0",
+            "text": "u lanh khac cua tu cung"
+        },
+        {
+            "id": "category:D27:0",
+            "text": "u lanh buong trung"
+        },
+        {
+            "id": "category:D28:0",
+            "text": "u lanh cua co quan sinh duc khac va khong xac dinh"
+        },
+        {
+            "id": "category:D29:0",
+            "text": "u lanh cua co quan sinh duc nam"
+        },
+        {
+            "id": "category:D30:0",
+            "text": "u lanh cua co quan tiet nieu"
+        },
+        {
+            "id": "category:D31:0",
+            "text": "u lanh cua mat va phan phu"
+        },
+        {
+            "id": "category:D32:0",
+            "text": "u lanh cua mang nao"
+        },
+        {
+            "id": "category:D33:0",
+            "text": "u lanh cua nao va cac phan khac cua he than kinh trung uong"
+        },
+        {
+            "id": "category:D34:0",
+            "text": "u lanh cua tuyen giap"
+        },
+        {
+            "id": "category:D35:0",
+            "text": "u lanh cua tuyen noi tiet khac va khong xac dinh"
+        },
+        {
+            "id": "category:D36:0",
+            "text": "u lanh o vi tri khac va khong xac dinh"
+        },
+        {
+            "id": "category:D37:0",
+            "text": "u tan sinh khong ro hoac khong biet tinh chat cua khoang mieng va co quan tieu hoa"
+        },
+        {
+            "id": "category:D38:0",
+            "text": "u tan sinh khong ro hoac khong biet tinh chat cua tai giua co quan ho hap va co quan trong long nguc"
+        },
+        {
+            "id": "category:D39:0",
+            "text": "u khong chac chan hoac khong biet tinh chat cua co quan sinh duc nu"
+        },
+        {
+            "id": "category:D40:0",
+            "text": "u tan sinh khong chac chan hoac chua ro tinh chat cua co quan sinh duc nam"
+        },
+        {
+            "id": "category:D41:0",
+            "text": "u tan sinh khong chac chan hoac chua ro tinh chat cua co quan tiet nieu"
+        },
+        {
+            "id": "category:D42:0",
+            "text": "u tan sinh khong chac chan hoac chua ro tinh chat cua mang nao"
+        },
+        {
+            "id": "category:D43:0",
+            "text": "u tan sinh khong chac chan hoac chua ro tinh chat cua nao va he than kinh trung uong"
+        },
+        {
+            "id": "category:D44:0",
+            "text": "u tan sinh khong chac chan hoac chua ro tinh chat cua tuyen noi tiet"
+        },
+        {
+            "id": "category:D45:0",
+            "text": "da hong cau nguyen phat"
+        },
+        {
+            "id": "category:D46:0",
+            "text": "hoi chung roi loan sinh tuy"
+        },
+        {
+            "id": "category:D47:0",
+            "text": "u tan sinh khac khong chac chan hoac khong biet sinh chat cua mo u lympho mo tao huyet va mo lien quan"
+        },
+        {
+            "id": "category:D48:0",
+            "text": "u tan sinh khong chac chan hoac chua ro tinh chat cua vi tri khac va khong xac dinh"
+        },
+        {
+            "id": "category:D50:0",
+            "text": "thieu mau do thieu sat"
+        },
+        {
+            "id": "category:D51:0",
+            "text": "thieu mau do thieu vitamin b12"
+        },
+        {
+            "id": "category:D52:0",
+            "text": "thieu mau thieu folate"
+        },
+        {
+            "id": "category:D53:0",
+            "text": "cac thieu mau dinh duong khac"
+        },
+        {
+            "id": "category:D55:0",
+            "text": "thieu mau do roi loan men"
+        },
+        {
+            "id": "category:D56:0",
+            "text": "benh thalassemia"
+        },
+        {
+            "id": "category:D57:0",
+            "text": "benh hong cau hinh liem"
+        },
+        {
+            "id": "category:D58:0",
+            "text": "cac thieu mau tan mau di truyen khac"
+        },
+        {
+            "id": "category:D59:0",
+            "text": "thieu mau tan mau mac phai"
+        },
+        {
+            "id": "category:D60:0",
+            "text": "suy tuy xuong mot dong hong cau mac phai giam nguyen hong cau"
+        },
+        {
+            "id": "category:D61:0",
+            "text": "cac the suy tuy xuong khac"
+        },
+        {
+            "id": "category:D62:0",
+            "text": "thieu mau sau xuat huyet cap tinh"
+        },
+        {
+            "id": "category:D64:0",
+            "text": "cac thieu mau khac"
+        },
+        {
+            "id": "category:D65:0",
+            "text": "dong mau noi mach rai rac hoi chung tieu fibrin"
+        },
+        {
+            "id": "category:D66:0",
+            "text": "thieu yeu to viii di truyen"
+        },
+        {
+            "id": "category:D67:0",
+            "text": "thieu yeu to ix di truyen"
+        },
+        {
+            "id": "category:D68:0",
+            "text": "cac bat thuong dong mau khac"
+        },
+        {
+            "id": "category:D69:0",
+            "text": "ban xuat huyet va cac tinh trang xuat huyet khac"
+        },
+        {
+            "id": "category:D70:0",
+            "text": "tinh trang mat bach cau hat"
+        },
+        {
+            "id": "category:D71:0",
+            "text": "roi loan chuc nang bach cau hat trung tinh"
+        },
+        {
+            "id": "category:D72:0",
+            "text": "cac roi loan khac cua bach cau"
+        },
+        {
+            "id": "category:D73:0",
+            "text": "benh ly lach"
+        },
+        {
+            "id": "category:D74:0",
+            "text": "methemoglobin huyet"
+        },
+        {
+            "id": "category:D75:0",
+            "text": "cac benh mau va co quan tao mau khac"
+        },
+        {
+            "id": "category:D76:0",
+            "text": "cac benh cua to chuc lympho lien vong va to chuc bao mo bao lien vong xac dinh khac"
+        },
+        {
+            "id": "category:D80:0",
+            "text": "thieu hut mien dich chu yeu do bat thuong khang the"
+        },
+        {
+            "id": "category:D81:0",
+            "text": "suy giam mien dich ket hop"
+        },
+        {
+            "id": "category:D82:0",
+            "text": "suy giam mien dich lien quan den cac bat thuong nang khac"
+        },
+        {
+            "id": "category:D83:0",
+            "text": "mot so cac bien the khac cua suy giam mien dich"
+        },
+        {
+            "id": "category:D84:0",
+            "text": "cac suy giam mien dich khac"
+        },
+        {
+            "id": "category:D86:0",
+            "text": "benh sarcoid u hat"
+        },
+        {
+            "id": "category:D89:0",
+            "text": "roi loan lien quan den co che mien dich khong phan loai noi khac"
+        },
+        {
+            "id": "category:E00:0",
+            "text": "hoi chung thieu iod bam sinh"
+        },
+        {
+            "id": "category:E01:0",
+            "text": "roi loan tuyen giap lien quan den thieu iod va benh phoi hop"
+        },
+        {
+            "id": "category:E02:0",
+            "text": "suy giap can lam sang do thieu iod"
+        },
+        {
+            "id": "category:E03:0",
+            "text": "suy giap khac"
+        },
+        {
+            "id": "category:E04:0",
+            "text": "buou giap khong doc khac"
+        },
+        {
+            "id": "category:E05:0",
+            "text": "nhiem doc giap cuong giap"
+        },
+        {
+            "id": "category:E06:0",
+            "text": "viem giap"
+        },
+        {
+            "id": "category:E07:0",
+            "text": "cac roi loan khac cua tuyen giap"
+        },
+        {
+            "id": "category:E10:0",
+            "text": "benh dai thao duong type 1"
+        },
+        {
+            "id": "category:E11:0",
+            "text": "benh dai thao duong type 2"
+        },
+        {
+            "id": "category:E12:0",
+            "text": "benh dai thao duong lien quan den suy dinh duong"
+        },
+        {
+            "id": "category:E13:0",
+            "text": "benh dai thao duong xac dinh khac"
+        },
+        {
+            "id": "category:E14:0",
+            "text": "cac the loai dai thao duong khong xac dinh"
+        },
+        {
+            "id": "category:E15:0",
+            "text": "hon me ha duong huyet khong do dai thao duong"
+        },
+        {
+            "id": "category:E16:0",
+            "text": "roi loan khac cua tuyen tuy noi tiet"
+        },
+        {
+            "id": "category:E20:0",
+            "text": "suy tuyen can giap"
+        },
+        {
+            "id": "category:E21:0",
+            "text": "cuong can giap va cac roi loan khac cua tuyen can giap"
+        },
+        {
+            "id": "category:E22:0",
+            "text": "cuong tuyen yen"
+        },
+        {
+            "id": "category:E23:0",
+            "text": "suy chuc nang va roi loan khac cua tuyen yen"
+        },
+        {
+            "id": "category:E24:0",
+            "text": "hoi chung cushing"
+        },
+        {
+            "id": "category:E25:0",
+            "text": "roi loan thuong than sinh duc"
+        },
+        {
+            "id": "category:E26:0",
+            "text": "cuong aldosterone"
+        },
+        {
+            "id": "category:E27:0",
+            "text": "cac roi loan khac cua tuyen thuong than"
+        },
+        {
+            "id": "category:E28:0",
+            "text": "roi loan chuc nang buong trung"
+        },
+        {
+            "id": "category:E29:0",
+            "text": "roi loan chuc nang tinh hoan"
+        },
+        {
+            "id": "category:E30:0",
+            "text": "roi loan luc day thi khong phan loai noi khac"
+        },
+        {
+            "id": "category:E31:0",
+            "text": "roi loan chuc nang da tuyen"
+        },
+        {
+            "id": "category:E32:0",
+            "text": "benh tuyen uc"
+        },
+        {
+            "id": "category:E34:0",
+            "text": "roi loan noi tiet khac"
+        },
+        {
+            "id": "category:E40:0",
+            "text": "kwashiorkor"
+        },
+        {
+            "id": "category:E41:0",
+            "text": "suy dinh duong the marasmus"
+        },
+        {
+            "id": "category:E42:0",
+            "text": "the hon hop kwashiorkor marasmus"
+        },
+        {
+            "id": "category:E43:0",
+            "text": "suy dinh duong nang do thieu protein nang luong khong dac hieu"
+        },
+        {
+            "id": "category:E44:0",
+            "text": "suy dinh duong vua va nhe do thieu protein nang luong"
+        },
+        {
+            "id": "category:E45:0",
+            "text": "cham phat trien sau suy dinh duong do thieu protein nang luong"
+        },
+        {
+            "id": "category:E46:0",
+            "text": "suy dinh duong do thieu protein nang luong khong xac dinh"
+        },
+        {
+            "id": "category:E50:0",
+            "text": "thieu vitamin a"
+        },
+        {
+            "id": "category:E51:0",
+            "text": "thieu thiamine"
+        },
+        {
+            "id": "category:E52:0",
+            "text": "thieu niacin"
+        },
+        {
+            "id": "category:E53:0",
+            "text": "thieu cac vitamin nhom b khac"
+        },
+        {
+            "id": "category:E54:0",
+            "text": "thieu acid ascorbic"
+        },
+        {
+            "id": "category:E55:0",
+            "text": "thieu vitamin d"
+        },
+        {
+            "id": "category:E56:0",
+            "text": "thieu vitamin khac"
+        },
+        {
+            "id": "category:E58:0",
+            "text": "thieu calci do che do an"
+        },
+        {
+            "id": "category:E59:0",
+            "text": "thieu selen do che do an"
+        },
+        {
+            "id": "category:E60:0",
+            "text": "thieu kem do che do an"
+        },
+        {
+            "id": "category:E61:0",
+            "text": "thieu cac yeu to dinh duong khac"
+        },
+        {
+            "id": "category:E63:0",
+            "text": "thieu dinh duong khac"
+        },
+        {
+            "id": "category:E64:0",
+            "text": "di chung cua suy dinh duong va benh thieu dinh duong khac"
+        },
+        {
+            "id": "category:E65:0",
+            "text": "beo phi khu tru"
+        },
+        {
+            "id": "category:E66:0",
+            "text": "benh thua can beo phi"
+        },
+        {
+            "id": "category:E67:0",
+            "text": "tinh trang thua dinh duong khac"
+        },
+        {
+            "id": "category:E68:0",
+            "text": "di chung cua thua dinh duong"
+        },
+        {
+            "id": "category:E70:0",
+            "text": "roi loan chuyen hoa acid amin thom"
+        },
+        {
+            "id": "category:E71:0",
+            "text": "roi loan chuyen hoa acid amin chuoi nhanh va roi loan chuyen hoa acid beo"
+        },
+        {
+            "id": "category:E72:0",
+            "text": "cac roi loan khac cua chuyen hoa acid amin"
+        },
+        {
+            "id": "category:E73:0",
+            "text": "khong dung nap lactose"
+        },
+        {
+            "id": "category:E74:0",
+            "text": "roi loan khac cua chuyen hoa carbohydrat"
+        },
+        {
+            "id": "category:E75:0",
+            "text": "roi loan chuyen hoa sphingolipid va roi loan tich luy lipid"
+        },
+        {
+            "id": "category:E76:0",
+            "text": "roi loan chuyen hoa glycosaminoglycan"
+        },
+        {
+            "id": "category:E77:0",
+            "text": "roi loan chuyen hoa glycoprotein"
+        },
+        {
+            "id": "category:E78:0",
+            "text": "roi loan chuyen hoa lipoprotein va tinh trang tang lipid mau khac"
+        },
+        {
+            "id": "category:E79:0",
+            "text": "roi loan chuyen hoa purine va pyrimidine"
+        },
+        {
+            "id": "category:E83:0",
+            "text": "roi loan chuyen hoa chat khoang"
+        },
+        {
+            "id": "category:E84:0",
+            "text": "xo nang"
+        },
+        {
+            "id": "category:E85:0",
+            "text": "thoai hoa dang bot"
+        },
+        {
+            "id": "category:E86:0",
+            "text": "giam the tich"
+        },
+        {
+            "id": "category:E87:0",
+            "text": "roi loan can bang nuoc dien giai va thang bang kiem toan"
+        },
+        {
+            "id": "category:E88:0",
+            "text": "roi loan chuyen hoa khac"
+        },
+        {
+            "id": "category:E89:0",
+            "text": "roi loan noi tiet va chuyen hoa sau dieu tri khong phan loai noi khac"
+        },
+        {
+            "id": "category:F01:0",
+            "text": "sa sut tri tue do nguyen nhan mach"
+        },
+        {
+            "id": "category:F03:0",
+            "text": "sa sut tri tue khong biet dinh"
+        },
+        {
+            "id": "category:F04:0",
+            "text": "hoi chung quen thuc ton khong do ruou va chat tac dong tam than khac"
+        },
+        {
+            "id": "category:F05:0",
+            "text": "sang khong do ruou va chat tac dong tam than khac"
+        },
+        {
+            "id": "category:F06:0",
+            "text": "roi loan tam than khac do ton thuong va roi loan chuc nang nao va do benh co the"
+        },
+        {
+            "id": "category:F07:0",
+            "text": "cac roi loan nhan cach va hanh vi do benh ly nao ton thuong nao va roi loan chuc nang nao"
+        },
+        {
+            "id": "category:F09:0",
+            "text": "roi loan tam than thuc ton hoac trieu chung khong biet dinh"
+        },
+        {
+            "id": "category:F10:0",
+            "text": "roi loan tam than va hanh vi do su dung ruou"
+        },
+        {
+            "id": "category:F11:0",
+            "text": "roi loan tam than va hanh vi do su dung cac dang thuoc phien"
+        },
+        {
+            "id": "category:F12:0",
+            "text": "roi loan tam than va hanh vi do su dung can sa"
+        },
+        {
+            "id": "category:F13:0",
+            "text": "roi loan tam than va hanh vi do su dung cac chat an diu hoac cac thuoc ngu"
+        },
+        {
+            "id": "category:F14:0",
+            "text": "roi loan tam than va hanh vi do su dung cocain"
+        },
+        {
+            "id": "category:F15:0",
+            "text": "roi loan tam than va hanh vi do su dung chat kich thich khac bao gom ca caffein"
+        },
+        {
+            "id": "category:F16:0",
+            "text": "roi loan tam than va hanh vi do su dung cac chat gay ao giac"
+        },
+        {
+            "id": "category:F17:0",
+            "text": "roi loan tam than va hanh vi do su dung thuoc la"
+        },
+        {
+            "id": "category:F18:0",
+            "text": "roi loan tam than va hanh vi do su dung dung moi de bay hoi"
+        },
+        {
+            "id": "category:F19:0",
+            "text": "roi loan tam than va hanh vi do su dung nhieu loai ma tuy va chat tac dong tam than khac"
+        },
+        {
+            "id": "category:F20:0",
+            "text": "tam than phan liet"
+        },
+        {
+            "id": "category:F21:0",
+            "text": "roi loan loai phan liet"
+        },
+        {
+            "id": "category:F22:0",
+            "text": "roi loan hoang tuong dai dang"
+        },
+        {
+            "id": "category:F23:0",
+            "text": "roi loan loan than cap va nhat thoi"
+        },
+        {
+            "id": "category:F24:0",
+            "text": "roi loan hoang tuong cam ung"
+        },
+        {
+            "id": "category:F25:0",
+            "text": "roi loan phan liet cam xuc"
+        },
+        {
+            "id": "category:F28:0",
+            "text": "roi loan loan than khong thuc ton khac"
+        },
+        {
+            "id": "category:F29:0",
+            "text": "loan than khong thuc ton khong biet dinh"
+        },
+        {
+            "id": "category:F30:0",
+            "text": "giai doan hung cam"
+        },
+        {
+            "id": "category:F31:0",
+            "text": "roi loan cam xuc luong cuc"
+        },
+        {
+            "id": "category:F32:0",
+            "text": "giai doan tram cam"
+        },
+        {
+            "id": "category:F33:0",
+            "text": "roi loan tram cam tai dien"
+        },
+        {
+            "id": "category:F34:0",
+            "text": "roi loan khi sac cam xuc dai dang"
+        },
+        {
+            "id": "category:F38:0",
+            "text": "roi loan khi sac cam xuc khac"
+        },
+        {
+            "id": "category:F39:0",
+            "text": "roi loan khi sac cam xuc biet dinh"
+        },
+        {
+            "id": "category:F40:0",
+            "text": "roi loan lo au am anh so hai"
+        },
+        {
+            "id": "category:F41:0",
+            "text": "cac roi loan lo au khac"
+        },
+        {
+            "id": "category:F42:0",
+            "text": "roi loan am anh nghi thuc"
+        },
+        {
+            "id": "category:F43:0",
+            "text": "phan ung voi stress tram trong va roi loan su thich ung"
+        },
+        {
+            "id": "category:F44:0",
+            "text": "cac roi loan phan ly chuyen di"
+        },
+        {
+            "id": "category:F45:0",
+            "text": "roi loan dang co the"
+        },
+        {
+            "id": "category:F48:0",
+            "text": "cac roi loan tam can khac"
+        },
+        {
+            "id": "category:F50:0",
+            "text": "cac roi loan an uong"
+        },
+        {
+            "id": "category:F51:0",
+            "text": "roi loan giac ngu khong thuc ton"
+        },
+        {
+            "id": "category:F52:0",
+            "text": "loan chuc nang tinh duc khong do roi loan hoac benh thuc ton"
+        },
+        {
+            "id": "category:F53:0",
+            "text": "roi loan hanh vi va tam than ket hop voi thoi ki sinh de khong phan loai noi khac"
+        },
+        {
+            "id": "category:F54:0",
+            "text": "cac nhan to tam ly va hanh vi ket hop voi roi loan hoac cac benh phan loai noi khac"
+        },
+        {
+            "id": "category:F55:0",
+            "text": "lam dung cac chat khong gay nghien"
+        },
+        {
+            "id": "category:F59:0",
+            "text": "cac hoi chung hanh vi ung xu khong biet dinh ket hop voi roi loan sinh ly va yeu to the chat"
+        },
+        {
+            "id": "category:F60:0",
+            "text": "roi loan nhan cach dac hieu"
+        },
+        {
+            "id": "category:F61:0",
+            "text": "roi loan nhan cach khac va hon hop"
+        },
+        {
+            "id": "category:F62:0",
+            "text": "bien doi nhan cach keo dai khong the quy cho mot ton thuong hay benh nao"
+        },
+        {
+            "id": "category:F63:0",
+            "text": "roi loan thoi quen va xung dong"
+        },
+        {
+            "id": "category:F64:0",
+            "text": "cac roi loan phan dinh gioi tinh"
+        },
+        {
+            "id": "category:F65:0",
+            "text": "roi loan trong ua chuong tinh duc"
+        },
+        {
+            "id": "category:F66:0",
+            "text": "nhung roi loan tam ly va hanh vi ket hop voi su phat trien va dinh huong tinh duc"
+        },
+        {
+            "id": "category:F68:0",
+            "text": "roi loan khac ve hanh vi va nhan cach o nguoi truong thanh"
+        },
+        {
+            "id": "category:F69:0",
+            "text": "roi loan khong biet dinh ve nhan cach va hanh vi o nguoi truong thanh"
+        },
+        {
+            "id": "category:F70:0",
+            "text": "cham phat trien tri tue nhe"
+        },
+        {
+            "id": "category:F71:0",
+            "text": "cham phat trien tri tue trung binh"
+        },
+        {
+            "id": "category:F72:0",
+            "text": "cham phat trien tri tue nang"
+        },
+        {
+            "id": "category:F73:0",
+            "text": "cham phat trien tri tue nghiem trong"
+        },
+        {
+            "id": "category:F78:0",
+            "text": "cham phat trien tri tue khac"
+        },
+        {
+            "id": "category:F79:0",
+            "text": "cham phat trien tri tue khong biet dinh"
+        },
+        {
+            "id": "category:F80:0",
+            "text": "cac roi loan dac hieu ve phat trien loi noi va ngon ngu"
+        },
+        {
+            "id": "category:F81:0",
+            "text": "roi loan dac hieu ve phat trien cac ky nang o truong"
+        },
+        {
+            "id": "category:F82:0",
+            "text": "roi loan dac hieu su phat trien chuc nang van dong"
+        },
+        {
+            "id": "category:F83:0",
+            "text": "cac roi loan dac hieu hon hop cua su phat trien"
+        },
+        {
+            "id": "category:F84:0",
+            "text": "roi loan lan toa su phat trien"
+        },
+        {
+            "id": "category:F88:0",
+            "text": "cac roi loan khac cua phat trien tam ly"
+        },
+        {
+            "id": "category:F89:0",
+            "text": "roi loan khong biet dinh cua phat trien tam ly"
+        },
+        {
+            "id": "category:F90:0",
+            "text": "cac roi loan tang dong"
+        },
+        {
+            "id": "category:F91:0",
+            "text": "roi loan hanh vi"
+        },
+        {
+            "id": "category:F92:0",
+            "text": "cac roi loan hon hop ve hanh vi va cam xuc"
+        },
+        {
+            "id": "category:F93:0",
+            "text": "roi loan cam xuc voi su khoi phat dac biet o tre em"
+        },
+        {
+            "id": "category:F95:0",
+            "text": "cac roi loan tic"
+        },
+        {
+            "id": "category:F98:0",
+            "text": "cac roi loan tac phong va cam xuc khac thuong khoi phat o lua tuoi tre em va thanh thieu nien"
+        },
+        {
+            "id": "category:F99:0",
+            "text": "roi loan tam than khong biet dinh khac"
+        },
+        {
+            "id": "category:G00:0",
+            "text": "benh viem mang nao vi khuan khong phan loai noi khac"
+        },
+        {
+            "id": "category:G03:0",
+            "text": "viem mang nao do nguyen nhan khac va khong xac dinh"
+        },
+        {
+            "id": "category:G04:0",
+            "text": "viem nao viem tuy va viem nao tuy"
+        },
+        {
+            "id": "category:G06:0",
+            "text": "ap xe noi so va u hat noi so ap xe noi tuy va u hat noi tuy"
+        },
+        {
+            "id": "category:G08:0",
+            "text": "viem tinh mach va viem tac tinh mach noi so va noi tuy"
+        },
+        {
+            "id": "category:G09:0",
+            "text": "di chung cua benh viem he than kinh trung uong"
+        },
+        {
+            "id": "category:G10:0",
+            "text": "benh hungtington"
+        },
+        {
+            "id": "category:G11:0",
+            "text": "that dieu di truyen"
+        },
+        {
+            "id": "category:G12:0",
+            "text": "teo co do ton thuong tuy song va hoi chung lien quan"
+        },
+        {
+            "id": "category:G14:0",
+            "text": "hoi chung sau bai liet"
+        },
+        {
+            "id": "category:G20:0",
+            "text": "benh parkinson"
+        },
+        {
+            "id": "category:G21:0",
+            "text": "hoi chung parkinson thu phat"
+        },
+        {
+            "id": "category:G23:0",
+            "text": "benh thoai hoa khac cua hach nen nao"
+        },
+        {
+            "id": "category:G24:0",
+            "text": "loan truong luc co"
+        },
+        {
+            "id": "category:G25:0",
+            "text": "hoi chung ngoai thap va roi loan van dong khac"
+        },
+        {
+            "id": "category:G30:0",
+            "text": "benh alzheimer"
+        },
+        {
+            "id": "category:G31:0",
+            "text": "benh thoai hoa khac cua he than kinh khong phan loai noi khac"
+        },
+        {
+            "id": "category:G35:0",
+            "text": "da xo cung xo cung rai rac"
+        },
+        {
+            "id": "category:G36:0",
+            "text": "thoai hoa myelin rai rac cap tinh khac"
+        },
+        {
+            "id": "category:G37:0",
+            "text": "benh thoai hoa myelin khac cua he than kinh trung uong"
+        },
+        {
+            "id": "category:G40:0",
+            "text": "dong kinh"
+        },
+        {
+            "id": "category:G41:0",
+            "text": "trang thai dong kinh"
+        },
+        {
+            "id": "category:G43:0",
+            "text": "migraine"
+        },
+        {
+            "id": "category:G44:0",
+            "text": "hoi chung dau dau khac"
+        },
+        {
+            "id": "category:G45:0",
+            "text": "con thieu mau nao thoang qua va hoi chung lien quan"
+        },
+        {
+            "id": "category:G47:0",
+            "text": "roi loan giac ngu"
+        },
+        {
+            "id": "category:G50:0",
+            "text": "benh than kinh tam thoa"
+        },
+        {
+            "id": "category:G51:0",
+            "text": "benh than kinh mat"
+        },
+        {
+            "id": "category:G52:0",
+            "text": "benh cac day than kinh so khac"
+        },
+        {
+            "id": "category:G54:0",
+            "text": "benh re va dam roi than kinh"
+        },
+        {
+            "id": "category:G56:0",
+            "text": "benh don day than kinh chi tren"
+        },
+        {
+            "id": "category:G57:0",
+            "text": "benh don day than kinh chi duoi"
+        },
+        {
+            "id": "category:G58:0",
+            "text": "benh don day than kinh khac"
+        },
+        {
+            "id": "category:G60:0",
+            "text": "benh day than kinh di truyen va nguyen phat"
+        },
+        {
+            "id": "category:G61:0",
+            "text": "viem da day than kinh"
+        },
+        {
+            "id": "category:G62:0",
+            "text": "benh da day than kinh khac"
+        },
+        {
+            "id": "category:G64:0",
+            "text": "benh khac cua he than kinh ngoai vi"
+        },
+        {
+            "id": "category:G70:0",
+            "text": "nhuoc co va benh than kinh co khac"
+        },
+        {
+            "id": "category:G71:0",
+            "text": "benh co tien phat"
+        },
+        {
+            "id": "category:G72:0",
+            "text": "benh co khac"
+        },
+        {
+            "id": "category:G80:0",
+            "text": "bai nao"
+        },
+        {
+            "id": "category:G81:0",
+            "text": "liet nua nguoi"
+        },
+        {
+            "id": "category:G82:0",
+            "text": "liet hai chan va liet tu chi"
+        },
+        {
+            "id": "category:G83:0",
+            "text": "hoi chung liet khac"
+        },
+        {
+            "id": "category:G90:0",
+            "text": "benh he than kinh tu chu"
+        },
+        {
+            "id": "category:G91:0",
+            "text": "nao ung thuy"
+        },
+        {
+            "id": "category:G92:0",
+            "text": "benh nao nhiem doc"
+        },
+        {
+            "id": "category:G93:0",
+            "text": "benh khac cua nao"
+        },
+        {
+            "id": "category:G95:0",
+            "text": "benh khac cua tuy song"
+        },
+        {
+            "id": "category:G96:0",
+            "text": "benh khac cua he than kinh trung uong"
+        },
+        {
+            "id": "category:G97:0",
+            "text": "cac roi loan cua he than kinh sau phau thuat thu thuat khong phan loai noi khac"
+        },
+        {
+            "id": "category:G98:0",
+            "text": "benh khac cua he than kinh khong phan loai noi khac"
+        },
+        {
+            "id": "category:H00:0",
+            "text": "leo va chap"
+        },
+        {
+            "id": "category:H01:0",
+            "text": "viem khac cua mi mat"
+        },
+        {
+            "id": "category:H02:0",
+            "text": "benh khac cua mi mat"
+        },
+        {
+            "id": "category:H04:0",
+            "text": "benh cua le bo"
+        },
+        {
+            "id": "category:H05:0",
+            "text": "benh cua hoc mat"
+        },
+        {
+            "id": "category:H10:0",
+            "text": "viem ket mac"
+        },
+        {
+            "id": "category:H11:0",
+            "text": "benh khac cua ket mac"
+        },
+        {
+            "id": "category:H15:0",
+            "text": "benh cua cung mac"
+        },
+        {
+            "id": "category:H16:0",
+            "text": "viem giac mac"
+        },
+        {
+            "id": "category:H17:0",
+            "text": "seo va duc giac mac"
+        },
+        {
+            "id": "category:H18:0",
+            "text": "benh khac cua giac mac"
+        },
+        {
+            "id": "category:H20:0",
+            "text": "viem mong mat the mi"
+        },
+        {
+            "id": "category:H21:0",
+            "text": "benh khac cua mong mat va the mi"
+        },
+        {
+            "id": "category:H25:0",
+            "text": "duc the thuy tinh nguoi gia"
+        },
+        {
+            "id": "category:H26:0",
+            "text": "duc the thuy tinh khac"
+        },
+        {
+            "id": "category:H27:0",
+            "text": "cac benh khac cua the thuy tinh"
+        },
+        {
+            "id": "category:H30:0",
+            "text": "viem hac vong mac"
+        },
+        {
+            "id": "category:H31:0",
+            "text": "benh khac cua hac mac"
+        },
+        {
+            "id": "category:H33:0",
+            "text": "bong va rach vong mac"
+        },
+        {
+            "id": "category:H34:0",
+            "text": "cac benh ly tac mach mau vong mac"
+        },
+        {
+            "id": "category:H35:0",
+            "text": "cac benh ly vong mac khac"
+        },
+        {
+            "id": "category:H40:0",
+            "text": "glocom"
+        },
+        {
+            "id": "category:H43:0",
+            "text": "benh cua dich kinh"
+        },
+        {
+            "id": "category:H44:0",
+            "text": "benh cua nhan cau"
+        },
+        {
+            "id": "category:H46:0",
+            "text": "viem thi than kinh"
+        },
+        {
+            "id": "category:H47:0",
+            "text": "cac benh khac cua than kinh thi day than kinh so ii va duong thi giac"
+        },
+        {
+            "id": "category:H49:0",
+            "text": "lac liet"
+        },
+        {
+            "id": "category:H50:0",
+            "text": "lac khac"
+        },
+        {
+            "id": "category:H51:0",
+            "text": "cac roi loan van nhan hai mat khac"
+        },
+        {
+            "id": "category:H52:0",
+            "text": "benh khuc xa va dieu tiet"
+        },
+        {
+            "id": "category:H53:0",
+            "text": "roi loan thi giac"
+        },
+        {
+            "id": "category:H54:0",
+            "text": "mu va khiem thi hai mat hoac mot mat"
+        },
+        {
+            "id": "category:H55:0",
+            "text": "rung giat nhan cau va roi loan van nhan khac"
+        },
+        {
+            "id": "category:H57:0",
+            "text": "cac benh khac cua mat va phan phu"
+        },
+        {
+            "id": "category:H59:0",
+            "text": "benh mat va phan phu sau phau thuat khong phan loai noi khac"
+        },
+        {
+            "id": "category:H60:0",
+            "text": "viem tai ngoai"
+        },
+        {
+            "id": "category:H61:0",
+            "text": "benh khac cua tai ngoai"
+        },
+        {
+            "id": "category:H65:0",
+            "text": "viem tai giua khong mu"
+        },
+        {
+            "id": "category:H66:0",
+            "text": "viem tai giua mu va khong dac hieu"
+        },
+        {
+            "id": "category:H68:0",
+            "text": "viem va tac voi eustache"
+        },
+        {
+            "id": "category:H69:0",
+            "text": "benh khac cua voi eustache"
+        },
+        {
+            "id": "category:H70:0",
+            "text": "viem xuong chum va tinh trang lien quan"
+        },
+        {
+            "id": "category:H71:0",
+            "text": "cholesteatoma cua tai giua"
+        },
+        {
+            "id": "category:H72:0",
+            "text": "thung mang nhi"
+        },
+        {
+            "id": "category:H73:0",
+            "text": "benh khac cua mang nhi"
+        },
+        {
+            "id": "category:H74:0",
+            "text": "benh khac cua tai giua va xuong chum"
+        },
+        {
+            "id": "category:H80:0",
+            "text": "xop xo tai"
+        },
+        {
+            "id": "category:H81:0",
+            "text": "roi loan chuc nang tien dinh"
+        },
+        {
+            "id": "category:H83:0",
+            "text": "benh khac cua tai trong"
+        },
+        {
+            "id": "category:H90:0",
+            "text": "nghe kem dan truyen va nghe kem tiep nhan"
+        },
+        {
+            "id": "category:H91:0",
+            "text": "nghe kem khac"
+        },
+        {
+            "id": "category:H92:0",
+            "text": "dau tai va chay dich o tai"
+        },
+        {
+            "id": "category:H93:0",
+            "text": "benh khac cua tai khong phan loai noi khac"
+        },
+        {
+            "id": "category:H95:0",
+            "text": "benh tai va xuong chum sau phau thuat khong phan loai noi khac"
+        },
+        {
+            "id": "category:I00:0",
+            "text": "thap khong co ton thuong tim"
+        },
+        {
+            "id": "category:I01:0",
+            "text": "thap anh huong den tim"
+        },
+        {
+            "id": "category:I02:0",
+            "text": "mua giat do thap"
+        },
+        {
+            "id": "category:I05:0",
+            "text": "benh ly van hai la do thap"
+        },
+        {
+            "id": "category:I06:0",
+            "text": "benh van dong mach chu do thap"
+        },
+        {
+            "id": "category:I07:0",
+            "text": "benh ly van ba la do thap"
+        },
+        {
+            "id": "category:I08:0",
+            "text": "benh ly cua nhieu van tim"
+        },
+        {
+            "id": "category:I09:0",
+            "text": "cac benh tim khac do thap"
+        },
+        {
+            "id": "category:I10:0",
+            "text": "tang huyet ap vo can nguyen phat"
+        },
+        {
+            "id": "category:I11:0",
+            "text": "benh tim do tang huyet ap"
+        },
+        {
+            "id": "category:I12:0",
+            "text": "benh than do tang huyet ap"
+        },
+        {
+            "id": "category:I13:0",
+            "text": "benh tim va than do tang huyet ap"
+        },
+        {
+            "id": "category:I15:0",
+            "text": "tang huyet ap thu phat"
+        },
+        {
+            "id": "category:I20:0",
+            "text": "con dau that nguc"
+        },
+        {
+            "id": "category:I21:0",
+            "text": "nhoi mau co tim cap"
+        },
+        {
+            "id": "category:I22:0",
+            "text": "nhoi mau co tim tien trien"
+        },
+        {
+            "id": "category:I23:0",
+            "text": "mot so bien chung thuong gap sau nhoi mau co tim cap"
+        },
+        {
+            "id": "category:I24:0",
+            "text": "benh tim do thieu mau cuc bo cap khac"
+        },
+        {
+            "id": "category:I25:0",
+            "text": "benh tim thieu mau cuc bo man"
+        },
+        {
+            "id": "category:I26:0",
+            "text": "tac mach phoi"
+        },
+        {
+            "id": "category:I27:0",
+            "text": "cac benh tim do phoi khac"
+        },
+        {
+            "id": "category:I28:0",
+            "text": "benh mach mau phoi khac"
+        },
+        {
+            "id": "category:I30:0",
+            "text": "viem mang ngoai tim cap"
+        },
+        {
+            "id": "category:I31:0",
+            "text": "cac benh mang ngoai tim khac"
+        },
+        {
+            "id": "category:I33:0",
+            "text": "viem noi tam mac cap va ban cap"
+        },
+        {
+            "id": "category:I34:0",
+            "text": "benh ly van hai la khong do thap"
+        },
+        {
+            "id": "category:I35:0",
+            "text": "benh van dong mach chu khong do thap"
+        },
+        {
+            "id": "category:I36:0",
+            "text": "benh van ba la khong do thap"
+        },
+        {
+            "id": "category:I37:0",
+            "text": "benh van dong mach phoi"
+        },
+        {
+            "id": "category:I38:0",
+            "text": "viem noi tam mac van tim khong xac dinh"
+        },
+        {
+            "id": "category:I40:0",
+            "text": "viem co tim cap"
+        },
+        {
+            "id": "category:I42:0",
+            "text": "benh co tim"
+        },
+        {
+            "id": "category:I44:0",
+            "text": "bloc nhi that va nhanh trai"
+        },
+        {
+            "id": "category:I45:0",
+            "text": "roi loan dan truyen khac"
+        },
+        {
+            "id": "category:I46:0",
+            "text": "ngung tim"
+        },
+        {
+            "id": "category:I47:0",
+            "text": "nhip nhanh kich phat"
+        },
+        {
+            "id": "category:I48:0",
+            "text": "rung nhi va cuong dong nhi"
+        },
+        {
+            "id": "category:I49:0",
+            "text": "loan nhip tim khac"
+        },
+        {
+            "id": "category:I50:0",
+            "text": "suy tim"
+        },
+        {
+            "id": "category:I51:0",
+            "text": "bien chung va benh ly chua ro rang lien quan de benh tim"
+        },
+        {
+            "id": "category:I60:0",
+            "text": "xuat huyet duoi nhen"
+        },
+        {
+            "id": "category:I61:0",
+            "text": "xuat huyet noi so"
+        },
+        {
+            "id": "category:I62:0",
+            "text": "xuat huyet noi so khong do chan thuong khac"
+        },
+        {
+            "id": "category:I63:0",
+            "text": "nhoi mau nao"
+        },
+        {
+            "id": "category:I64:0",
+            "text": "dot quy tai bien mach mau nao khong xac dinh do xuat huyet hay nhoi mau"
+        },
+        {
+            "id": "category:I65:0",
+            "text": "nghen tac va hep dong mach nao truoc khong dan den nhoi mau nao"
+        },
+        {
+            "id": "category:I66:0",
+            "text": "nghen tac va hep dong mach nao khong dan den nhoi mau nao"
+        },
+        {
+            "id": "category:I67:0",
+            "text": "benh mach mau nao khac"
+        },
+        {
+            "id": "category:I69:0",
+            "text": "di chung benh mach mau nao"
+        },
+        {
+            "id": "category:I70:0",
+            "text": "xo vua dong mach"
+        },
+        {
+            "id": "category:I71:0",
+            "text": "phinh va tach thanh dong mach chu"
+        },
+        {
+            "id": "category:I72:0",
+            "text": "phinh va tach dong mach khac"
+        },
+        {
+            "id": "category:I73:0",
+            "text": "benh mach mau ngoai bien"
+        },
+        {
+            "id": "category:I74:0",
+            "text": "thuyen tac va huyet khoi dong mach"
+        },
+        {
+            "id": "category:I77:0",
+            "text": "cac benh khac cua he dong mach va tieu dong mach"
+        },
+        {
+            "id": "category:I78:0",
+            "text": "benh cua mao mach"
+        },
+        {
+            "id": "category:I80:0",
+            "text": "viem tinh mach va tac tinh mach"
+        },
+        {
+            "id": "category:I81:0",
+            "text": "huyet khoi tinh mach cua"
+        },
+        {
+            "id": "category:I82:0",
+            "text": "cac thuyen tac va huyet khoi tinh mach khac"
+        },
+        {
+            "id": "category:I83:0",
+            "text": "gian tinh mach chi duoi"
+        },
+        {
+            "id": "category:I85:0",
+            "text": "gian tinh mach thuc quan"
+        },
+        {
+            "id": "category:I86:0",
+            "text": "gian tinh mach vi tri khac"
+        },
+        {
+            "id": "category:I87:0",
+            "text": "roi loan khac cua tinh mach"
+        },
+        {
+            "id": "category:I88:0",
+            "text": "viem hach bach huyet khong dac hieu"
+        },
+        {
+            "id": "category:I89:0",
+            "text": "roi loan mach bach huyet va hach bach huyet khong nhiem trung khac"
+        },
+        {
+            "id": "category:I95:0",
+            "text": "huyet ap thap ha huyet ap"
+        },
+        {
+            "id": "category:I97:0",
+            "text": "roi loan he tuan hoan sau phau thuat khong phan loai noi khac"
+        },
+        {
+            "id": "category:I99:0",
+            "text": "roi loan he tuan hoan khac va khong xac dinh"
+        },
+        {
+            "id": "category:J00:0",
+            "text": "viem mui hong cap cam thuong"
+        },
+        {
+            "id": "category:J01:0",
+            "text": "viem mui xoang cap tinh"
+        },
+        {
+            "id": "category:J02:0",
+            "text": "viem hong cap"
+        },
+        {
+            "id": "category:J03:0",
+            "text": "viem amidan cap"
+        },
+        {
+            "id": "category:J04:0",
+            "text": "viem thanh quan va khi quan cap"
+        },
+        {
+            "id": "category:J05:0",
+            "text": "viem thanh quan tac nghen cap viem thanh khi phe quan cap va viem thanh thiet cap"
+        },
+        {
+            "id": "category:J06:0",
+            "text": "nhiem trung duong ho hap tren cap o nhieu va khong xac dinh vi tri"
+        },
+        {
+            "id": "category:J09:0",
+            "text": "cum do vi rut da duoc dinh danh"
+        },
+        {
+            "id": "category:J10:0",
+            "text": "cam cum do vi rut cum mua dac hieu khac"
+        },
+        {
+            "id": "category:J11:0",
+            "text": "cum vi rut khong duoc dinh danh"
+        },
+        {
+            "id": "category:J12:0",
+            "text": "viem phoi do vi rut khong phan loai noi khac"
+        },
+        {
+            "id": "category:J13:0",
+            "text": "viem phoi do phe cau streptococcus pneumoniae"
+        },
+        {
+            "id": "category:J14:0",
+            "text": "viem phoi do vi khuan haemophilus influenzae"
+        },
+        {
+            "id": "category:J15:0",
+            "text": "viem phoi do vi khuan khong phan loai noi khac"
+        },
+        {
+            "id": "category:J16:0",
+            "text": "viem phoi do tac nhan nhiem khuan khac khong phan loai noi khac"
+        },
+        {
+            "id": "category:J18:0",
+            "text": "viem phoi tac nhan khong xac dinh"
+        },
+        {
+            "id": "category:J20:0",
+            "text": "viem phe quan cap"
+        },
+        {
+            "id": "category:J21:0",
+            "text": "viem tieu phe quan cap"
+        },
+        {
+            "id": "category:J22:0",
+            "text": "nhiem trung ho hap duoi cap khong phan loai"
+        },
+        {
+            "id": "category:J30:0",
+            "text": "viem mui van mach va viem mui di ung"
+        },
+        {
+            "id": "category:J31:0",
+            "text": "viem mui viem mui hong viem hong man tinh"
+        },
+        {
+            "id": "category:J32:0",
+            "text": "viem mui xoang man tinh"
+        },
+        {
+            "id": "category:J33:0",
+            "text": "polyp mui"
+        },
+        {
+            "id": "category:J34:0",
+            "text": "benh khac cua mui va xoang"
+        },
+        {
+            "id": "category:J35:0",
+            "text": "benh man tinh cua amidan va va"
+        },
+        {
+            "id": "category:J36:0",
+            "text": "ap xe quanh amidan"
+        },
+        {
+            "id": "category:J37:0",
+            "text": "viem thanh quan va viem thanh khi quan man tinh"
+        },
+        {
+            "id": "category:J38:0",
+            "text": "benh ly cua day thanh am va thanh quan khong phan loai noi khac"
+        },
+        {
+            "id": "category:J39:0",
             "text": "cac benh khac cua duong ho hap tren"
         },
         {
-            "id": "section:J40-J47:0",
-            "text": "cac benh ho hap duoi man tinh"
+            "id": "category:J40:0",
+            "text": "viem phe quan khong xac dinh la cap hay man tinh"
         },
         {
-            "id": "section:J60-J70:0",
-            "text": "cac benh phoi do nguyen nhan ngoai sinh"
+            "id": "category:J41:0",
+            "text": "viem phe quan man tinh don thuan va nhay mu"
         },
         {
-            "id": "section:J80-J84:0",
-            "text": "cac benh ho hap khac anh huong chu yeu den mo ke"
+            "id": "category:J42:0",
+            "text": "viem phe quan man tinh khong dac hieu"
         },
         {
-            "id": "section:J85-J86:0",
-            "text": "tinh trang nung mu va hoai tu cua duong ho hap duoi"
+            "id": "category:J43:0",
+            "text": "khi phe thung"
         },
         {
-            "id": "section:J90-J94:0",
-            "text": "benh khac cua mang phoi"
+            "id": "category:J44:0",
+            "text": "cac benh phoi tac nghen man tinh khac"
         },
         {
-            "id": "section:J95-J99:0",
-            "text": "cac benh ly khac cua he ho hap"
+            "id": "category:J45:0",
+            "text": "hen suyen"
         },
         {
-            "id": "section:K00-K14:0",
-            "text": "benh cua khoang mieng tuyen nuoc bot va xuong ham"
+            "id": "category:J46:0",
+            "text": "con hen ac tinh"
         },
         {
-            "id": "section:K20-K31:0",
-            "text": "benh cua thuc quan da day va ta trang"
+            "id": "category:J47:0",
+            "text": "gian phe quan"
         },
         {
-            "id": "section:K35-K38:0",
-            "text": "benh ruot thua"
+            "id": "category:J60:0",
+            "text": "benh bui phoi cua cong nhan nganh than"
         },
         {
-            "id": "section:K40-K46:0",
-            "text": "thoat vi"
+            "id": "category:J61:0",
+            "text": "benh bui phoi amian va cac soi khoang khac"
         },
         {
-            "id": "section:K50-K52:0",
-            "text": "viem ruot non va dai trang khong do nhiem trung"
+            "id": "category:J62:0",
+            "text": "benh bui phoi do bui silic"
         },
         {
-            "id": "section:K55-K64:0",
-            "text": "benh duong ruot khac"
+            "id": "category:J63:0",
+            "text": "benh bui phoi do bui vo co khac"
         },
         {
-            "id": "section:K65-K67:0",
-            "text": "benh cua phuc mac"
+            "id": "category:J64:0",
+            "text": "benh bui phoi khong phan loai"
         },
         {
-            "id": "section:K70-K77:0",
-            "text": "benh cua gan"
+            "id": "category:J65:0",
+            "text": "benh bui phoi ket hop voi lao"
         },
         {
-            "id": "section:K80-K87:0",
-            "text": "benh tui mat ong mat va tuy"
+            "id": "category:J66:0",
+            "text": "benh duong dan khi do bui huu co dac biet khac"
         },
         {
-            "id": "section:K90-K93:0",
+            "id": "category:J67:0",
+            "text": "viem phoi tang cam do bui huu co"
+        },
+        {
+            "id": "category:J68:0",
+            "text": "benh ho hap do hit hoa chat khi khoi va chat bay hoi"
+        },
+        {
+            "id": "category:J69:0",
+            "text": "viem phoi do chat ran va chat long"
+        },
+        {
+            "id": "category:J70:0",
+            "text": "benh ho hap do nguyen nhan ngoai sinh khac"
+        },
+        {
+            "id": "category:J80:0",
+            "text": "hoi chung suy ho hap tien trien"
+        },
+        {
+            "id": "category:J81:0",
+            "text": "phu phoi"
+        },
+        {
+            "id": "category:J82:0",
+            "text": "tang bach cau ai toan o phoi khong phan loai noi khac"
+        },
+        {
+            "id": "category:J84:0",
+            "text": "benh phoi mo ke khac"
+        },
+        {
+            "id": "category:J85:0",
+            "text": "ap xe phoi va trung that"
+        },
+        {
+            "id": "category:J86:0",
+            "text": "mu long nguc"
+        },
+        {
+            "id": "category:J90:0",
+            "text": "tran dich mang phoi khong phan loai noi khac"
+        },
+        {
+            "id": "category:J92:0",
+            "text": "mang mang phoi"
+        },
+        {
+            "id": "category:J93:0",
+            "text": "tran khi mang phoi"
+        },
+        {
+            "id": "category:J94:0",
+            "text": "cac benh mang phoi khac"
+        },
+        {
+            "id": "category:J95:0",
+            "text": "cac benh ho hap sau phau thuat thu thuat khong phan loai noi khac"
+        },
+        {
+            "id": "category:J96:0",
+            "text": "suy ho hap khong phan loai noi khac"
+        },
+        {
+            "id": "category:J98:0",
+            "text": "cac benh ho hap khac"
+        },
+        {
+            "id": "category:K00:0",
+            "text": "roi loan phat trien rang va moc rang"
+        },
+        {
+            "id": "category:K01:0",
+            "text": "rang moc ket va rang moc ngam"
+        },
+        {
+            "id": "category:K02:0",
+            "text": "sau rang"
+        },
+        {
+            "id": "category:K03:0",
+            "text": "benh mo cung khac cua rang"
+        },
+        {
+            "id": "category:K04:0",
+            "text": "benh tuy va mo quanh chan rang"
+        },
+        {
+            "id": "category:K05:0",
+            "text": "viem loi nuou va benh quanh rang"
+        },
+        {
+            "id": "category:K06:0",
+            "text": "roi loan khac cua loi nuou va song ham"
+        },
+        {
+            "id": "category:K07:0",
+            "text": "bat thuong ham mat bao gom khop can lech"
+        },
+        {
+            "id": "category:K08:0",
+            "text": "benh khac cua rang va cau truc nang do"
+        },
+        {
+            "id": "category:K09:0",
+            "text": "nang vung mieng khong phan loai noi khac"
+        },
+        {
+            "id": "category:K10:0",
+            "text": "benh khac cua xuong ham"
+        },
+        {
+            "id": "category:K11:0",
+            "text": "benh tuyen nuoc bot"
+        },
+        {
+            "id": "category:K12:0",
+            "text": "viem mieng va ton thuong lien quan"
+        },
+        {
+            "id": "category:K13:0",
+            "text": "benh khac cua moi va niem mac mieng"
+        },
+        {
+            "id": "category:K14:0",
+            "text": "benh cua luoi"
+        },
+        {
+            "id": "category:K20:0",
+            "text": "viem thuc quan"
+        },
+        {
+            "id": "category:K21:0",
+            "text": "benh trao nguoc da day thuc quan"
+        },
+        {
+            "id": "category:K22:0",
+            "text": "benh khac cua thuc quan"
+        },
+        {
+            "id": "category:K25:0",
+            "text": "loet da day"
+        },
+        {
+            "id": "category:K26:0",
+            "text": "loet ta trang"
+        },
+        {
+            "id": "category:K27:0",
+            "text": "loet da day ta trang vi tri khong xac dinh"
+        },
+        {
+            "id": "category:K28:0",
+            "text": "loet da day hong trang"
+        },
+        {
+            "id": "category:K29:0",
+            "text": "viem da day va ta trang"
+        },
+        {
+            "id": "category:K30:0",
+            "text": "kho tieu chuc nang"
+        },
+        {
+            "id": "category:K31:0",
+            "text": "benh khac cua da day va ta trang"
+        },
+        {
+            "id": "category:K35:0",
+            "text": "viem ruot thua cap"
+        },
+        {
+            "id": "category:K36:0",
+            "text": "viem ruot thua khac"
+        },
+        {
+            "id": "category:K37:0",
+            "text": "viem ruot thua khong dac hieu"
+        },
+        {
+            "id": "category:K38:0",
+            "text": "benh khac cua ruot thua"
+        },
+        {
+            "id": "category:K40:0",
+            "text": "thoat vi ben"
+        },
+        {
+            "id": "category:K41:0",
+            "text": "thoat vi dui"
+        },
+        {
+            "id": "category:K42:0",
+            "text": "thoat vi ron"
+        },
+        {
+            "id": "category:K43:0",
+            "text": "thoat vi thanh bung"
+        },
+        {
+            "id": "category:K44:0",
+            "text": "thoat vi hoanh"
+        },
+        {
+            "id": "category:K45:0",
+            "text": "thoat vi thanh bung khac"
+        },
+        {
+            "id": "category:K46:0",
+            "text": "thoat vi thanh bung khong dac hieu"
+        },
+        {
+            "id": "category:K50:0",
+            "text": "benh crohn viem ruot tung vung"
+        },
+        {
+            "id": "category:K51:0",
+            "text": "viem loet dai trang chay mau"
+        },
+        {
+            "id": "category:K52:0",
+            "text": "viem da day ruot va viem dai trang khong nhiem trung khac"
+        },
+        {
+            "id": "category:K55:0",
+            "text": "roi loan mach mau cua ruot"
+        },
+        {
+            "id": "category:K56:0",
+            "text": "liet ruot va tac ruot khong co thoat vi"
+        },
+        {
+            "id": "category:K57:0",
+            "text": "benh tui thua cua ruot"
+        },
+        {
+            "id": "category:K58:0",
+            "text": "hoi chung ruot kich thich"
+        },
+        {
+            "id": "category:K59:0",
+            "text": "roi loan chuc nang khac cua ruot"
+        },
+        {
+            "id": "category:K60:0",
+            "text": "nut va ro vung hau mon va truc trang"
+        },
+        {
+            "id": "category:K61:0",
+            "text": "ap xe vung hau mon truc trang"
+        },
+        {
+            "id": "category:K62:0",
+            "text": "benh khac cua hau mon va truc trang"
+        },
+        {
+            "id": "category:K63:0",
+            "text": "benh khac cua ruot"
+        },
+        {
+            "id": "category:K64:0",
+            "text": "tri va huyet khoi tinh mach quanh hau mon"
+        },
+        {
+            "id": "category:K65:0",
+            "text": "viem phuc mac"
+        },
+        {
+            "id": "category:K66:0",
+            "text": "benh ly khac cua phuc mac"
+        },
+        {
+            "id": "category:K70:0",
+            "text": "benh gan do ruou"
+        },
+        {
+            "id": "category:K71:0",
+            "text": "benh gan do doc chat"
+        },
+        {
+            "id": "category:K72:0",
+            "text": "suy gan khong phan loai noi khac"
+        },
+        {
+            "id": "category:K73:0",
+            "text": "viem gan man tinh khong phan loai noi khac"
+        },
+        {
+            "id": "category:K74:0",
+            "text": "gan xo hoa va xo gan"
+        },
+        {
+            "id": "category:K75:0",
+            "text": "benh viem gan khac"
+        },
+        {
+            "id": "category:K76:0",
+            "text": "benh gan khac"
+        },
+        {
+            "id": "category:K80:0",
+            "text": "soi mat"
+        },
+        {
+            "id": "category:K81:0",
+            "text": "viem tui mat"
+        },
+        {
+            "id": "category:K82:0",
+            "text": "benh khac cua tui mat"
+        },
+        {
+            "id": "category:K83:0",
+            "text": "benh khac cua duong mat"
+        },
+        {
+            "id": "category:K85:0",
+            "text": "viem tuy cap"
+        },
+        {
+            "id": "category:K86:0",
+            "text": "benh tuy khac"
+        },
+        {
+            "id": "category:K90:0",
+            "text": "ruot kem hap thu"
+        },
+        {
+            "id": "category:K91:0",
+            "text": "roi loan tieu hoa sau phau thuat khong phan loai noi khac"
+        },
+        {
+            "id": "category:K92:0",
             "text": "benh khac cua he tieu hoa"
         },
         {
-            "id": "section:L00-L08:0",
-            "text": "nhiem trung da va mo duoi da"
+            "id": "category:L00:0",
+            "text": "hoi chung bong vay da do tu cau"
         },
         {
-            "id": "section:L10-L14:0",
-            "text": "benh da bong nuoc"
+            "id": "category:L01:0",
+            "text": "choc"
         },
         {
-            "id": "section:L20-L30:0",
-            "text": "viem da va cham"
+            "id": "category:L02:0",
+            "text": "ap xe da nhot nhot cum"
         },
         {
-            "id": "section:L40-L45:0",
-            "text": "benh san co vay"
+            "id": "category:L03:0",
+            "text": "viem mo bao"
         },
         {
-            "id": "section:L50-L54:0",
-            "text": "may day va hong ban"
+            "id": "category:L04:0",
+            "text": "viem hach bach huyet cap tinh"
         },
         {
-            "id": "section:L55-L59:0",
-            "text": "cac benh da va to chuc duoi da lien quan den buc xa"
+            "id": "category:L05:0",
+            "text": "ken nang long"
         },
         {
-            "id": "section:L60-L75:0",
-            "text": "cac benh phan phu cua da"
+            "id": "category:L08:0",
+            "text": "nhiem trung khu tru khac cua da va mo duoi da"
         },
         {
-            "id": "section:L80-L99:0",
-            "text": "cac benh khac cua da va to chuc duoi da"
+            "id": "category:L10:0",
+            "text": "pemphigus"
         },
         {
-            "id": "section:M30-M36:0",
-            "text": "benh mo lien ket he thong"
+            "id": "category:L11:0",
+            "text": "cac benh da ly gai khac"
         },
         {
-            "id": "section:M95-M99:0",
-            "text": "cac benh khac cua he co xuong khop va mo lien ket"
+            "id": "category:L12:0",
+            "text": "pemphigoid"
         },
         {
-            "id": "section:N00-N08:0",
-            "text": "benh cau than"
+            "id": "category:L13:0",
+            "text": "cac benh da co bong nuoc khac"
         },
         {
-            "id": "section:N10-N16:0",
-            "text": "benh ke ong than"
+            "id": "category:L20:0",
+            "text": "viem da co dia"
         },
         {
-            "id": "section:N17-N19:0",
-            "text": "suy than"
+            "id": "category:L21:0",
+            "text": "viem da dau"
         },
         {
-            "id": "section:N20-N23:0",
-            "text": "soi tiet nieu"
+            "id": "category:L22:0",
+            "text": "viem da ta lot"
         },
         {
-            "id": "section:N25-N29:0",
-            "text": "cac roi loan khac cua than va nieu quan"
+            "id": "category:L23:0",
+            "text": "viem da tiep xuc di ung"
         },
         {
-            "id": "section:N30-N39:0",
-            "text": "cac benh khac cua he tiet nieu"
+            "id": "category:L24:0",
+            "text": "viem da tiep xuc kich ung"
         },
         {
-            "id": "section:N40-N51:0",
-            "text": "benh co quan sinh duc nam"
+            "id": "category:L25:0",
+            "text": "viem da tiep xuc khong dac hieu"
         },
         {
-            "id": "section:N60-N64:0",
-            "text": "cac bien doi cua vu"
+            "id": "category:L26:0",
+            "text": "do da toan than"
         },
         {
-            "id": "section:N70-N77:0",
-            "text": "viem co quan sinh duc vung chau nu"
+            "id": "category:L27:0",
+            "text": "viem da do cac chat duoc dua vao trong co the"
         },
         {
-            "id": "section:N80-N98:0",
-            "text": "bien doi khong do viem cua duong sinh duc nu"
+            "id": "category:L28:0",
+            "text": "lichen don dang man tinh va san ngua"
         },
         {
-            "id": "section:N99-N99:0",
-            "text": "cac roi loan khac cua he sinh duc tiet nieu"
+            "id": "category:L29:0",
+            "text": "ngua"
         },
         {
-            "id": "section:O00-O08:0",
-            "text": "say thai pha thai"
+            "id": "category:L30:0",
+            "text": "cac viem da khac"
         },
         {
-            "id": "section:O10-O16:0",
-            "text": "phu protein nieu va tang huyet ap trong khi co thai khi de va sau de"
+            "id": "category:L40:0",
+            "text": "vay nen"
         },
         {
-            "id": "section:O20-O29:0",
-            "text": "cac benh ly khac cua ba me chu yeu lien quan den thai ky"
+            "id": "category:L41:0",
+            "text": "a sung vay nen"
         },
         {
-            "id": "section:O30-O48:0",
-            "text": "cham soc ba me lien quan den thai buong oi va cac van de co the gap khi de"
+            "id": "category:L42:0",
+            "text": "vay phan hong"
         },
         {
-            "id": "section:O60-O75:0",
-            "text": "bien chung cua chuyen da va de"
+            "id": "category:L43:0",
+            "text": "lichen phang"
         },
         {
-            "id": "section:O80-O84:0",
-            "text": "cuoc de"
+            "id": "category:L44:0",
+            "text": "cac benh san co vay khac"
         },
         {
-            "id": "section:O85-O92:0",
-            "text": "bien chung thuong gap lien quan den sau de"
+            "id": "category:L50:0",
+            "text": "may day"
         },
         {
-            "id": "section:P00-P04:0",
-            "text": "thai nhi va tre so sinh bi anh huong do cac yeu to ve phia me va boi cac bien chung trong thoi ky mang thai chuyen da va cuoc de"
+            "id": "category:L51:0",
+            "text": "hong ban da dang"
         },
         {
-            "id": "section:P05-P08:0",
-            "text": "cac roi loan lien quan den tuoi thai va su phat trien cua thai"
+            "id": "category:L52:0",
+            "text": "hong ban nut"
         },
         {
-            "id": "section:P10-P15:0",
-            "text": "chan thuong khi sinh"
+            "id": "category:L53:0",
+            "text": "cac trang thai hong ban khac"
         },
         {
-            "id": "section:P20-P29:0",
-            "text": "roi loan ho hap va tim mach dac hieu cho giai doan chu sinh"
+            "id": "category:L56:0",
+            "text": "bien doi da cap tinh khac do buc xa tia cuc tim"
         },
         {
-            "id": "section:P35-P39:0",
-            "text": "nhiem trung dac hieu trong thoi ky chu sinh"
+            "id": "category:L57:0",
+            "text": "benh da do tiep xuc lau dai voi buc xa khong ion hoa"
         },
         {
-            "id": "section:P50-P61:0",
-            "text": "roi loan chay mau va huyet hoc cua thai va tre so sinh"
+            "id": "category:L58:0",
+            "text": "viem da do quang tuyen"
         },
         {
-            "id": "section:P70-P74:0",
-            "text": "cac roi loan noi tiet chuyen hoa tam thoi dac hieu cho thai va tre so sinh"
+            "id": "category:L59:0",
+            "text": "cac benh khac o da va to chuc duoi da lien quan den buc xa"
         },
         {
-            "id": "section:P75-P78:0",
-            "text": "cac roi loan cua he thong tieu hoa o thai va tre so sinh"
+            "id": "category:L63:0",
+            "text": "rung toc tung mang"
         },
         {
-            "id": "section:P80-P83:0",
-            "text": "cac benh ly cua da va dieu hoa than nhiet cua thai va tre so sinh"
+            "id": "category:L64:0",
+            "text": "rung toc do noi tiet to nam tinh"
         },
         {
-            "id": "section:P90-P96:0",
-            "text": "cac benh ly khac xuat phat tu giai doan chu sinh"
+            "id": "category:L65:0",
+            "text": "rung toc khong seo khac"
         },
         {
-            "id": "section:Q00-Q07:0",
-            "text": "di tat bam sinh he than kinh"
+            "id": "category:L66:0",
+            "text": "rung toc co seo"
         },
         {
-            "id": "section:Q10-Q18:0",
-            "text": "cac di tat bam sinh o mat tai mat va co"
+            "id": "category:L67:0",
+            "text": "bat thuong ve mau va soi toc"
         },
         {
-            "id": "section:Q20-Q28:0",
-            "text": "cac di tat bam sinh cua he thong tuan hoan"
+            "id": "category:L68:0",
+            "text": "ram long toc"
         },
         {
-            "id": "section:Q30-Q34:0",
-            "text": "cac bat thuong bam sinh cua bo may ho hap"
+            "id": "category:L70:0",
+            "text": "trung ca"
         },
         {
-            "id": "section:Q50-Q56:0",
-            "text": "di tat bam sinh cua co quan sinh duc"
+            "id": "category:L71:0",
+            "text": "trung ca do"
         },
         {
-            "id": "section:Q60-Q64:0",
-            "text": "cac di tat bam sinh cua he tiet nieu"
+            "id": "category:L72:0",
+            "text": "nang long cua da va to chuc duoi da"
         },
         {
-            "id": "section:Q65-Q79:0",
-            "text": "di tat va bien dang bam sinh cua he co xuong"
+            "id": "category:L73:0",
+            "text": "cac benh nang long khac"
         },
         {
-            "id": "section:Q80-Q89:0",
-            "text": "cac di tat bam sinh khac"
+            "id": "category:L74:0",
+            "text": "cac benh cua tuyen mo hoi"
         },
         {
-            "id": "section:Q90-Q99:0",
-            "text": "cac bat thuong nhiem sac the khong phan loai noi khac"
+            "id": "category:L75:0",
+            "text": "benh tuyen mo hoi ban huy noi tiet"
         },
         {
-            "id": "section:R00-R09:0",
-            "text": "trieu chung lien quan toi he tuan hoan va ho hap"
+            "id": "category:L80:0",
+            "text": "bach bien"
         },
         {
-            "id": "section:R10-R19:0",
-            "text": "trieu chung lien quan toi he tieu hoa va bung"
+            "id": "category:L81:0",
+            "text": "benh roi loan sac to khac"
         },
         {
-            "id": "section:R20-R23:0",
-            "text": "trieu chung lien quan toi da va to chuc duoi da"
+            "id": "category:L82:0",
+            "text": "day sung tiet ba"
         },
         {
-            "id": "section:R25-R29:0",
-            "text": "trieu chung lien quan toi he than kinh va he co xuong"
+            "id": "category:L83:0",
+            "text": "benh gai den"
         },
         {
-            "id": "section:R30-R39:0",
-            "text": "trieu chung lien quan toi he tiet nieu"
+            "id": "category:L84:0",
+            "text": "mat ca va chai chan"
         },
         {
-            "id": "section:R40-R46:0",
-            "text": "trieu chung lien quan toi nhan thuc tri giac va trang thai cam"
+            "id": "category:L85:0",
+            "text": "day thuong bi khac"
         },
         {
-            "id": "section:R47-R49:0",
-            "text": "trieu chung lien quan toi ngon ngu va giong noi"
+            "id": "category:L87:0",
+            "text": "cac benh loai bo di vat qua thuong bi"
         },
         {
-            "id": "section:R50-R69:0",
-            "text": "trieu chung tong quat"
+            "id": "category:L88:0",
+            "text": "viem da mu hoai thu"
         },
         {
-            "id": "section:R70-R79:0",
-            "text": "bat thuong ve xet nghiem mau khong co chan doan"
+            "id": "category:L89:0",
+            "text": "loet ti de do nam hoac de ep"
         },
         {
-            "id": "section:R90-R94:0",
-            "text": "bat thuong ve chan doan hinh anh va tham do chuc nang khong co chan doan"
+            "id": "category:L90:0",
+            "text": "teo da"
         },
         {
-            "id": "section:R95-R99:0",
-            "text": "nguyen nhan tu vong khong xac dinh"
+            "id": "category:L91:0",
+            "text": "cac benh qua san cua da"
         },
         {
-            "id": "section:S00-S09:0",
-            "text": "ton thuong o dau"
+            "id": "category:L92:0",
+            "text": "u hat cua da va to chuc duoi da"
         },
         {
-            "id": "section:S10-S19:0",
-            "text": "ton thuong o co"
+            "id": "category:L93:0",
+            "text": "lupus ban do"
         },
         {
-            "id": "section:S20-S29:0",
-            "text": "ton thuong long nguc"
+            "id": "category:L94:0",
+            "text": "cac benh to chuc lien ket khu tru khac"
         },
         {
-            "id": "section:S30-S39:0",
-            "text": "ton thuong bung lung duoi cot song that lung va vung chau"
+            "id": "category:L97:0",
+            "text": "loet chi duoi khong phan loai noi khac"
         },
         {
-            "id": "section:S40-S49:0",
-            "text": "ton thuong vai va canh tay"
+            "id": "category:L98:0",
+            "text": "benh khac cua da va mo duoi da khong phan loai noi khac"
         },
         {
-            "id": "section:S50-S59:0",
-            "text": "ton thuong tai khuyu tay va cang tay"
+            "id": "category:M00:0",
+            "text": "viem khop nhiem khuan do vi khuan sinh mu"
         },
         {
-            "id": "section:S60-S69:0",
-            "text": "ton thuong o co tay va ban tay"
+            "id": "category:M02:0",
+            "text": "viem khop phan ung"
         },
         {
-            "id": "section:S70-S79:0",
-            "text": "ton thuong tai hong va dui"
+            "id": "category:M05:0",
+            "text": "viem khop dang thap huyet thanh duong tinh"
         },
         {
-            "id": "section:S80-S89:0",
-            "text": "ton thuong tai dau goi va cang chan"
+            "id": "category:M06:0",
+            "text": "viem khop dang thap khac"
         },
         {
-            "id": "section:S90-S99:0",
-            "text": "ton thuong tai co chan va ban chan"
+            "id": "category:M08:0",
+            "text": "viem khop thieu nien"
         },
         {
-            "id": "section:T00-T07:0",
-            "text": "ton thuong tac dong nhieu vung co the"
+            "id": "category:M10:0",
+            "text": "gut thong phong"
         },
         {
-            "id": "section:T08-T14:0",
-            "text": "ton thuong phan khong xac dinh cua than cac chi hoac vung co the"
+            "id": "category:M11:0",
+            "text": "cac benh khop khac do vi tinh the"
         },
         {
-            "id": "section:T15-T19:0",
-            "text": "tac dong cua di vat vao qua lo tu nhien"
+            "id": "category:M13:0",
+            "text": "cac viem khop khac"
         },
         {
-            "id": "section:T33-T35:0",
-            "text": "ton thuong do cong lanh"
+            "id": "category:M14:0",
+            "text": "benh khop trong cac benh phan loai noi khac"
         },
         {
-            "id": "section:T36-T50:0",
-            "text": "ngo doc do thuoc duoc pham va chat sinh hoc"
+            "id": "category:M15:0",
+            "text": "thoai hoa da khop"
         },
         {
-            "id": "section:T51-T65:0",
-            "text": "nhiem doc to chu yeu khong co nguon goc y hoc"
+            "id": "category:M16:0",
+            "text": "thoai hoa khop hang"
         },
         {
-            "id": "section:T66-T78:0",
-            "text": "tac dung khac va khong xac dinh cua cac nguyen nhan tu ben ngoai"
+            "id": "category:M17:0",
+            "text": "thoai hoa khop goi"
         },
         {
-            "id": "section:T79-T79:0",
-            "text": "mot so bien chung som cua chan thuong"
+            "id": "category:M18:0",
+            "text": "thoai hoa khop co ban ngon tay cai"
         },
         {
-            "id": "section:T80-T88:0",
-            "text": "bien chung dieu tri noi khoa ngoai khoa khong phan loai noi khac"
+            "id": "category:M19:0",
+            "text": "thoai hoa khop khac"
         },
         {
-            "id": "section:T90-T98:0",
-            "text": "di chung cua ton thuong cua nhiem doc va cua hau qua khac cua cac nguyen nhan tu ben ngoai"
+            "id": "category:M20:0",
+            "text": "bien dang mac phai cua ngon tay va ngon chan"
+        },
+        {
+            "id": "category:M21:0",
+            "text": "bien dang mac phai khac cua chi"
+        },
+        {
+            "id": "category:M22:0",
+            "text": "cac bat thuong cua xuong banh che"
+        },
+        {
+            "id": "category:M30:0",
+            "text": "viem nut quanh dong mach va benh lien quan"
+        },
+        {
+            "id": "category:M31:0",
+            "text": "benh mach mau hoai tu khac"
+        },
+        {
+            "id": "category:M32:0",
+            "text": "lupus ban do he thong"
+        },
+        {
+            "id": "category:M33:0",
+            "text": "viem da co viem da co"
+        },
+        {
+            "id": "category:M34:0",
+            "text": "xo cung bi toan the"
+        },
+        {
+            "id": "category:M35:0",
+            "text": "cac ton thuong he thong khac cua mo lien ket"
+        },
+        {
+            "id": "category:M40:0",
+            "text": "gu va uon cot song"
+        },
+        {
+            "id": "category:M41:0",
+            "text": "veo cot song"
+        },
+        {
+            "id": "category:M42:0",
+            "text": "viem xuong sun cot song"
+        },
+        {
+            "id": "category:M43:0",
+            "text": "cac bien dang khac cua cot song"
+        },
+        {
+            "id": "category:M45:0",
+            "text": "benh viem cot song dinh khop"
+        },
+        {
+            "id": "category:M46:0",
+            "text": "cac benh viem cot song khac"
+        },
+        {
+            "id": "category:M47:0",
+            "text": "thoai hoa cot song"
+        },
+        {
+            "id": "category:M50:0",
+            "text": "benh dia dem dot song co"
+        },
+        {
+            "id": "category:M51:0",
+            "text": "cac benh dia dem gian dot song khac"
+        },
+        {
+            "id": "category:M53:0",
+            "text": "benh cot song khac khong phan loai noi khac"
+        },
+        {
+            "id": "category:M54:0",
+            "text": "dau lung"
+        },
+        {
+            "id": "category:M60:0",
+            "text": "viem co"
+        },
+        {
+            "id": "category:M61:0",
+            "text": "voi hoa va cot hoa co"
+        },
+        {
+            "id": "category:M65:0",
+            "text": "viem mang hoat dich va viem bao gan"
+        },
+        {
+            "id": "category:M66:0",
+            "text": "rach dut tu nhien cua mang hoat dich va gan"
+        },
+        {
+            "id": "category:M67:0",
+            "text": "cac benh khac cua mang hoat dich va gan"
+        },
+        {
+            "id": "category:M70:0",
+            "text": "cac benh mo mem lien quan den van dong van dong qua muc va bi chen ep"
+        },
+        {
+            "id": "category:M71:0",
+            "text": "cac benh tui thanh mac khac"
+        },
+        {
+            "id": "category:M72:0",
+            "text": "cac benh nguyen bao soi"
+        },
+        {
+            "id": "category:M75:0",
+            "text": "ton thuong vai"
+        },
+        {
+            "id": "category:M76:0",
+            "text": "benh diem bam gan day chang o chi duoi khong ke ban chan"
+        },
+        {
+            "id": "category:M77:0",
+            "text": "cac benh diem bam gan day chang khac"
+        },
+        {
+            "id": "category:M80:0",
+            "text": "loang xuong co kem gay xuong benh ly"
+        },
+        {
+            "id": "category:M81:0",
+            "text": "loang xuong khong kem gay xuong benh ly"
+        },
+        {
+            "id": "category:M83:0",
+            "text": "nhuyen xuong nguoi lon"
+        },
+        {
+            "id": "category:M86:0",
+            "text": "viem xuong tuy xuong"
+        },
+        {
+            "id": "category:M87:0",
+            "text": "hoai tu xuong"
+        },
+        {
+            "id": "category:M88:0",
+            "text": "benh paget viem xuong bien dang"
+        },
+        {
+            "id": "category:M91:0",
+            "text": "hu diem cot hoa tai khop hang va khung chau o tre em"
+        },
+        {
+            "id": "category:M92:0",
+            "text": "hu diem cot hoa khac o tre em"
+        },
+        {
+            "id": "category:M93:0",
+            "text": "cac benh xuong sun khac"
+        },
+        {
+            "id": "category:M94:0",
+            "text": "cac benh ly khac cua sun"
+        },
+        {
+            "id": "category:M95:0",
+            "text": "cac bien dang mac phai cua he co xuong khop va mo lien ket"
+        },
+        {
+            "id": "category:M96:0",
+            "text": "cac benh ly cua he co xuong khop sau can thiep khong phan loai noi khac"
+        },
+        {
+            "id": "category:N00:0",
+            "text": "hoi chung viem than cap"
+        },
+        {
+            "id": "category:N01:0",
+            "text": "hoi chung viem than tien trien nhanh"
+        },
+        {
+            "id": "category:N02:0",
+            "text": "dai mau dai dang va tai dien"
+        },
+        {
+            "id": "category:N03:0",
+            "text": "hoi chung viem than man"
+        },
+        {
+            "id": "category:N04:0",
+            "text": "hoi chung than hu"
+        },
+        {
+            "id": "category:N05:0",
+            "text": "hoi chung viem than khong dac hieu"
+        },
+        {
+            "id": "category:N06:0",
+            "text": "protein nieu don doc voi hinh thai ton thuong xac dinh"
+        },
+        {
+            "id": "category:N07:0",
+            "text": "benh than di truyen khong phan loai noi khac"
+        },
+        {
+            "id": "category:N10:0",
+            "text": "viem mo ke ong than cap"
+        },
+        {
+            "id": "category:N11:0",
+            "text": "viem mo ke ong than man"
+        },
+        {
+            "id": "category:N12:0",
+            "text": "viem mo ke ong than khong xac dinh cap hay man"
+        },
+        {
+            "id": "category:N13:0",
+            "text": "benh tiet nieu trao nguoc va tac nghen"
+        },
+        {
+            "id": "category:N14:0",
+            "text": "benh ong than va ke ong than do thuoc va kim loai nang"
+        },
+        {
+            "id": "category:N15:0",
+            "text": "cac benh ke ong than khac"
+        },
+        {
+            "id": "category:N17:0",
+            "text": "suy than cap"
+        },
+        {
+            "id": "category:N18:0",
+            "text": "benh than man tinh"
+        },
+        {
+            "id": "category:N19:0",
+            "text": "suy than khong xac dinh"
+        },
+        {
+            "id": "category:N20:0",
+            "text": "soi than va nieu quan"
+        },
+        {
+            "id": "category:N21:0",
+            "text": "soi duong tiet nieu duoi"
+        },
+        {
+            "id": "category:N23:0",
+            "text": "con dau quan than khong xac dinh"
+        },
+        {
+            "id": "category:N25:0",
+            "text": "roi loan do suy giam chuc nang ong than"
+        },
+        {
+            "id": "category:N26:0",
+            "text": "than nho khong xac dinh"
+        },
+        {
+            "id": "category:N27:0",
+            "text": "than teo nho khong ro nguyen nhan"
+        },
+        {
+            "id": "category:N28:0",
+            "text": "cac bien doi khac cua than va nieu quan khong phan loai noi khac"
+        },
+        {
+            "id": "category:N30:0",
+            "text": "viem bang quang"
+        },
+        {
+            "id": "category:N31:0",
+            "text": "roi loan chuc nang than kinh co bang quang khong phan loai noi khac"
+        },
+        {
+            "id": "category:N32:0",
+            "text": "cac roi loan khac cua bang quang"
+        },
+        {
+            "id": "category:N34:0",
+            "text": "viem nieu dao va hoi chung nieu dao"
+        },
+        {
+            "id": "category:N35:0",
+            "text": "hep nieu dao"
+        },
+        {
+            "id": "category:N36:0",
+            "text": "cac bien doi khac cua nieu dao"
+        },
+        {
+            "id": "category:N39:0",
+            "text": "bien doi khac cua he tiet nieu"
+        },
+        {
+            "id": "category:N40:0",
+            "text": "tang san tuyen tien liet"
+        },
+        {
+            "id": "category:N41:0",
+            "text": "cac benh viem tuyen tien liet"
+        },
+        {
+            "id": "category:N42:0",
+            "text": "bien doi khac cua tuyen tien liet"
+        },
+        {
+            "id": "category:N43:0",
+            "text": "tran dich mang tinh va sa tinh"
+        },
+        {
+            "id": "category:N44:0",
+            "text": "xoan tinh hoan"
+        },
+        {
+            "id": "category:N45:0",
+            "text": "viem tinh hoan va viem mao tinh hoan"
+        },
+        {
+            "id": "category:N46:0",
+            "text": "vo sinh nam"
+        },
+        {
+            "id": "category:N47:0",
+            "text": "bao quy dau rong hep bao quy dau va nghet bao quy dau"
+        },
+        {
+            "id": "category:N48:0",
+            "text": "bien doi khac cua duong vat"
+        },
+        {
+            "id": "category:N49:0",
+            "text": "viem cua co quan sinh duc nam khong phan loai noi khac"
+        },
+        {
+            "id": "category:N50:0",
+            "text": "bien doi khac cua co quan sinh duc nam"
+        },
+        {
+            "id": "category:N60:0",
+            "text": "loan san vu lanh tinh"
+        },
+        {
+            "id": "category:N61:0",
+            "text": "viem vu"
+        },
+        {
+            "id": "category:N62:0",
+            "text": "phi dai vu"
+        },
+        {
+            "id": "category:N63:0",
+            "text": "khoi u khong xac dinh o vu"
+        },
+        {
+            "id": "category:N64:0",
+            "text": "bien doi khac o vu"
+        },
+        {
+            "id": "category:N70:0",
+            "text": "viem voi va viem buong trung"
+        },
+        {
+            "id": "category:N71:0",
+            "text": "viem tu cung tru co tu cung"
+        },
+        {
+            "id": "category:N72:0",
+            "text": "viem co tu cung"
+        },
+        {
+            "id": "category:N73:0",
+            "text": "cac benh viem vung chau nu khac"
+        },
+        {
+            "id": "category:N75:0",
+            "text": "benh cua tuyen bartholin"
+        },
+        {
+            "id": "category:N76:0",
+            "text": "cac viem khac cua am dao va am ho"
+        },
+        {
+            "id": "category:N80:0",
+            "text": "benh lac noi mac tu cung"
+        },
+        {
+            "id": "category:N81:0",
+            "text": "sa sinh duc nu"
+        },
+        {
+            "id": "category:N82:0",
+            "text": "ro duong sinh duc nu"
+        },
+        {
+            "id": "category:N83:0",
+            "text": "cac bien doi khong do viem cua buong trung voi trung va day chang rong"
+        },
+        {
+            "id": "category:N84:0",
+            "text": "polyp duong sinh duc nu"
+        },
+        {
+            "id": "category:N85:0",
+            "text": "cac bien doi khong do viem khac cua tu cung tru co tu cung"
+        },
+        {
+            "id": "category:N86:0",
+            "text": "xuoc va lon niem mac co tu cung"
+        },
+        {
+            "id": "category:N87:0",
+            "text": "loan san co tu cung"
+        },
+        {
+            "id": "category:N88:0",
+            "text": "cac bien doi khong do viem khac cua co tu cung"
+        },
+        {
+            "id": "category:N89:0",
+            "text": "bien doi khong do viem khac cua am dao"
+        },
+        {
+            "id": "category:N90:0",
+            "text": "bien doi khong do viem khac cua am ho va tang sinh mon"
+        },
+        {
+            "id": "category:N91:0",
+            "text": "vo kinh thieu kinh hiem kinh"
+        },
+        {
+            "id": "category:N92:0",
+            "text": "kinh nguyet nhieu hay xuat hien va khong deu"
+        },
+        {
+            "id": "category:N93:0",
+            "text": "chay mau bat thuong khac cua tu cung va am dao"
+        },
+        {
+            "id": "category:N94:0",
+            "text": "dau va tinh trang khac lien quan den co quan sinh duc nu va chu ky kinh nguyet"
+        },
+        {
+            "id": "category:N95:0",
+            "text": "roi loan man kinh va roi loan tien man kinh"
+        },
+        {
+            "id": "category:N96:0",
+            "text": "hay say thai"
+        },
+        {
+            "id": "category:N97:0",
+            "text": "vo sinh nu"
+        },
+        {
+            "id": "category:N98:0",
+            "text": "bien chung lien quan den thu thai nhan tao"
+        },
+        {
+            "id": "category:N99:0",
+            "text": "cac roi loan sau phau thuat thu thuat cua he sinh duc tiet nieu khong phan loai noi khac"
+        },
+        {
+            "id": "category:O00:0",
+            "text": "thai ngoai tu cung"
+        },
+        {
+            "id": "category:O01:0",
+            "text": "thai trung"
+        },
+        {
+            "id": "category:O02:0",
+            "text": "cac san pham bat thuong khac cua thu thai"
+        },
+        {
+            "id": "category:O03:0",
+            "text": "say thai tu nhien"
+        },
+        {
+            "id": "category:O04:0",
+            "text": "pha thai noi khoa"
+        },
+        {
+            "id": "category:O05:0",
+            "text": "pha thai khac"
+        },
+        {
+            "id": "category:O06:0",
+            "text": "pha thai khong xac dinh"
+        },
+        {
+            "id": "category:O07:0",
+            "text": "pha thai that bai"
+        },
+        {
+            "id": "category:O08:0",
+            "text": "bien chung sau say thai thai ngoai tu cung va thai trung"
+        },
+        {
+            "id": "category:O10:0",
+            "text": "tang huyet ap co san gay bien chung cho thai ky cuoc de va sau de"
+        },
+        {
+            "id": "category:O11:0",
+            "text": "tien san giat kem theo tang huyet ap man tinh"
+        },
+        {
+            "id": "category:O12:0",
+            "text": "phu thai ky do thai nghen va protein nieu thai ky khong co tang huyet ap"
+        },
+        {
+            "id": "category:O13:0",
+            "text": "tang huyet ap thai ky do thai nghen gay ra"
+        },
+        {
+            "id": "category:O14:0",
+            "text": "tang huyet ap thai ky do thai nghen kem protein nieu tien san giat"
+        },
+        {
+            "id": "category:O15:0",
+            "text": "san giat"
+        },
+        {
+            "id": "category:O16:0",
+            "text": "tang huyet ap ba me khong xac dinh"
+        },
+        {
+            "id": "category:O20:0",
+            "text": "ra mau trong thoi ky dau thai ky"
+        },
+        {
+            "id": "category:O21:0",
+            "text": "non qua muc trong thai ky"
+        },
+        {
+            "id": "category:O22:0",
+            "text": "bien chung tinh mach khi mang thai"
+        },
+        {
+            "id": "category:O23:0",
+            "text": "nhiem khuan duong tiet nieu sinh duc trong khi co thai"
+        },
+        {
+            "id": "category:O24:0",
+            "text": "dai thao duong thai ky"
+        },
+        {
+            "id": "category:O25:0",
+            "text": "thieu dinh duong trong thai ky"
+        },
+        {
+            "id": "category:O26:0",
+            "text": "cham soc ba me vi nhung tinh trang khac chu yeu lien quan den thai ky"
+        },
+        {
+            "id": "category:O28:0",
+            "text": "cac dau hieu bat thuong cua ba me phat hien khi kham thai"
+        },
+        {
+            "id": "category:O29:0",
+            "text": "cac bien chung cua gay me trong thoi gian thai ky"
+        },
+        {
+            "id": "category:O30:0",
+            "text": "da thai"
+        },
+        {
+            "id": "category:O31:0",
+            "text": "bien chung xac dinh cua da thai"
+        },
+        {
+            "id": "category:O32:0",
+            "text": "cham soc ba me vi ngoi thai bat thuong hay nghi ngo bat thuong"
+        },
+        {
+            "id": "category:O33:0",
+            "text": "cham soc ba me vi bat tuong xung hay nghi ngo co bat tuong xung"
+        },
+        {
+            "id": "category:O34:0",
+            "text": "cham soc ba me do hoac nghi do bat thuong o cac tang trong vung chau"
+        },
+        {
+            "id": "category:O35:0",
+            "text": "cham soc ba me do hoac nghi do bat thuong ton thuong cua thai"
+        },
+        {
+            "id": "category:O36:0",
+            "text": "cham soc ba me vi co hay nghi ngo co van de cua thai"
+        },
+        {
+            "id": "category:O40:0",
+            "text": "da oi"
+        },
+        {
+            "id": "category:O41:0",
+            "text": "cac roi loan khac cua nuoc oi va mang oi"
+        },
+        {
+            "id": "category:O42:0",
+            "text": "vo oi som"
+        },
+        {
+            "id": "category:O43:0",
+            "text": "benh ly banh rau"
+        },
+        {
+            "id": "category:O44:0",
+            "text": "rau tien dao"
+        },
+        {
+            "id": "category:O45:0",
+            "text": "rau bong non"
+        },
+        {
+            "id": "category:O46:0",
+            "text": "chay mau truoc de khong phan loai noi khac"
+        },
+        {
+            "id": "category:O47:0",
+            "text": "chuyen da gia"
+        },
+        {
+            "id": "category:O48:0",
+            "text": "thai qua ngay sinh"
+        },
+        {
+            "id": "category:O60:0",
+            "text": "chuyen da som va de"
+        },
+        {
+            "id": "category:O61:0",
+            "text": "khoi phat chuyen da that bai"
+        },
+        {
+            "id": "category:O62:0",
+            "text": "bat thuong ve dong luc chuyen da"
+        },
+        {
+            "id": "category:O63:0",
+            "text": "chuyen da keo dai"
+        },
+        {
+            "id": "category:O64:0",
+            "text": "chuyen da dinh tre do ngoi va the cua thai bat thuong"
+        },
+        {
+            "id": "category:O65:0",
+            "text": "chuyen da dinh tre do khung chau bat thuong"
+        },
+        {
+            "id": "category:O66:0",
+            "text": "chuyen da dinh tre khac"
+        },
+        {
+            "id": "category:O67:0",
+            "text": "chuyen da va de co bien chung chay mau trong de khong phan loai noi khac"
+        },
+        {
+            "id": "category:O68:0",
+            "text": "chuyen da va de co bien chung suy thai"
+        },
+        {
+            "id": "category:O69:0",
+            "text": "chuyen da va de co bien chung day ron"
+        },
+        {
+            "id": "category:O70:0",
+            "text": "rach tang sinh mon trong de"
+        },
+        {
+            "id": "category:O72:0",
+            "text": "chay mau sau de"
+        },
+        {
+            "id": "category:O73:0",
+            "text": "sot rau va mang rau khong co chay mau"
+        },
+        {
+            "id": "category:O74:0",
+            "text": "bien chung cua gay me trong chuyen da va trong de"
+        },
+        {
+            "id": "category:O80:0",
+            "text": "de thuong mot thai"
+        },
+        {
+            "id": "category:O81:0",
+            "text": "de mot thai bang forcep hay giac hut"
+        },
+        {
+            "id": "category:O82:0",
+            "text": "mo lay thai cho mot thai"
+        },
+        {
+            "id": "category:O83:0",
+            "text": "de mot thai voi thu thuat khac"
+        },
+        {
+            "id": "category:O84:0",
+            "text": "de nhieu thai"
+        },
+        {
+            "id": "category:O85:0",
+            "text": "nhiem khuan huyet sau de"
+        },
+        {
+            "id": "category:O86:0",
+            "text": "nhiem trung sau de khac"
+        },
+        {
+            "id": "category:O87:0",
+            "text": "bien chung tinh mach va tri thoi ky hau san sau de"
+        },
+        {
+            "id": "category:O88:0",
+            "text": "tac mach san khoa"
+        },
+        {
+            "id": "category:O89:0",
+            "text": "bien chung cua gay me trong thoi ky sau de"
+        },
+        {
+            "id": "category:O90:0",
+            "text": "bien chung sau de khong phan loai noi khac"
+        },
+        {
+            "id": "category:O91:0",
+            "text": "nhiem trung vu lien quan den de"
+        },
+        {
+            "id": "category:O92:0",
+            "text": "cac roi loan khac cua vu va tiet sua lien quan den sinh de"
+        },
+        {
+            "id": "category:O95:0",
+            "text": "tu vong san khoa vi nguyen nhan khong xac dinh"
+        },
+        {
+            "id": "category:O96:0",
+            "text": "tu vong vi bat ky nguyen nhan san khoa nao khac sau de 42 ngay va duoi 1 nam"
+        },
+        {
+            "id": "category:O97:0",
+            "text": "tu vong vi di chung cua nguyen nhan san khoa"
+        },
+        {
+            "id": "category:O98:0",
+            "text": "nhiem trung san khoa va benh ky sinh trung phan loai noi khac nhung gay bien chung cho thai ky khi de va sau de"
+        },
+        {
+            "id": "category:O99:0",
+            "text": "cac benh khac cua ba me phan loai noi khac nhung gay bien chung cho thai ky khi de va sau de"
+        },
+        {
+            "id": "category:P00:0",
+            "text": "thai nhi va tre so sinh bi anh huong do cac yeu to cua me co the khong lien quan den lan thai ky hien nay"
+        },
+        {
+            "id": "category:P01:0",
+            "text": "thai nhi va tre so sinh bi anh huong do bien chung thai ky cua me"
+        },
+        {
+            "id": "category:P02:0",
+            "text": "thai nhi va tre so sinh bi anh huong do cac bien chung cua banh rau day ron va cac mang thai"
+        },
+        {
+            "id": "category:P03:0",
+            "text": "thai nhi va tre so sinh bi anh huong do cac bien chung cua chuyen da va cuoc de"
+        },
+        {
+            "id": "category:P04:0",
+            "text": "thai nhi va tre so sinh bi anh huong do doc to truyen qua banh rau hoac qua sua me"
+        },
+        {
+            "id": "category:P05:0",
+            "text": "thai nhi cham phat trien va thai suy dinh duong"
+        },
+        {
+            "id": "category:P07:0",
+            "text": "cac roi loan lien quan den de non va nhe can luc de khong phan loai noi khac"
+        },
+        {
+            "id": "category:P08:0",
+            "text": "roi loan lien quan den thai gia thang va tre nang can"
+        },
+        {
+            "id": "category:P10:0",
+            "text": "rach vo va chay mau noi so do chan thuong khi sinh"
+        },
+        {
+            "id": "category:P11:0",
+            "text": "cac chan thuong he than kinh trung uong khi sinh"
+        },
+        {
+            "id": "category:P12:0",
+            "text": "chan thuong da dau khi sinh"
+        },
+        {
+            "id": "category:P13:0",
+            "text": "chan thuong he xuong khi sinh"
+        },
+        {
+            "id": "category:P14:0",
+            "text": "chan thuong he than kinh ngoai vi khi sinh"
+        },
+        {
+            "id": "category:P15:0",
+            "text": "chan thuong khac khi sinh"
+        },
+        {
+            "id": "category:P20:0",
+            "text": "thieu oxy trong tu cung"
+        },
+        {
+            "id": "category:P21:0",
+            "text": "ngat khi sinh"
+        },
+        {
+            "id": "category:P22:0",
+            "text": "suy ho hap cua tre so sinh"
+        },
+        {
+            "id": "category:P23:0",
+            "text": "viem phoi bam sinh"
+        },
+        {
+            "id": "category:P24:0",
+            "text": "cac hoi chung hit cua tre so sinh"
+        },
+        {
+            "id": "category:P25:0",
+            "text": "u khi to chuc ke phoi va cac benh ly lien quan khoi phat trong thoi ky chu sinh"
+        },
+        {
+            "id": "category:P26:0",
+            "text": "chay mau phoi chu sinh"
+        },
+        {
+            "id": "category:P27:0",
+            "text": "benh ho hap man tinh khoi phat trong thoi ky chu sinh"
+        },
+        {
+            "id": "category:P28:0",
+            "text": "cac benh ly ho hap khac khoi phat trong thoi ky chu sinh"
+        },
+        {
+            "id": "category:P29:0",
+            "text": "roi loan tim mach khoi phat trong thoi ky chu sinh"
+        },
+        {
+            "id": "category:P35:0",
+            "text": "benh nhiem vi rut bam sinh"
+        },
+        {
+            "id": "category:P36:0",
+            "text": "nhiem khuan huyet cua tre so sinh"
+        },
+        {
+            "id": "category:P37:0",
+            "text": "benh nhiem trung va ky sinh trung bam sinh khac"
+        },
+        {
+            "id": "category:P38:0",
+            "text": "viem ron tre so sinh co hoac khong co chay mau muc do nhe"
+        },
+        {
+            "id": "category:P39:0",
+            "text": "nhiem khuan dac hieu khac trong thoi ky chu sinh"
+        },
+        {
+            "id": "category:P50:0",
+            "text": "mat mau thai"
+        },
+        {
+            "id": "category:P51:0",
+            "text": "chay mau ron cua tre so sinh"
+        },
+        {
+            "id": "category:P52:0",
+            "text": "chay mau noi so khong do chan thuong cua thai nhi va tre so sinh"
+        },
+        {
+            "id": "category:P53:0",
+            "text": "benh chay mau cua thai nhi va tre so sinh"
+        },
+        {
+            "id": "category:P54:0",
+            "text": "cac chay mau so sinh khac"
+        },
+        {
+            "id": "category:P55:0",
+            "text": "benh huyet tan cua bao thai va tre so sinh"
+        },
+        {
+            "id": "category:P56:0",
+            "text": "phu thai do benh huyet tan"
+        },
+        {
+            "id": "category:P57:0",
+            "text": "vang da nhan xam"
+        },
+        {
+            "id": "category:P58:0",
+            "text": "vang da so sinh do huyet tan qua muc"
+        },
+        {
+            "id": "category:P59:0",
+            "text": "vang da so sinh do cac nguyen nhan khac va khong xac dinh"
+        },
+        {
+            "id": "category:P60:0",
+            "text": "dong mau rai rac trong long mach cua thai va tre so sinh"
+        },
+        {
+            "id": "category:P61:0",
+            "text": "cac roi loan huyet hoc chu sinh khac"
+        },
+        {
+            "id": "category:P70:0",
+            "text": "cac roi loan chuyen hoa carbon hydrat thoang qua dac hieu voi thai va tre so sinh"
+        },
+        {
+            "id": "category:P71:0",
+            "text": "cac roi loan chuyen hoa calci va magie thoang qua cua so sinh"
+        },
+        {
+            "id": "category:P72:0",
+            "text": "cac roi loan noi tiet tam thoi khac cua tre so sinh"
+        },
+        {
+            "id": "category:P74:0",
+            "text": "cac roi loan chuyen hoa va dien giai tam thoi khac cua tre so sinh"
+        },
+        {
+            "id": "category:P76:0",
+            "text": "tac ruot non khac cua tre so sinh"
+        },
+        {
+            "id": "category:P77:0",
+            "text": "viem ruot hoai tu cua thai nhi va tre so sinh"
+        },
+        {
+            "id": "category:P78:0",
+            "text": "cac roi loan khac cua he tieu hoa trong thoi ky chu sinh"
+        },
+        {
+            "id": "category:P80:0",
+            "text": "ha than nhiet cua tre so sinh"
+        },
+        {
+            "id": "category:P81:0",
+            "text": "cac roi loan dieu nhiet khac cua tre so sinh"
+        },
+        {
+            "id": "category:P83:0",
+            "text": "cac benh ly khac cua da dac hieu cho thai va tre so sinh"
+        },
+        {
+            "id": "category:P90:0",
+            "text": "con co giat cua tre so sinh"
+        },
+        {
+            "id": "category:P91:0",
+            "text": "roi loan khac cua tinh trang nao tre so sinh"
+        },
+        {
+            "id": "category:P92:0",
+            "text": "van de nuoi duong so sinh"
+        },
+        {
+            "id": "category:P93:0",
+            "text": "phan ung va nhiem doc thuoc dung cho thai va tre so sinh"
+        },
+        {
+            "id": "category:P94:0",
+            "text": "roi loan truong luc co cua tre so sinh"
+        },
+        {
+            "id": "category:P95:0",
+            "text": "thai chet vi nguyen nhan khong xac dinh"
+        },
+        {
+            "id": "category:P96:0",
+            "text": "cac benh ly khac khoi phat trong thoi ky chu sinh"
+        },
+        {
+            "id": "category:Q00:0",
+            "text": "di tat khong nao va cac di tat tuong tu"
+        },
+        {
+            "id": "category:Q02:0",
+            "text": "tat dau nho"
+        },
+        {
+            "id": "category:Q03:0",
+            "text": "nao ung thuy bam sinh"
+        },
+        {
+            "id": "category:Q04:0",
+            "text": "di tat bam sinh khac cua nao"
+        },
+        {
+            "id": "category:Q05:0",
+            "text": "nut dot song"
+        },
+        {
+            "id": "category:Q06:0",
+            "text": "cac di tat bam sinh khac cua tuy song"
+        },
+        {
+            "id": "category:Q07:0",
+            "text": "di tat bam sinh khac cua he than kinh"
+        },
+        {
+            "id": "category:Q10:0",
+            "text": "cac di tat bam sinh cua mi mat o mat va bo may bai tiet nuoc mat"
+        },
+        {
+            "id": "category:Q11:0",
+            "text": "cac di tat khong co mat mat be mat to"
+        },
+        {
+            "id": "category:Q12:0",
+            "text": "cac di tat bam sinh cua the thuy tinh"
+        },
+        {
+            "id": "category:Q13:0",
+            "text": "di tat bam sinh phan truoc mat"
+        },
+        {
+            "id": "category:Q14:0",
+            "text": "cac di tat bam sinh phan sau cua mat"
+        },
+        {
+            "id": "category:Q15:0",
+            "text": "cac di tat bam sinh khac cua mat"
+        },
+        {
+            "id": "category:Q16:0",
+            "text": "cac di tat o tai gay anh huong toi thinh luc"
+        },
+        {
+            "id": "category:Q17:0",
+            "text": "cac di tat bam sinh khac o tai"
+        },
+        {
+            "id": "category:Q18:0",
+            "text": "cac di tat bam sinh khac cua mat va co"
+        },
+        {
+            "id": "category:Q20:0",
+            "text": "cac di tat bam sinh cua cac buong tim va bo phan noi"
+        },
+        {
+            "id": "category:Q21:0",
+            "text": "cac di tat bam sinh cua vach tim"
+        },
+        {
+            "id": "category:Q22:0",
+            "text": "cac di tat bam sinh cua van ba la va dong mach phoi"
+        },
+        {
+            "id": "category:Q23:0",
+            "text": "cac di tat bam sinh cua van hai la va dong mach chu"
+        },
+        {
+            "id": "category:Q24:0",
+            "text": "cac di tat bam sinh khac cua tim"
+        },
+        {
+            "id": "category:Q25:0",
+            "text": "cac di tat bam sinh cua cac dong mach lon"
+        },
+        {
+            "id": "category:Q26:0",
+            "text": "cac di tat bam sinh cua cac tinh mach lon"
+        },
+        {
+            "id": "category:Q27:0",
+            "text": "cac di tat bam sinh khac cua he thong mach mau ngoai bien"
+        },
+        {
+            "id": "category:Q28:0",
+            "text": "cac di tat bam sinh khac cua he thong tuan hoan"
+        },
+        {
+            "id": "category:Q30:0",
+            "text": "cac bat thuong bam sinh o mui"
+        },
+        {
+            "id": "category:Q31:0",
+            "text": "cac bat thuong bam sinh cua thanh quan"
+        },
+        {
+            "id": "category:Q32:0",
+            "text": "cac bat thuong bam sinh o khi quan va phe quan"
+        },
+        {
+            "id": "category:Q33:0",
+            "text": "cac di tat bam sinh cua phoi"
+        },
+        {
+            "id": "category:Q34:0",
+            "text": "cac bat thuong bam sinh khac cua bo may ho hap"
+        },
+        {
+            "id": "category:Q35:0",
+            "text": "khe ho vom mieng"
+        },
+        {
+            "id": "category:Q36:0",
+            "text": "khe ho moi"
+        },
+        {
+            "id": "category:Q37:0",
+            "text": "khe ho vom mieng cung voi khe ho moi"
+        },
+        {
+            "id": "category:Q38:0",
+            "text": "cac di tat bam sinh khac cua luoi mieng va hong"
+        },
+        {
+            "id": "category:Q39:0",
+            "text": "cac di tat bam sinh cua thuc quan"
+        },
+        {
+            "id": "category:Q40:0",
+            "text": "cac di tat bam sinh khac cua duong tieu hoa tren"
+        },
+        {
+            "id": "category:Q41:0",
+            "text": "khong co teo va hep bam sinh ruot non"
+        },
+        {
+            "id": "category:Q42:0",
+            "text": "khong co teo va hep bam sinh dai trang"
+        },
+        {
+            "id": "category:Q43:0",
+            "text": "cac di tat bam sinh khac cua ruot"
+        },
+        {
+            "id": "category:Q44:0",
+            "text": "cac di tat bam sinh cua tui mat duong mat va gan"
+        },
+        {
+            "id": "category:Q45:0",
+            "text": "cac di tat bam sinh khac cua he tieu hoa"
+        },
+        {
+            "id": "category:Q50:0",
+            "text": "nhung di tat bam sinh cua buong trung voi trung va day chang rong"
+        },
+        {
+            "id": "category:Q51:0",
+            "text": "di tat bam sinh cua tu cung va co tu cung"
+        },
+        {
+            "id": "category:Q52:0",
+            "text": "cac di tat bam sinh khac cua co quan sinh duc nu"
+        },
+        {
+            "id": "category:Q53:0",
+            "text": "tinh hoan lac cho"
+        },
+        {
+            "id": "category:Q54:0",
+            "text": "lo tieu lenh thap"
+        },
+        {
+            "id": "category:Q55:0",
+            "text": "cac di tat bam sinh khac cua co quan sinh duc nam"
+        },
+        {
+            "id": "category:Q56:0",
+            "text": "khong xac dinh gioi tinh va hoi chung gia luong gioi"
+        },
+        {
+            "id": "category:Q60:0",
+            "text": "khong co than va cac khuyet tat khac cua than"
+        },
+        {
+            "id": "category:Q61:0",
+            "text": "cac benh nang than"
+        },
+        {
+            "id": "category:Q62:0",
+            "text": "cac benh ly tac bam sinh cua be than va cac di tat bam sinh cua nieu quan"
+        },
+        {
+            "id": "category:Q63:0",
+            "text": "cac di tat bam sinh khac cua than"
+        },
+        {
+            "id": "category:Q64:0",
+            "text": "cac di tat bam sinh khac cua he tiet nieu"
+        },
+        {
+            "id": "category:Q65:0",
+            "text": "bien dang bam sinh cua khop hang"
+        },
+        {
+            "id": "category:Q66:0",
+            "text": "cac bien dang bam sinh cua ban chan"
+        },
+        {
+            "id": "category:Q68:0",
+            "text": "cac bien dang co xuong bam sinh khac"
+        },
+        {
+            "id": "category:Q69:0",
+            "text": "tat da ngon"
+        },
+        {
+            "id": "category:Q70:0",
+            "text": "tat dinh ngon"
+        },
+        {
+            "id": "category:Q71:0",
+            "text": "cac khuyet tat thieu hut cua chi tren"
+        },
+        {
+            "id": "category:Q72:0",
+            "text": "cac khuyet tat thieu hut cua chi duoi"
+        },
+        {
+            "id": "category:Q73:0",
+            "text": "cac khuyet tat thieu hut cua chi khong xac dinh"
+        },
+        {
+            "id": "category:Q74:0",
+            "text": "cac di tat bam sinh khac cua chi"
+        },
+        {
+            "id": "category:Q75:0",
+            "text": "cac di tat bam sinh khac cua xuong so va xuong mat"
+        },
+        {
+            "id": "category:Q76:0",
+            "text": "cac di tat bam sinh cua xuong song va xuong long nguc"
+        },
+        {
+            "id": "category:Q77:0",
+            "text": "loan san xuong sun voi cac khuyet tat truong thanh cua cac xuong ong va cot song"
+        },
+        {
+            "id": "category:Q78:0",
+            "text": "cac loan san xuong sun khac"
+        },
+        {
+            "id": "category:Q79:0",
+            "text": "cac di tat bam sinh cua he co xuong khong phan loai noi khac"
+        },
+        {
+            "id": "category:Q80:0",
+            "text": "benh vay ca bam sinh"
+        },
+        {
+            "id": "category:Q81:0",
+            "text": "bong bieu bi bong nuoc"
+        },
+        {
+            "id": "category:Q82:0",
+            "text": "di tat bam sinh khac ve da"
+        },
+        {
+            "id": "category:Q83:0",
+            "text": "di tat bam sinh cua vu"
+        },
+        {
+            "id": "category:Q84:0",
+            "text": "di tat bam sinh khac cua bo phan bao boc"
+        },
+        {
+            "id": "category:Q85:0",
+            "text": "hoi chung u than kinh da ngoai bi khong phan loai noi khac"
+        },
+        {
+            "id": "category:Q86:0",
+            "text": "cac hoi chung di tat bam sinh do nhung nguyen nhan ngoai sinh da biet khong phan loai noi khac"
+        },
+        {
+            "id": "category:Q87:0",
+            "text": "cac hoi chung di tat bam sinh dac hieu khac anh huong nhieu he thong"
+        },
+        {
+            "id": "category:Q89:0",
+            "text": "cac di tat bam sinh khac khong phan loai noi khac"
+        },
+        {
+            "id": "category:Q90:0",
+            "text": "hoi chung down"
+        },
+        {
+            "id": "category:Q91:0",
+            "text": "hoi chung edwards va hoi chung patau"
+        },
+        {
+            "id": "category:Q92:0",
+            "text": "ba nhiem sac the va mot phan ba nhiem sac the khac cua nhiem sac the thuong khong phan loai noi khac"
+        },
+        {
+            "id": "category:Q93:0",
+            "text": "don nhiem sac the va mat doan cua nhiem sac the thuong khong phan loai noi khac"
+        },
+        {
+            "id": "category:Q95:0",
+            "text": "sap xep lai can bang va dau an cau truc khong phan loai noi khac"
+        },
+        {
+            "id": "category:Q96:0",
+            "text": "hoi chung turner"
+        },
+        {
+            "id": "category:Q97:0",
+            "text": "bat thuong nhiem sac the gioi tinh khac kieu hinh nu khong phan loai noi khac"
+        },
+        {
+            "id": "category:Q98:0",
+            "text": "bat thuong nhiem sac the gioi tinh khac kieu hinh nam khong phan loai noi khac"
+        },
+        {
+            "id": "category:Q99:0",
+            "text": "bat thuong nhiem sac the khac khong phan loai noi khac"
+        },
+        {
+            "id": "category:R00:0",
+            "text": "bat thuong cua nhip tim"
+        },
+        {
+            "id": "category:R01:0",
+            "text": "tieng thoi tim va cac tieng tim khac"
+        },
+        {
+            "id": "category:R02:0",
+            "text": "hoai tu khong phan loai noi khac"
+        },
+        {
+            "id": "category:R03:0",
+            "text": "bat thuong so do huyet ap khong co chan doan"
+        },
+        {
+            "id": "category:R04:0",
+            "text": "chay mau duong ho hap"
+        },
+        {
+            "id": "category:R05:0",
+            "text": "ho"
+        },
+        {
+            "id": "category:R06:0",
+            "text": "bat thuong ve tho"
+        },
+        {
+            "id": "category:R07:0",
+            "text": "dau hong va nguc"
+        },
+        {
+            "id": "category:R09:0",
+            "text": "trieu chung khac lien quan toi he tuan hoan va ho hap"
+        },
+        {
+            "id": "category:R10:0",
+            "text": "dau bung va dau vung chau"
+        },
+        {
+            "id": "category:R11:0",
+            "text": "buon non va non"
+        },
+        {
+            "id": "category:R12:0",
+            "text": "nong rat nguc"
+        },
+        {
+            "id": "category:R13:0",
+            "text": "kho nuot"
+        },
+        {
+            "id": "category:R14:0",
+            "text": "day hoi va cac tinh trang lien quan"
+        },
+        {
+            "id": "category:R15:0",
+            "text": "dai tien mat tu chu"
+        },
+        {
+            "id": "category:R16:0",
+            "text": "gan to va la lach to khong phan loai noi khac"
+        },
+        {
+            "id": "category:R17:0",
+            "text": "tang bilirubin huyet co hoac khong co vang da khong phan loai noi khac"
+        },
+        {
+            "id": "category:R18:0",
+            "text": "co truong"
+        },
+        {
+            "id": "category:R19:0",
+            "text": "trieu chung khac lien quan toi he tieu hoa va bung"
+        },
+        {
+            "id": "category:R20:0",
+            "text": "roi loan cam giac da"
+        },
+        {
+            "id": "category:R21:0",
+            "text": "ban va phat ban khong dac hieu"
+        },
+        {
+            "id": "category:R22:0",
+            "text": "sung cuc bo khoi cuc o da va to chuc duoi da"
+        },
+        {
+            "id": "category:R23:0",
+            "text": "cac thay doi khac cua da"
+        },
+        {
+            "id": "category:R25:0",
+            "text": "van dong khong tu chu bat thuong"
+        },
+        {
+            "id": "category:R26:0",
+            "text": "bat thuong dang di va chuyen dong"
+        },
+        {
+            "id": "category:R27:0",
+            "text": "thieu phoi hop khac"
+        },
+        {
+            "id": "category:R29:0",
+            "text": "trieu chung khac lien quan toi he than kinh va co xuong"
+        },
+        {
+            "id": "category:R30:0",
+            "text": "dau lien quan voi tieu tien"
+        },
+        {
+            "id": "category:R31:0",
+            "text": "dai mau khong xac dinh"
+        },
+        {
+            "id": "category:R32:0",
+            "text": "tieu tien mat tu chu khong xac dinh"
+        },
+        {
+            "id": "category:R33:0",
+            "text": "bi dai"
+        },
+        {
+            "id": "category:R34:0",
+            "text": "vo nieu va thieu nieu"
+        },
+        {
+            "id": "category:R35:0",
+            "text": "da nieu"
+        },
+        {
+            "id": "category:R36:0",
+            "text": "chat tiet nieu dao"
+        },
+        {
+            "id": "category:R39:0",
+            "text": "trieu chung khac lien quan toi he tiet nieu"
+        },
+        {
+            "id": "category:R40:0",
+            "text": "buon ngu lo mo va hon me"
+        },
+        {
+            "id": "category:R43:0",
+            "text": "roi loan ve mui va vi"
+        },
+        {
+            "id": "category:R44:0",
+            "text": "trieu chung co nang va thuc the khac ve cam giac va tri giac tong quat"
+        },
+        {
+            "id": "category:R45:0",
+            "text": "trieu chung ve trang thai cam xuc"
+        },
+        {
+            "id": "category:R46:0",
+            "text": "trieu chung khac lien quan den hinh dang va hanh vi"
+        },
+        {
+            "id": "category:R47:0",
+            "text": "roi loan loi noi khong phan loai noi khac"
+        },
+        {
+            "id": "category:R48:0",
+            "text": "roi loan kha nang doc va cac roi loan khac khong phan loai noi khac"
+        },
+        {
+            "id": "category:R49:0",
+            "text": "roi loan giong noi"
+        },
+        {
+            "id": "category:R50:0",
+            "text": "sot khong ro nguyen nhan va khac"
+        },
+        {
+            "id": "category:R51:0",
+            "text": "dau dau"
+        },
+        {
+            "id": "category:R52:0",
+            "text": "dau khong phan loai noi khac"
+        },
+        {
+            "id": "category:R53:0",
+            "text": "kho chiu va met moi"
+        },
+        {
+            "id": "category:R54:0",
+            "text": "lao suy do tuoi gia"
+        },
+        {
+            "id": "category:R55:0",
+            "text": "ngat va nga quy"
+        },
+        {
+            "id": "category:R56:0",
+            "text": "co giat khong phan loai noi khac"
+        },
+        {
+            "id": "category:R57:0",
+            "text": "soc khong phan loai noi khac"
+        },
+        {
+            "id": "category:R58:0",
+            "text": "chay mau khong phan loai noi khac"
+        },
+        {
+            "id": "category:R59:0",
+            "text": "hach bach huyet to"
+        },
+        {
+            "id": "category:R60:0",
+            "text": "phu khong phan loai noi khac"
+        },
+        {
+            "id": "category:R61:0",
+            "text": "tang tiet mo hoi"
+        },
+        {
+            "id": "category:R62:0",
+            "text": "phat trien sinh ly khong binh thuong nhu mong muon"
+        },
+        {
+            "id": "category:R63:0",
+            "text": "trieu chung lien quan toi do an va thuc uong dua vao co the"
+        },
+        {
+            "id": "category:R64:0",
+            "text": "suy mon"
+        },
+        {
+            "id": "category:R65:0",
+            "text": "hoi chung dap ung viem he thong sirs"
+        },
+        {
+            "id": "category:R68:0",
+            "text": "trieu chung toan the khac"
+        },
+        {
+            "id": "category:R69:0",
+            "text": "nguyen nhan mac benh khong dac hieu va khong ro"
+        },
+        {
+            "id": "category:R70:0",
+            "text": "do lang hong cau va bat thuong do nhot huyet tuong"
+        },
+        {
+            "id": "category:R71:0",
+            "text": "bat thuong ve hong cau"
+        },
+        {
+            "id": "category:R72:0",
+            "text": "bat thuong ve bach cau khong phan loai noi khac"
+        },
+        {
+            "id": "category:R73:0",
+            "text": "tang nong do glucoza mau"
+        },
+        {
+            "id": "category:R74:0",
+            "text": "bat thuong nong do enzym huyet thanh"
+        },
+        {
+            "id": "category:R75:0",
+            "text": "bieu hien can lam sang cua vi rut gay suy giam mien dich o nguoi hiv"
+        },
+        {
+            "id": "category:R76:0",
+            "text": "cac phat hien bat thuong khac ve mien dich trong huyet thanh"
+        },
+        {
+            "id": "category:R77:0",
+            "text": "bat thuong khac ve protein huyet tuong"
+        },
+        {
+            "id": "category:R78:0",
+            "text": "phat hien cac loai thuoc va cac chat khac khong thuong co trong mau"
+        },
+        {
+            "id": "category:R79:0",
+            "text": "cac phat hien sinh hoa mau bat thuong khac"
+        },
+        {
+            "id": "category:R80:0",
+            "text": "protein nieu rieng le"
+        },
+        {
+            "id": "category:R81:0",
+            "text": "glucose nieu"
+        },
+        {
+            "id": "category:R82:0",
+            "text": "cac phat hien bat thuong khac ve nuoc tieu"
+        },
+        {
+            "id": "category:R83:0",
+            "text": "cac phat hien bat thuong ve dich nao tuy"
+        },
+        {
+            "id": "category:R84:0",
+            "text": "cac phat hien bat thuong trong mau benh pham tu co quan ho hap va long nguc"
+        },
+        {
+            "id": "category:R85:0",
+            "text": "cac phat hien bat thuong trong mau benh pham tu co quan tieu hoa va o bung"
+        },
+        {
+            "id": "category:R86:0",
+            "text": "cac phat hien bat thuong trong mau vat cua co quan sinh duc nam"
+        },
+        {
+            "id": "category:R87:0",
+            "text": "cac phat hien bat thuong trong benh pham co quan sinh duc nu"
+        },
+        {
+            "id": "category:R89:0",
+            "text": "cac phat hien bat thuong trong mau vat cua cac co quan he thong va mo khac"
+        },
+        {
+            "id": "category:R90:0",
+            "text": "cac phat hien bat thuong ve chan doan hinh anh cua he than kinh trung uong"
+        },
+        {
+            "id": "category:R91:0",
+            "text": "cac phat hien bat thuong ve chan doan hinh anh cua phoi khong xac dinh"
+        },
+        {
+            "id": "category:R92:0",
+            "text": "cac phat hien bat thuong ve chan doan hinh anh cua nguc"
+        },
+        {
+            "id": "category:R93:0",
+            "text": "cac phat hien bat thuong ve chan doan hinh anh cua cac co quan khac"
+        },
+        {
+            "id": "category:R94:0",
+            "text": "ket qua bat thuong ve tham do chuc nang"
+        },
+        {
+            "id": "category:R95:0",
+            "text": "hoi chung dot tu tre em"
+        },
+        {
+            "id": "category:R96:0",
+            "text": "dot tu khac khong ro nguyen nhan"
+        },
+        {
+            "id": "category:R98:0",
+            "text": "tu vong khong ai biet"
+        },
+        {
+            "id": "category:R99:0",
+            "text": "nguyen nhan tu vong khong ro rang ill defined khac va khong xac dinh"
+        },
+        {
+            "id": "category:S00:0",
+            "text": "ton thuong nong o dau"
+        },
+        {
+            "id": "category:S01:0",
+            "text": "vet thuong ho o dau"
+        },
+        {
+            "id": "category:S02:0",
+            "text": "gay xuong so va xuong mat"
+        },
+        {
+            "id": "category:S03:0",
+            "text": "trat khop bong gan va cang co cua khop va cac day chang cua dau"
+        },
+        {
+            "id": "category:S04:0",
+            "text": "ton thuong day than kinh so"
+        },
+        {
+            "id": "category:S05:0",
+            "text": "ton thuong mat va o mat"
+        },
+        {
+            "id": "category:S06:0",
+            "text": "ton thuong noi so"
+        },
+        {
+            "id": "category:S07:0",
+            "text": "ton thuong giap nat cua dau"
+        },
+        {
+            "id": "category:S08:0",
+            "text": "chan thuong dut lia phan cua dau"
+        },
+        {
+            "id": "category:S09:0",
+            "text": "ton thuong khac va khong xac dinh o dau"
+        },
+        {
+            "id": "category:S10:0",
+            "text": "ton thuong nong cua co"
+        },
+        {
+            "id": "category:S11:0",
+            "text": "vet thuong ho cua co"
+        },
+        {
+            "id": "category:S12:0",
+            "text": "gay co"
+        },
+        {
+            "id": "category:S13:0",
+            "text": "trat khop bong gan va cang co qua muc cua khop va cac day chang vung co"
+        },
+        {
+            "id": "category:S14:0",
+            "text": "ton thuong day than kinh va tuy song vung co"
+        },
+        {
+            "id": "category:S15:0",
+            "text": "ton thuong mach mau vung co"
+        },
+        {
+            "id": "category:S16:0",
+            "text": "ton thuong co va gan vung co"
+        },
+        {
+            "id": "category:S17:0",
+            "text": "ton thuong giap nat vung co"
+        },
+        {
+            "id": "category:S18:0",
+            "text": "chan thuong dut lia vung co"
+        },
+        {
+            "id": "category:S19:0",
+            "text": "ton thuong khac va khong xac dinh o co"
+        },
+        {
+            "id": "category:S20:0",
+            "text": "ton thuong nong cua long nguc"
+        },
+        {
+            "id": "category:S21:0",
+            "text": "vet thuong thau nguc"
+        },
+        {
+            "id": "category:S22:0",
+            "text": "gay xuong suon xuong uc va gai song nguc"
+        },
+        {
+            "id": "category:S23:0",
+            "text": "trat khop bong gan va cang co qua muc cua khop va day chang cua nguc"
+        },
+        {
+            "id": "category:S24:0",
+            "text": "ton thuong day than kinh va tuy song tam nguc"
+        },
+        {
+            "id": "category:S25:0",
+            "text": "ton thuong mach mau cua nguc"
+        },
+        {
+            "id": "category:S26:0",
+            "text": "ton thuong tim"
+        },
+        {
+            "id": "category:S27:0",
+            "text": "ton thuong cua cac co quan trong long nguc khac va khong xac dinh"
+        },
+        {
+            "id": "category:S28:0",
+            "text": "ton thuong giap nat cua nguc va chan thuong dut lia phan cua nguc"
+        },
+        {
+            "id": "category:S29:0",
+            "text": "ton thuong khac va khong xac dinh cua nguc"
+        },
+        {
+            "id": "category:S30:0",
+            "text": "ton thuong nong cua bung lung duoi va vung chau"
+        },
+        {
+            "id": "category:S31:0",
+            "text": "vet thuong ho cua bung lung duoi va vung chau"
+        },
+        {
+            "id": "category:S32:0",
+            "text": "gay cot song that lung va vung chau"
+        },
+        {
+            "id": "category:S33:0",
+            "text": "trat khop bong gan va gian khop va day chang cot song that lung va chau"
+        },
+        {
+            "id": "category:S34:0",
+            "text": "ton thuong day than kinh va day song tai bung lung va vung chau"
+        },
+        {
+            "id": "category:S35:0",
+            "text": "ton thuong mach mau vung bung lung va chau"
+        },
+        {
+            "id": "category:S36:0",
+            "text": "ton thuong cac co quan trong o bung"
+        },
+        {
+            "id": "category:S37:0",
+            "text": "ton thuong cua he tiet nieu va co quan o vung chau"
+        },
+        {
+            "id": "category:S38:0",
+            "text": "ton thuong giap nat va chan thuong dut lia phan cua bung lung duoi va chau"
+        },
+        {
+            "id": "category:S39:0",
+            "text": "ton thuong khac va khong xac dinh cua bung lung duoi va chau"
+        },
+        {
+            "id": "category:S40:0",
+            "text": "ton thuong nong cua vai va canh tay"
+        },
+        {
+            "id": "category:S41:0",
+            "text": "vet thuong ho cua vai va canh tay"
+        },
+        {
+            "id": "category:S42:0",
+            "text": "gay xuong vai va xuong canh tay"
+        },
+        {
+            "id": "category:S43:0",
+            "text": "trat khop bong gan va gian khop va day chang cua vong nguc"
+        },
+        {
+            "id": "category:S44:0",
+            "text": "ton thuong day than kinh tai vai va canh tay tren"
+        },
+        {
+            "id": "category:S45:0",
+            "text": "ton thuong mach mau tai vai canh tay tren"
+        },
+        {
+            "id": "category:S46:0",
+            "text": "ton thuong co va gan tai vai va canh tay tren"
+        },
+        {
+            "id": "category:S47:0",
+            "text": "ton thuong giap nat vai va canh tay tren"
+        },
+        {
+            "id": "category:S48:0",
+            "text": "chan thuong dut lia vai va canh tay tren"
+        },
+        {
+            "id": "category:S49:0",
+            "text": "ton thuong khac va khong xac dinh o vai va canh tay tren"
+        },
+        {
+            "id": "category:S50:0",
+            "text": "ton thuong nong o cang tay"
+        },
+        {
+            "id": "category:S51:0",
+            "text": "vet thuong ho o cang tay"
+        },
+        {
+            "id": "category:S52:0",
+            "text": "gay xuong cang tay"
+        },
+        {
+            "id": "category:S53:0",
+            "text": "trat khop bong gan va cang co cua khop va day chang khuyu tay"
+        },
+        {
+            "id": "category:S54:0",
+            "text": "ton thuong day than kinh cang tay"
+        },
+        {
+            "id": "category:S55:0",
+            "text": "ton thuong mach mau o tam cang tay"
+        },
+        {
+            "id": "category:S56:0",
+            "text": "ton thuong co bap va gan o tam cang tay"
+        },
+        {
+            "id": "category:S57:0",
+            "text": "ton thuong giap nat o cang tay"
+        },
+        {
+            "id": "category:S58:0",
+            "text": "chan thuong dut lia o cang tay"
+        },
+        {
+            "id": "category:S59:0",
+            "text": "ton thuong khac va khong xac dinh cua cang tay"
+        },
+        {
+            "id": "category:S60:0",
+            "text": "ton thuong nong o co tay va ban tay"
+        },
+        {
+            "id": "category:S61:0",
+            "text": "vet thuong ho o co tay va ban tay"
+        },
+        {
+            "id": "category:S62:0",
+            "text": "gay xuong tam co tay va ban tay"
+        },
+        {
+            "id": "category:S63:0",
+            "text": "trat khop bong gan va cang co cua khop va day chang tam co tay va ban tay"
+        },
+        {
+            "id": "category:S64:0",
+            "text": "ton thuong day than kinh tam co tay va ban tay"
+        },
+        {
+            "id": "category:S65:0",
+            "text": "ton thuong mach mau tai tam co tay va ban tay"
+        },
+        {
+            "id": "category:S66:0",
+            "text": "ton thuong co bap va gan tai tam co tay va ban tay"
+        },
+        {
+            "id": "category:S67:0",
+            "text": "ton thuong giap nat co tay va ban tay"
+        },
+        {
+            "id": "category:S68:0",
+            "text": "chan thuong dut lia co tay va ban tay"
+        },
+        {
+            "id": "category:S69:0",
+            "text": "ton thuong khac va khong xac dinh cua co tay va ban tay"
+        },
+        {
+            "id": "category:S70:0",
+            "text": "ton thuong nong tai hong va dui"
+        },
+        {
+            "id": "category:S71:0",
+            "text": "vet thuong ho o hong va dui"
+        },
+        {
+            "id": "category:S72:0",
+            "text": "gay xuong dui"
+        },
+        {
+            "id": "category:S73:0",
+            "text": "trat khop bong gan va cang co khop va day chang khop hang"
+        },
+        {
+            "id": "category:S74:0",
+            "text": "ton thuong day than kinh tam hong va dui"
+        },
+        {
+            "id": "category:S75:0",
+            "text": "ton thuong mach mau tai tam hong va dui"
+        },
+        {
+            "id": "category:S76:0",
+            "text": "ton thuong co bap va gan tai tam hong va dui"
+        },
+        {
+            "id": "category:S77:0",
+            "text": "ton thuong giap nat hong va dui"
+        },
+        {
+            "id": "category:S78:0",
+            "text": "chan thuong dut lia o hong va dui"
+        },
+        {
+            "id": "category:S79:0",
+            "text": "ton thuong khac khong xac dinh cua hong va dui"
+        },
+        {
+            "id": "category:S80:0",
+            "text": "ton thuong nong tai cang chan"
+        },
+        {
+            "id": "category:S81:0",
+            "text": "vet thuong ho tai cang chan"
+        },
+        {
+            "id": "category:S82:0",
+            "text": "gay xuong cang chan bao gom co chan"
+        },
+        {
+            "id": "category:S83:0",
+            "text": "trat khop bong gan va cang co khop va day chang khop goi"
+        },
+        {
+            "id": "category:S84:0",
+            "text": "ton thuong day than kinh tai tam cang chan"
+        },
+        {
+            "id": "category:S85:0",
+            "text": "ton thuong mach mau tai tam cang chan"
+        },
+        {
+            "id": "category:S86:0",
+            "text": "ton thuong co bap va gan tai tam cang chan"
+        },
+        {
+            "id": "category:S87:0",
+            "text": "ton thuong giap nat tai cang chan"
+        },
+        {
+            "id": "category:S88:0",
+            "text": "chan thuong dut lia o cang chan"
+        },
+        {
+            "id": "category:S89:0",
+            "text": "ton thuong khac va khong xac dinh tai cang chan"
+        },
+        {
+            "id": "category:S90:0",
+            "text": "ton thuong nong tai co chan va ban chan"
+        },
+        {
+            "id": "category:S91:0",
+            "text": "vet thuong ho tai co chan va ban chan"
+        },
+        {
+            "id": "category:S92:0",
+            "text": "gay xuong ban chan tru co chan"
+        },
+        {
+            "id": "category:S94:0",
+            "text": "ton thuong day than kinh tai tam co chan va ban chan"
+        },
+        {
+            "id": "category:S95:0",
+            "text": "ton thuong mach mau tai tam co chan va ban chan"
+        },
+        {
+            "id": "category:S96:0",
+            "text": "ton thuong co bap va gan tai tam co chan va ban chan"
+        },
+        {
+            "id": "category:S97:0",
+            "text": "ton thuong giap nat tai co chan va ban chan"
+        },
+        {
+            "id": "category:S98:0",
+            "text": "chan thuong dut lia co chan va ban chan"
+        },
+        {
+            "id": "category:S99:0",
+            "text": "ton thuong khac va khong xac dinh cua co chan va ban chan"
+        },
+        {
+            "id": "category:T00:0",
+            "text": "ton thuong nong lien quan nhieu vung co the"
+        },
+        {
+            "id": "category:T01:0",
+            "text": "vet thuong ho lien quan nhieu vung co the"
+        },
+        {
+            "id": "category:T02:0",
+            "text": "gay xuong lien quan nhieu vung co the"
+        },
+        {
+            "id": "category:T04:0",
+            "text": "ton thuong giap nat lien quan nhieu vung co the"
+        },
+        {
+            "id": "category:T05:0",
+            "text": "chan thuong dut lia tac dong nhieu vung co the"
+        },
+        {
+            "id": "category:T07:0",
+            "text": "da ton thuong khong xac dinh"
+        },
+        {
+            "id": "category:T08:0",
+            "text": "gay cot song muc do khong xac dinh"
+        },
+        {
+            "id": "category:T09:0",
+            "text": "ton thuong khac cua cot song va than tam khong xac dinh"
+        },
+        {
+            "id": "category:T10:0",
+            "text": "gay xuong cua chi tren tam khong xac dinh"
+        },
+        {
+            "id": "category:T11:0",
+            "text": "ton thuong khac tai chi tren tam khong xac dinh"
+        },
+        {
+            "id": "category:T12:0",
+            "text": "gay xuong chi duoi tam khong xac dinh"
+        },
+        {
+            "id": "category:T13:0",
+            "text": "ton thuong khac chi duoi tam khong xac dinh"
+        },
+        {
+            "id": "category:T14:0",
+            "text": "ton thuong khong xac dinh vung co the"
+        },
+        {
+            "id": "category:T15:0",
+            "text": "di vat o mat ngoai"
+        },
+        {
+            "id": "category:T16:0",
+            "text": "di vat o tai"
+        },
+        {
+            "id": "category:T17:0",
+            "text": "di vat trong duong ho hap"
+        },
+        {
+            "id": "category:T18:0",
+            "text": "di vat trong duong tieu hoa"
+        },
+        {
+            "id": "category:T19:0",
+            "text": "di vat trong duong tiet nieu sinh duc"
+        },
+        {
+            "id": "category:T21:0",
+            "text": "bong va an mon tai than minh"
+        },
+        {
+            "id": "category:T22:0",
+            "text": "bong va an mon tai vai va chi tren tru co tay va ban tay"
+        },
+        {
+            "id": "category:T23:0",
+            "text": "bong va an mon tai co tay va ban tay"
+        },
+        {
+            "id": "category:T24:0",
+            "text": "bong va an mon tai hong va chi duoi tru co chan va ban chan"
+        },
+        {
+            "id": "category:T25:0",
+            "text": "bong va an mon tai co chan va ban chan"
+        },
+        {
+            "id": "category:T26:0",
+            "text": "bong va an mon gioi han tai mat va phan phu cua mat"
+        },
+        {
+            "id": "category:T27:0",
+            "text": "bong va an mon duong ho hap"
+        },
+        {
+            "id": "category:T28:0",
+            "text": "bong va an mon noi tang khac"
+        },
+        {
+            "id": "category:T29:0",
+            "text": "bong va an mon nhieu vung co the"
+        },
+        {
+            "id": "category:T30:0",
+            "text": "bong va an mon vung co the khong xac dinh"
+        },
+        {
+            "id": "category:T31:0",
+            "text": "bong phan loai theo dien tich be mat co the bi ton thuong"
+        },
+        {
+            "id": "category:T32:0",
+            "text": "an mon phan loai theo dien tich be mat co the bi ton thuong"
+        },
+        {
+            "id": "category:T33:0",
+            "text": "ton thuong nong do cong lanh"
+        },
+        {
+            "id": "category:T34:0",
+            "text": "ton thuong do cong lanh voi hoai tu mo"
+        },
+        {
+            "id": "category:T35:0",
+            "text": "ton thuong do cong lanh tac dong nhieu vung co the va khong xac dinh"
+        },
+        {
+            "id": "category:T36:0",
+            "text": "ngo doc do dung khang sinh toan than"
+        },
+        {
+            "id": "category:T37:0",
+            "text": "ngo doc do chat chong nhiem trung va chong ky sinh trung khac dung toan than"
+        },
+        {
+            "id": "category:T38:0",
+            "text": "ngo doc do noi tiet va chat tong hop thay the va chat doi khang khong phan loai noi khac"
+        },
+        {
+            "id": "category:T39:0",
+            "text": "ngo doc do thuoc giam dau khong opioid ha nhiet va chong thap khop"
+        },
+        {
+            "id": "category:T40:0",
+            "text": "ngo doc thuoc gay nghien va thuoc huong tam than thuoc gay ao giac"
+        },
+        {
+            "id": "category:T41:0",
+            "text": "ngo doc do gay te va khi dieu tri"
+        },
+        {
+            "id": "category:T42:0",
+            "text": "ngo doc do thuoc dong kinh an than gay ngu va chong hoi chung parkison"
+        },
+        {
+            "id": "category:T43:0",
+            "text": "ngo doc do thuoc huong tam than khong phan loai noi khac"
+        },
+        {
+            "id": "category:T44:0",
+            "text": "ngo doc do thuoc tac dong chu yeu he than kinh tu chu"
+        },
+        {
+            "id": "category:T45:0",
+            "text": "ngo doc do thuoc chu yeu toan than va huyet hoc khong phan loai noi khac"
+        },
+        {
+            "id": "category:T46:0",
+            "text": "ngo doc do thuoc tac dong chu yeu he thong tim mach"
+        },
+        {
+            "id": "category:T47:0",
+            "text": "ngo doc do thuoc tac dong chu yeu tren he thong tieu hoa"
+        },
+        {
+            "id": "category:T48:0",
+            "text": "ngo doc do thuoc tac dong chu yeu tren co tron va co xuong va he thong ho hap"
+        },
+        {
+            "id": "category:T49:0",
+            "text": "ngo doc do thuoc dung tai cho tac dong chu yeu tren da va niem mac va do thuoc dung chua mat tai va rang"
+        },
+        {
+            "id": "category:T50:0",
+            "text": "ngo doc do thuoc loi tieu va thuoc duoc pham va chat sinh hoc khac va khong xac dinh"
+        },
+        {
+            "id": "category:T51:0",
+            "text": "ngo doc con"
+        },
+        {
+            "id": "category:T52:0",
+            "text": "ngo doc dung moi huu co"
+        },
+        {
+            "id": "category:T53:0",
+            "text": "ngo doc dan xuat halogen cua hydrocarbon beo va thom"
+        },
+        {
+            "id": "category:T54:0",
+            "text": "ngo doc chat an mon"
+        },
+        {
+            "id": "category:T55:0",
+            "text": "tac dung doc cua xa phong va chat giat tay"
+        },
+        {
+            "id": "category:T56:0",
+            "text": "ngo doc kim loai"
+        },
+        {
+            "id": "category:T57:0",
+            "text": "ngo doc chat vo co"
+        },
+        {
+            "id": "category:T58:0",
+            "text": "ngo doc carbon monoxide"
+        },
+        {
+            "id": "category:T59:0",
+            "text": "ngo doc khi khac khoi va hoi"
+        },
+        {
+            "id": "category:T60:0",
+            "text": "ngo doc thuoc tru sau"
+        },
+        {
+            "id": "category:T61:0",
+            "text": "ngo doc cac chat doc do an do bien"
+        },
+        {
+            "id": "category:T62:0",
+            "text": "ngo doc chat doc do an thuc pham"
+        },
+        {
+            "id": "category:T63:0",
+            "text": "ngo doc do tiep xuc voi dong vat tiet noc doc"
+        },
+        {
+            "id": "category:T64:0",
+            "text": "ngo doc do thuc pham nhiem aflatoxin va doc to nam khac"
+        },
+        {
+            "id": "category:T65:0",
+            "text": "ngo doc do chat khac va khong xac dinh"
+        },
+        {
+            "id": "category:T66:0",
+            "text": "tac dung khong xac dinh cua tia xa"
+        },
+        {
+            "id": "category:T67:0",
+            "text": "tac dung do nhiet va anh sang"
+        },
+        {
+            "id": "category:T68:0",
+            "text": "ha than nhiet"
+        },
+        {
+            "id": "category:T69:0",
+            "text": "tac dung khac cua giam nhiet do"
+        },
+        {
+            "id": "category:T70:0",
+            "text": "tac dong cua ap luc khong khi va ap luc nuoc"
+        },
+        {
+            "id": "category:T71:0",
+            "text": "ngat tho"
+        },
+        {
+            "id": "category:T73:0",
+            "text": "tac dong cua cac thieu hut khac"
+        },
+        {
+            "id": "category:T74:0",
+            "text": "hoi chung bi nguoc dai"
+        },
+        {
+            "id": "category:T75:0",
+            "text": "tac dong cua cac nguyen nhan ngoai sinh khac"
+        },
+        {
+            "id": "category:T76:0",
+            "text": "cac tac dung khong xac dinh cua nguyen nhan ngoai sinh"
+        },
+        {
+            "id": "category:T78:0",
+            "text": "tac dung phu khong phan loai noi khac"
+        },
+        {
+            "id": "category:T79:0",
+            "text": "mot so bien chung som cua chan thuong khong phan loai noi khac"
+        },
+        {
+            "id": "category:T80:0",
+            "text": "bien chung sau truyen dich truyen mau va tiem thuoc"
+        },
+        {
+            "id": "category:T81:0",
+            "text": "bien chung cua phau thuat thu thuat khong phan loai noi khac"
+        },
+        {
+            "id": "category:T82:0",
+            "text": "bien chung cac thiet bi nhan tao cua tim va huyet quan implant va vat ghep"
+        },
+        {
+            "id": "category:T83:0",
+            "text": "bien chung cua thiet bi nhan tao co quan tiet nieu sinh duc implant va vat ghep"
+        },
+        {
+            "id": "category:T84:0",
+            "text": "bien chung cua thiet bi chinh hinh ben trong implant va vat ghep"
+        },
+        {
+            "id": "category:T85:0",
+            "text": "bien chung cua thiet bi nhan tao ben trong khac implant va vat ghep"
+        },
+        {
+            "id": "category:T86:0",
+            "text": "that bai va thai bo ghep phu tang va to chuc"
+        },
+        {
+            "id": "category:T87:0",
+            "text": "cac bien chung dac biet do noi lai va cat cut"
+        },
+        {
+            "id": "category:T88:0",
+            "text": "bien chung khac trong phau thuat va dieu tri noi khoa khong phan loai noi khac"
+        },
+        {
+            "id": "category:T91:0",
+            "text": "di chung ton thuong co va than minh"
+        },
+        {
+            "id": "category:T92:0",
+            "text": "di chung ton thuong chi tren"
+        },
+        {
+            "id": "category:T93:0",
+            "text": "di chung ton thuong chi duoi"
+        },
+        {
+            "id": "category:T95:0",
+            "text": "di chung bong an mon va ton thuong do cong lanh"
+        },
+        {
+            "id": "category:T96:0",
+            "text": "di chung ngo doc do thuoc duoc pham va chat sinh hoc"
+        },
+        {
+            "id": "category:T97:0",
+            "text": "di chung nhiem doc chat co nguon goc chu yeu khong phai duoc pham"
         }
     ]
 }
