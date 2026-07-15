@@ -3,78 +3,192 @@
     "array": [
         {
             "id": "chapter:I:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "benh nhiem trung va ky sinh trung"
         },
         {
             "id": "chapter:II:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "u tan sinh"
         },
         {
             "id": "chapter:III:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "benh mau co quan tao mau va cac benh ly lien quan den co che mien dich"
         },
         {
             "id": "chapter:IV:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "benh noi tiet dinh duong va chuyen hoa"
         },
         {
             "id": "chapter:V:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "roi loan tam than va hanh vi"
         },
         {
             "id": "chapter:VI:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "benh he than kinh"
         },
         {
             "id": "chapter:VII:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "benh mat va phan phu cua mat"
         },
         {
             "id": "chapter:VIII:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "benh tai va xuong chum"
         },
         {
             "id": "chapter:IX:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "benh he tuan hoan"
         },
         {
             "id": "chapter:X:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "benh he ho hap"
         },
         {
             "id": "chapter:XI:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "benh he tieu hoa"
         },
         {
             "id": "chapter:XII:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "benh da va to chuc duoi da"
         },
         {
             "id": "chapter:XIII:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "benh he co xuong khop va mo lien ket"
         },
         {
             "id": "chapter:XIV:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "benh he tiet nieu sinh duc"
         },
         {
             "id": "chapter:XV:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "mang thai sinh de va hau san"
         },
         {
             "id": "chapter:XVI:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "mot so benh ly khoi phat trong thoi ky chu sinh"
         },
         {
             "id": "chapter:XVII:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "di tat bam sinh bien dang va bat thuong ve nhiem sac the"
         },
         {
             "id": "chapter:XVIII:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "cac trieu chung co nang thuc the va bat thuong ve lam sang va can lam sang khong phan loai noi khac"
         },
         {
             "id": "chapter:XIX:0",
+            "parent": {
+                "chapter-id": "",
+                "section-id": "",
+                "category-id": "",
+                "sub-category-id": ""
+            },
             "text": "ton thuong ngo doc va mot so hau qua do nguyen nhan ngoai sinh"
         }
     ]

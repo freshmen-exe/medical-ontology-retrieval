@@ -42,7 +42,7 @@ Mỗi bản ghi được gán một `id` duy nhất theo định dạng:
 ```
 
 - **Cấp độ:** Có thể là `chapter`, `section`, `category` hoặc `sub-category`.
-- **Thứ tự biến thể (alias index):** Mặc định là `0`. Chỉ riêng tập `sub-category` có thể có nhiều hơn một biến thể (alias), các biến thể tiếp theo sẽ có index là `1`, `2`, ...
+- **Thứ tự biến thể (alias index):** Mặc định là `0`. Chỉ riêng tập `category`, `sub-category` có thể có nhiều hơn một biến thể (alias), các biến thể tiếp theo sẽ có index là `1`, `2`, ...
 
 **Ví dụ:**
 
@@ -78,7 +78,7 @@ Kích thước (`length`) của mảng này tương đương với số lượng
 |------|----------------:|
 | `chapter.json` | 19 |
 | `section.json` | 183 |
-| `category.json` | 1473 |
+| `category.json` | 1498 |
 | `sub-category.json` | 189330 |
 
 ---
