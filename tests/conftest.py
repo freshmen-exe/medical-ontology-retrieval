@@ -4,6 +4,7 @@ import numpy as np
 
 #Change this if the embedding model using other number of dimension
 EMBEDDING_DIM = 384
+SMOOTHING_CONST = 60
 
 @pytest.fixture
 def vector_dim():
