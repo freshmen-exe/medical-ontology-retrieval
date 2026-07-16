@@ -62,12 +62,23 @@ def populated_db(hnsw_db, vector_dim):
         meta = {
             "id" : vector_id,
             "text": f"Mẫu bệnh lý {vector_id}",
-            "type": "CHẨN ĐOÁN" if vector_id % 2 == 0 else "TRIỆU CHỨNG",
-            "candidates": [],
-            "assertions": [],
-            "position": [vector_id*13, vector_id*13 + 13]
+            "type": "CHẨN ĐOÁN" if vector_id % 2 == 0 else "TRIỆU CHỨNG"
 
         }
         hnsw_db.add(vector,meta)
 
     return hnsw_db
+
+
+@pytest.fixture
+def dense_mock(self):
+    
+    # Giả lập danh sách ứng candidate từ mô hình HNSW (Dense Search)
+    return {"ICD-001": 1, "ICD-002": 2, "ICD-003": 5}
+
+
+@pytest.fixture
+def sparse_mock(self):
+    # Giả lập danh sách candidate từ mô hình BM25 (Sparse Search)
+    return {"ICD-001": 1, "ICD-004": 2, "ICD-002": 5}
+
