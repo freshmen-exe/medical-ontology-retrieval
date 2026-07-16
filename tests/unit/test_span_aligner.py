@@ -1,7 +1,7 @@
 import pytest
 
 # Giả định dev đã định nghĩa class SpanAligner trong module pipeline
-from src.pipeline.alignment import SpanAligner 
+# from src.pipeline.alignment import SpanAligner 
 
 class MockSpanAligner:
     """
