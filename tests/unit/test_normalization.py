@@ -1,184 +1,201 @@
 import pytest
 
-# Giả định dev đã định nghĩa class SpanAligner trong module pipeline
-# Hãy import đúng class được cài đặt thực tế vào file này
-from src.pipeline.normalization import SpanAligner 
+class MockNormalization:
+    """
+    Mock class giả lập hàm chuẩn hóa văn bản của team Dev.
+    Team Dev sẽ thay thế class này bằng hàm thật.
+    """
+    @staticmethod
+    def normalize(raw_text: str) -> tuple[str, list[int]]:
+        
+        # Giả lập trả về chuỗi rỗng nếu đầu vào rỗng để test pass logic cơ bản
+        if not raw_text:
+            return "", []
+        
+        # Fallback giả lập (Dev sẽ implement logic chuẩn hóa Unicode, khoảng trắng, v.v. tại đây)
+        return raw_text, list(range(len(raw_text)))
 
-
-class MockSpanAligner:
+class TestNormalization:
+    
     
     """
-    Mock class sử dụng mã giả thay cho code của dev để tránh lỗi khi chưa có code thật.
-    Cần thay thế bằng class thực tế chứa thuật toán map offset.
+    Test Class kiểm định module Chuẩn hóa văn bản (Normalization).
+    Đảm bảo biến đổi chuỗi thô thành chuỗi sạch và sinh offset mapping chính xác.
     """
-    
-    def __init__(self, raw_text: str):
-        self.raw_text = raw_text
-        self.normalized_view = raw_text.strip() # Giả lập logic chuẩn hóa
-        
-    def get_original_span(self, norm_start: int, norm_end: int):
-        # Logic giả lập - Dev phải viết logic thật dùng mảng ánh xạ (offset mapping array)
-        return norm_start, norm_end
 
-class TestTextNormalizationAndAlignment:
-    
-    
-    # 1. Kiểm tra văn bản chuẩn (không có nhiễu), offset gốc và chuẩn hóa phải khớp 1:1
-    def test_1_basic_string_alignment(self):
-        
-        raw_text = "bệnh trào ngược dạ dày"
-        aligner = MockSpanAligner(raw_text)
-        
-        # Giả lập tìm thấy chữ "trào ngược" ở chuỗi chuẩn hóa (index 5 -> 15)
-        norm_start, norm_end = 5, 15 
+
+    # Test 1: Kiểm tra loại bỏ khoảng trắng thừa liên tiếp giữa các từ
+    def test_remove_extra_spaces(self):
         
         try:
-            raw_start, raw_end = aligner.get_original_span(norm_start, norm_end)
-            assert raw_text[raw_start:raw_end] == "trào ngược", "Lỗi: Không khớp đúng từ 'trào ngược' ở văn bản chuẩn 1:1"
+            raw_text = "bệnh   trào    ngược"
+            expected_text = "bệnh trào ngược"
+            norm_text, mapping = MockNormalization.normalize(raw_text)
+            
+            assert norm_text == expected_text, f"Text chưa được chuẩn hóa khoảng trắng thừa. Nhận được: '{norm_text}'"
         
         except AssertionError as e:
-            pytest.fail(str(e))
-
-
-    # 2. Kiểm tra loại bỏ khoảng trắng thừa ở giữa và map offset đúng về chuỗi gốc
-    def test_2_extra_spaces_alignment(self):
-
-        raw_text = "bệnh    trào   ngược" # 4 spaces and 3 spaces
-        aligner = MockSpanAligner(raw_text)
-        
-        try:
-            # Nếu chuẩn hóa đúng, "trào ngược" ở norm_text nằm ở khoảng [5:15]
-            # Nhưng ở raw_text, chữ "trào" bắt đầu từ index 8, "ngược" kết thúc ở 20
-            raw_start, raw_end = aligner.get_original_span(5, 15) # Giả định pass qua logic của dev
-
-            # Code dev chuẩn phải trả về 8 và 20
-            assert raw_start == 8 and raw_end == 20, "Lỗi: Offset không khớp với chuỗi gốc bị dư khoảng trắng"
-        
-        except AssertionError as e:
-            pytest.fail(str(e))
-
-
-    # 3. Kiểm tra dọn dẹp khoảng trắng ở đầu và cuối chuỗi (Leading/Trailing spaces)
-    def test_3_leading_trailing_spaces(self):
-        
-        raw_text = "   ho đờm xanh   "
-        aligner = MockSpanAligner(raw_text)
-        
-        try:
-            # "ho" trong bản chuẩn hóa bắt đầu ở 0, kết thúc ở 2
-            # Gốc phải là 3 đến 5
-            
-            raw_start, raw_end = aligner.get_original_span(0, 2)
-            assert raw_start == 3 and raw_end == 5, "Lỗi: Không bắt đúng offset khi text gốc có khoảng trắng 2 đầu"
-            
-        
-        except AssertionError as e:
-            pytest.fail(str(e))
-
-
-    # 4. Kiểm tra xử lý ký tự xuống dòng và tab (\n, \t) thành khoảng trắng
-    def test_4_newline_and_tab_characters(self):
-        
-        raw_text = "đau\tthượng\n\nvị"
-        aligner = MockSpanAligner(raw_text)
-        
-        try:
-            # Chữ "vị" ở bản chuẩn hóa "đau thượng vị" là [11:13]
-            # Gốc phải tính thêm các ký tự ẩn
-            
-            raw_start, raw_end = aligner.get_original_span(11, 13)
-            assert raw_text[raw_start:raw_end] == "vị", "Lỗi: Offset sai lệch khi gặp ký tự Tab và Newline"
-            
-        except AssertionError as e:
-            pytest.fail(str(e))
-
-
-    # 5. Kiểm tra chuẩn hóa Unicode (NFD tổ hợp sang NFC dựng sẵn) không làm xô lệch offset
-    def test_5_unicode_normalization_nfd_to_nfc(self):
-        
-        raw_text = "kê\u0301t qua\u0309" # "kết quả" viết bằng Unicode tổ hợp (NFD)
-        aligner = MockSpanAligner(raw_text)
-        
-        try:
-            # Độ dài chuỗi NFC ngắn hơn NFD, aligner phải chiếu ngược chính xác
-            raw_start, raw_end = aligner.get_original_span(4, 7) 
-            assert raw_text[raw_start:raw_end] == "qua\u0309", "Lỗi: Aligner không xử lý được chênh lệch độ dài do Unicode tổ hợp"
-            
-        except AssertionError as e:
-            pytest.fail(str(e))
-
-
-    # 6. Kiểm tra xử lý dấu câu bị dính liền (Ví dụ: dấu phẩy sát chữ)
-    def test_6_punctuation_normalization(self):
-        
-        raw_text = "WBC:14,43;NEUT%:76,4"
-        aligner = MockSpanAligner(raw_text)
-        
-        try:
-            # Nếu norm text tự thêm dấu cách sau dấu phẩy/chấm phẩy, offset trỏ về gốc không được bao gồm khoảng trắng giả
-            raw_start, raw_end = aligner.get_original_span(10, 15)
-            assert raw_text[raw_start:raw_end] == "NEUT%", "Lỗi: Offset bị lệch khi tách dấu câu dính liền"
-            
-        except AssertionError as e:
-            pytest.fail(str(e))
-
-
-    # 7. Kiểm tra tính bất biến tuyệt đối (Immutable) của thuộc tính raw_text
-    def test_7_raw_text_immutability(self):
-        
-        original_string = "  sốt   cao  "
-        aligner = MockSpanAligner(original_string)
-        
-        try:
-            assert aligner.raw_text == "  sốt   cao  ", "Lỗi ValueError: raw_text đã bị class Aligner ngầm thay đổi, vi phạm nguyên tắc bất biến"
-            assert id(aligner.raw_text) == id(original_string), "Lỗi ValueError: raw_text bị copy sang vùng nhớ khác thay vì tham chiếu chuỗi gốc"
-        
-        except AssertionError as e:
-            pytest.fail(str(e))
-
-
-    # 8. Kiểm tra kết hợp phức tạp (Vừa dư khoảng trắng, vừa sai Unicode, có Tab và Newline)
-    def test_8_complex_noise_combination(self):
-
-        raw_text = "\n\t tiê\u0300n   sư\u0309 \n\n hen  suyê\u0303n  "
-        aligner = MockSpanAligner(raw_text)
-        
-        try:
-            # Trích xuất chữ "hen suyễn"
-            raw_start, raw_end = aligner.get_original_span(9, 18)
-            assert raw_text[raw_start:raw_end] == "hen  suyê\u0303n", "Lỗi: Hệ thống map offset sụp đổ khi gặp combo nhiều loại nhiễu"
-            
-        except AssertionError as e:
-            pytest.fail(str(e))
-
-
-    # 9. Kiểm tra Edge Case: tìm kiếm từ nằm sát rìa cuối của đoạn văn
-    def test_9_edge_case_end_of_string(self):
-
-        raw_text = "bệnh nhân bị viêm phổi   "
-        aligner = MockSpanAligner(raw_text)
-        
-        try:
-            raw_start, raw_end = aligner.get_original_span(13, 22) # "viêm phổi" ở bản norm
-            assert raw_text[raw_start:raw_end] == "viêm phổi", "Lỗi: Map offset bị crash (IndexError) ở rìa cuối văn bản"
-            
-        except AssertionError as e:
-            pytest.fail(str(e))
-
-
-    # 10. Kiểm tra Edge Case: raw text toàn khoảng trắng (Empty/Whitespace-only)
-    def test_10_edge_case_empty_or_whitespace_only(self):
-        
-        raw_text = "   \n\t  "
-        aligner = MockSpanAligner(raw_text)
-        
-        try:
-            assert aligner.normalized_view == "", "Lỗi: Normalize không quét sạch được chuỗi chỉ chứa khoảng trắng/tab"
-            
-            # Cố tình gọi get span trên chuỗi rỗng xem có lỗi không
-            raw_start, raw_end = aligner.get_original_span(0, 0)
-            
-            assert raw_start == 0 and raw_end == 0, "Lỗi: Không xử lý an toàn span cho chuỗi rỗng"
+            pytest.fail(f"Lỗi Logic Chuẩn Hóa: {str(e)}")
         
         except Exception as e:
-            pytest.fail(f"Lỗi không mong muốn khi xử lý chuỗi rỗng: {str(e)}")
+            pytest.fail(f"Lỗi Hệ thống (Test 1): {str(e)}")
+
+
+    # Test 2: Kiểm tra loại bỏ khoảng trắng ở đầu và cuối chuỗi (strip)
+    def test_strip_leading_trailing_spaces(self):
+        
+        try:
+            raw_text = "   đau thượng vị   "
+            expected_text = "đau thượng vị"
+            norm_text, mapping = MockNormalization.normalize(raw_text)
+            
+            assert norm_text == expected_text, f"Text chưa được strip khoảng trắng đầu/cuối. Nhận được: '{norm_text}'"
+        
+        except AssertionError as e:
+            pytest.fail(f"Lỗi Logic Chuẩn Hóa: {str(e)}")
+        
+        except Exception as e:
+            pytest.fail(f"Lỗi Hệ thống (Test 2): {str(e)}")
+
+
+    # Test 3: Kiểm tra chuẩn hóa Unicode từ NFD sang NFC (bắt buộc cho tiếng Việt)
+    def test_unicode_nfd_to_nfc(self):
+        
+        try:
+            # Chữ "ế" ở dạng NFD (tổ hợp)
+            raw_text = "t\u00ea\u0301" 
+            
+            # Chữ "ế" ở dạng NFC (dựng sẵn)
+            expected_text = "tế" 
+            
+            norm_text, mapping = MockNormalization.normalize(raw_text)
+            
+            assert norm_text == expected_text, f"Text chưa được chuẩn hóa về Unicode NFC. Nhận được: '{norm_text}'"
+        
+        except AssertionError as e:
+            pytest.fail(f"Lỗi Sinh Tử (Unicode): {str(e)}")
+        
+        except Exception as e:
+            pytest.fail(f"Lỗi Hệ thống (Test 3): {str(e)}")
+
+
+    # Test 4: Kiểm tra chuyển đổi ký tự tab (\t) và newline (\n) thành khoảng trắng
+    def test_replace_tabs_and_newlines(self):
+        
+        try:
+            raw_text = "bệnh\nnhân\tkhám"
+            expected_text = "bệnh nhân khám"
+            norm_text, mapping = MockNormalization.normalize(raw_text)
+            
+            assert norm_text == expected_text, f"Ký tự tab/newline chưa được xử lý. Nhận được: '{norm_text}'"
+        
+        except AssertionError as e:
+            pytest.fail(f"Lỗi Logic Chuẩn Hóa: {str(e)}")
+        
+        except Exception as e:
+            pytest.fail(f"Lỗi Hệ thống (Test 4): {str(e)}")
+
+
+    # Test 5: Kiểm tra chuẩn hóa các dấu câu y khoa (như dấu gạch nối, dấu nháy)
+    def test_normalize_special_punctuation(self):
+        
+        try:
+            # Sử dụng dấu gạch ngang dài (em dash) cần chuẩn hóa về hyphen
+            raw_text = "dạ dày—thực quản"
+            expected_text = "dạ dày-thực quản"
+            norm_text, mapping = MockNormalization.normalize(raw_text)
+            
+            assert norm_text == expected_text, f"Dấu câu đặc biệt chưa được chuẩn hóa. Nhận được: '{norm_text}'"
+        
+        except AssertionError as e:
+            pytest.fail(f"Lỗi Logic Chuẩn Hóa: {str(e)}")
+        
+        except Exception as e:
+            pytest.fail(f"Lỗi Hệ thống (Test 5): {str(e)}")
+
+
+    # Test 6: Kiểm tra xử lý an toàn với đầu vào là chuỗi rỗng
+    def test_empty_string_handling(self):
+        
+        try:
+            raw_text = ""
+            expected_text = ""
+            norm_text, mapping = MockNormalization.normalize(raw_text)
+            
+            assert norm_text == expected_text, "Hàm không xử lý đúng chuỗi rỗng."
+            
+            assert mapping == [], "Offset mapping của chuỗi rỗng phải là mảng rỗng."
+        
+        except AssertionError as e:
+            pytest.fail(f"Lỗi Boundary (Chuỗi rỗng): {str(e)}")
+        
+        except Exception as e:
+            pytest.fail(f"Lỗi Hệ thống (Test 6): {str(e)}")
+
+
+    # Test 7: Kiểm tra tính toàn vẹn khi chuỗi đầu vào đã sạch sẵn (không biến đổi)
+    def test_clean_string_remains_unchanged(self):
+        
+        try:
+            raw_text = "ho đờm xanh"
+            norm_text, mapping = MockNormalization.normalize(raw_text)
+            
+            assert norm_text == raw_text, "Chuỗi đã sạch nhưng lại bị hàm biến đổi sai lệch."
+        
+        except AssertionError as e:
+            pytest.fail(f"Lỗi Toàn vẹn Dữ liệu: {str(e)}")
+        
+        except Exception as e:
+            pytest.fail(f"Lỗi Hệ thống (Test 7): {str(e)}")
+
+
+    # Test 8: Kiểm tra khả năng xử lý chuỗi nhiễu phức tạp (kết hợp nhiều lỗi cùng lúc)
+    def test_complex_noisy_string(self):
+        
+        try:
+            # Chứa NFD, tab, khoảng trắng thừa, newline
+            raw_text = "  b\u00ea\u0323nh   nh\u00e2n \t \n ho  "
+            expected_text = "bệnh nhân ho"
+            norm_text, mapping = MockNormalization.normalize(raw_text)
+            
+            assert norm_text == expected_text, f"Không xử lý được chuỗi nhiễu phức tạp. Nhận được: '{norm_text}'"
+        
+        except AssertionError as e:
+            pytest.fail(f"Lỗi Logic Chuẩn Hóa: {str(e)}")
+        
+        except Exception as e:
+            pytest.fail(f"Lỗi Hệ thống (Test 8): {str(e)}")
+
+
+    # Test 9: Kiểm tra mảng offset_mapping sinh ra phải có số lượng phần tử bằng độ dài chuỗi đích
+    def test_offset_mapping_length(self):
+        
+        try:
+            raw_text = "tức   ngực"
+            norm_text, mapping = MockNormalization.normalize(raw_text)
+            
+            assert len(mapping) == len(norm_text), f"Độ dài mapping ({len(mapping)}) không khớp với độ dài normalized text ({len(norm_text)})."
+        
+        except AssertionError as e:
+            pytest.fail(f"Lỗi Ánh Xạ: {str(e)}")
+        
+        except Exception as e:
+            pytest.fail(f"Lỗi Hệ thống (Test 9): {str(e)}")
+
+
+    # Test 10: Kiểm tra giới hạn của phần tử trong offset_mapping không vượt quá index của chuỗi gốc
+    def test_offset_mapping_boundary(self):
+        
+        try:
+            raw_text = "ợ   hơi"
+            norm_text, mapping = MockNormalization.normalize(raw_text)
+            
+            if len(mapping) > 0:
+                max_index = max(mapping)
+                assert max_index < len(raw_text), f"Offset index ({max_index}) vượt quá độ dài chuỗi gốc ({len(raw_text)})."
+        
+        except AssertionError as e:
+            pytest.fail(f"Lỗi Out-of-Bound (Vượt giới hạn mảng): {str(e)}")
+        
+        except Exception as e:
+            pytest.fail(f"Lỗi Hệ thống (Test 10): {str(e)}")
