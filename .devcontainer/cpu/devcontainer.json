@@ -1,6 +1,8 @@
 {
-  "name": "Medical Ontology Retrieval",
-  "dockerComposeFile": ["../docker-compose.yml"],
+  "name": "CPU",
+  "dockerComposeFile": [
+    "../../docker-compose.yml"
+  ],
   "service": "dev",
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
@@ -9,9 +11,7 @@
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "ms-python.vscode-pylance",
         "ms-python.black-formatter",
-        "ms-python.isort",
         "charliermarsh.ruff",
         "njpwerner.autodocstring",
         "ms-toolsai.jupyter",
@@ -39,10 +39,14 @@
         "agy.agy",
         "opencode.opencode",
         "kilo.kilo"
-      ]
+      ],
+      "settings": {
+        "editor.inlayHints.enabled": "offUnlessPressed",
+        "files.autoSave": "onFocusChange"
+      }
     }
   },
   "remoteUser": "vscode",
-  "postCreateCommand": "python -m pip install --upgrade pip setuptools wheel && python -m pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 transformers==4.51.3 && python -m pip install --no-build-isolation autoawq==0.2.9 && python -m pip install -r requirements.txt && python -m pip check && pre-commit install && pre-commit install --hook-type pre-push",
+  "postCreateCommand": "python -m pip install --upgrade pip setuptools wheel && python -m pip install -r requirements.txt && python -m pip check && pre-commit install && pre-commit install --hook-type pre-push",
   "postAttachCommand": "git config --global --unset-all safe.directory >/dev/null 2>&1 || true; git config --global --add safe.directory /workspace"
 }

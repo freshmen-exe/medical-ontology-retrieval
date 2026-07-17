@@ -1,23 +1,19 @@
 import json
 import os
 import re
-from typing import Any, Dict, List
+from typing import Any
 
 import requests
 
 
 class LLMClient:
-    def __init__(self, base_url: str = None, api_key: str = None, model: str = None):
-        self.base_url = base_url or os.environ.get(
-            "LLM_BASE_URL", "http://localhost:8080/v1"
-        )
+    def __init__(self, base_url: str | None = None, api_key: str | None = None, model: str | None = None) -> None:
+        self.base_url = base_url or os.environ.get("LLM_BASE_URL", "http://localhost:8080/v1")
         self.api_key = api_key or os.environ.get("LLM_API_KEY", "local-internal-key")
         self.model = model or os.environ.get("LLM_MODEL", "medical-extractor")
 
-    def extract(self, text: str) -> List[Dict[str, Any]]:
-        """
-        Gọi LLM trích xuất thô thực thể y khoa.
-        """
+    def extract(self, text: str) -> list[dict[str, Any]]:
+        """Gọi LLM trích xuất thô thực thể y khoa."""
         prompt = (
             "Trích xuất tất cả các thực thể y khoa từ đoạn văn bản y khoa sau đây.\n"
             "Các nhãn thực thể hợp lệ bao gồm:\n"
@@ -73,19 +69,15 @@ class LLMClient:
                 parsed = json.loads(content)
                 if isinstance(parsed, dict) and "entities" in parsed:
                     return parsed["entities"]
-                elif isinstance(parsed, list):
+                if isinstance(parsed, list):
                     return parsed
             return []
         except Exception:
             # Fallback mock data khi không gọi được LLM Server
             return self._mock_fallback_extract(text)
 
-    def validate(
-        self, entity_text: str, entity_type: str, candidates: List[Dict[str, Any]]
-    ) -> List[str]:
-        """
-        Gọi LLM lần 2 để lựa chọn mã chuẩn xác nhất.
-        """
+    def validate(self, entity_text: str, entity_type: str, candidates: list[dict[str, Any]]) -> list[str]:
+        """Gọi LLM lần 2 để lựa chọn mã chuẩn xác nhất."""
         if not candidates:
             return []
 
@@ -128,7 +120,7 @@ class LLMClient:
         except Exception:
             return [candidates[0]["code"]]
 
-    def _mock_fallback_extract(self, text: str) -> List[Dict[str, Any]]:
+    def _mock_fallback_extract(self, text: str) -> list[dict[str, Any]]:
         # Tìm kiếm regex thô để giả lập trích xuất
         mock_entities = []
 
@@ -142,7 +134,6 @@ class LLMClient:
             "đái tháo đường",
             "viêm dạ dày",
         ]
-
 
         lower_text = text.lower()
 
@@ -160,7 +151,7 @@ class LLMClient:
                             "isFamily": "mẹ" in lower_text or "bố" in lower_text,
                             "isHistorical": "tiền sử" in lower_text,
                         },
-                    }
+                    },
                 )
 
         for dg in diagnoses:
@@ -176,7 +167,7 @@ class LLMClient:
                             "isFamily": "mẹ" in lower_text or "bố" in lower_text,
                             "isHistorical": "tiền sử" in lower_text,
                         },
-                    }
+                    },
                 )
 
         for dr in drugs:
@@ -192,31 +183,24 @@ class LLMClient:
                             "isFamily": False,
                             "isHistorical": False,
                         },
-                    }
+                    },
                 )
 
         return mock_entities
 
 
 class MedicalPipeline:
-    def __init__(self, llm_client: Any = None, vector_db: Any = None):
-        """
-        Khởi tạo Pipeline xử lý văn bản y khoa.
-        """
+    def __init__(self, llm_client: Any = None, vector_db: Any = None) -> None:
+        """Khởi tạo Pipeline xử lý văn bản y khoa."""
         self.llm_client = llm_client or LLMClient()
         self.vector_db = vector_db
 
-    def extract_entities_raw(self, text: str) -> List[Dict[str, Any]]:
-        """
-        Bước 1: Trích xuất thực thể thô bằng LLM.
-        """
+    def extract_entities_raw(self, text: str) -> list[dict[str, Any]]:
+        """Bước 1: Trích xuất thực thể thô bằng LLM."""
         return self.llm_client.extract(text)
 
-    def calculate_positions(
-        self, original_text: str, entities: List[Dict[str, Any]]
-    ) -> List[Dict[str, Any]]:
-        """
-        Bước 2: Tính toán chính xác vị trí [l, r) của các cụm từ trong văn bản gốc.
+    def calculate_positions(self, original_text: str, entities: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        """Bước 2: Tính toán chính xác vị trí [l, r) của các cụm từ trong văn bản gốc.
         Sử dụng cơ chế tìm kiếm tuần tự và hỗ trợ tìm kiếm không phân biệt hoa thường làm fallback.
         """
         processed_entities = []
@@ -259,16 +243,10 @@ class MedicalPipeline:
 
         return processed_entities
 
-    def query_vector_db(
-        self, entity_text: str, entity_type: str, n_results: int = 5
-    ) -> List[Dict[str, Any]]:
-        """
-        Bước 3: Gọi truy vấn vào VectorDB.
-        """
+    def query_vector_db(self, entity_text: str, entity_type: str, n_results: int = 5) -> list[dict[str, Any]]:
+        """Bước 3: Gọi truy vấn vào VectorDB."""
         if self.vector_db:
-            return self.vector_db.query(
-                query_text=entity_text, entity_type=entity_type, n_results=n_results
-            )
+            return self.vector_db.query(query_text=entity_text, entity_type=entity_type, n_results=n_results)
 
         # Mockup database ứng viên dựa trên thực thể y tế
         if entity_type == "CHẨN_ĐOÁN":
@@ -284,29 +262,26 @@ class MedicalPipeline:
                     },
                     {"code": "K21", "name": "Bệnh trào ngược dạ dày - thực quản"},
                 ][:n_results]
-            elif "huyết áp" in entity_text.lower():
+            if "huyết áp" in entity_text.lower():
                 return [
                     {"code": "I10", "name": "Tăng huyết áp vô căn (nguyên phát)"},
                     {"code": "I15", "name": "Tăng huyết áp thứ phát"},
                 ][:n_results]
-        elif entity_type == "THUỐC":
-            if "paracetamol" in entity_text.lower():
-                return [
-                    {"code": "RX123", "name": "Paracetamol 500mg Oral Tablet"},
-                    {"code": "RX456", "name": "Paracetamol 250mg Oral Tablet"},
-                    {"code": "RX789", "name": "Paracetamol 100mg/ml Oral Solution"},
-                ][:n_results]
+        elif entity_type == "THUỐC" and "paracetamol" in entity_text.lower():
+            return [
+                {"code": "RX123", "name": "Paracetamol 500mg Oral Tablet"},
+                {"code": "RX456", "name": "Paracetamol 250mg Oral Tablet"},
+                {"code": "RX789", "name": "Paracetamol 100mg/ml Oral Solution"},
+            ][:n_results]
         return []
 
     def reciprocal_rank_fusion(
         self,
-        dense_results: List[Dict[str, Any]],
-        sparse_results: List[Dict[str, Any]],
+        dense_results: list[dict[str, Any]],
+        sparse_results: list[dict[str, Any]],
         rrf_k: int = 60,
-    ) -> List[Dict[str, Any]]:
-        """
-        Xếp hạng ứng viên bằng thuật toán Reciprocal Rank Fusion (RRF) kết hợp dense và sparse.
-        """
+    ) -> list[dict[str, Any]]:
+        """Xếp hạng ứng viên bằng thuật toán Reciprocal Rank Fusion (RRF) kết hợp dense và sparse."""
         # Collapse alias by code đầu tiên
         dense_ranked = []
         seen_dense = set()
@@ -338,20 +313,14 @@ class MedicalPipeline:
 
         return [{"code": code, "rrf_score": rrf_scores[code]} for code in sorted_codes]
 
-    def validate_candidates(
-        self, entity_text: str, entity_type: str, candidates: List[Dict[str, Any]]
-    ) -> List[str]:
-        """
-        Bước 4: Gọi LLM validator chọn mã chuẩn xác sau cùng.
-        """
+    def validate_candidates(self, entity_text: str, entity_type: str, candidates: list[dict[str, Any]]) -> list[str]:
+        """Bước 4: Gọi LLM validator chọn mã chuẩn xác sau cùng."""
         if not candidates:
             return []
         return self.llm_client.validate(entity_text, entity_type, candidates)
 
-    def run_pipeline(self, text: str) -> List[Dict[str, Any]]:
-        """
-        Chạy toàn bộ pipeline xử lý văn bản y khoa.
-        """
+    def run_pipeline(self, text: str) -> list[dict[str, Any]]:
+        """Chạy toàn bộ pipeline xử lý văn bản y khoa."""
         # 1. Trích xuất thực thể thô
         raw_entities = self.extract_entities_raw(text)
 
@@ -385,23 +354,17 @@ class MedicalPipeline:
             clean_type = entity_type.replace(" ", "_")
             entity["type"] = clean_type
 
-            if clean_type in ["CHẨN_ĐOÁN", "THUỐC"]:
+            if clean_type in {"CHẨN_ĐOÁN", "THUỐC"}:
                 # Giả lập truy vấn từ Dense và Sparse (trong baseline, ta truy vấn qua DB mẫu)
-                candidates_dense = self.query_vector_db(
-                    entity_text, clean_type, n_results=5
-                )
+                candidates_dense = self.query_vector_db(entity_text, clean_type, n_results=5)
                 # Giả lập sparse kết quả (cho mục đích test RRF, ta lấy danh sách đảo ngược hoặc dịch chuyển)
                 candidates_sparse = list(reversed(candidates_dense))
 
                 # Thực hiện RRF fusion
-                fused_candidates = self.reciprocal_rank_fusion(
-                    candidates_dense, candidates_sparse
-                )
+                fused_candidates = self.reciprocal_rank_fusion(candidates_dense, candidates_sparse)
 
                 # Gọi Validator để đưa ra mã cuối
-                validated_codes = self.validate_candidates(
-                    entity_text, clean_type, fused_candidates
-                )
+                validated_codes = self.validate_candidates(entity_text, clean_type, fused_candidates)
                 entity["candidates"] = validated_codes
 
             final_entities.append(entity)

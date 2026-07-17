@@ -12,18 +12,11 @@ repos:
         args: ["--maxkb=50000"]
       - id: debug-statements
 
-  # 2. Formatter chuẩn hóa code (Black)
   - repo: https://github.com/psf/black
     rev: 24.4.2
     hooks:
       - id: black
         language_version: python3.11
-
-  - repo: https://github.com/PyCQA/isort
-    rev: 5.13.2
-    hooks:
-      - id: isort
-        name: isort (python)
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.4.8

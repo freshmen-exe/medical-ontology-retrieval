@@ -1,6 +1,8 @@
 # Local secrets
+*/.env
+*/.env.*
+.venv/
 .env
-.env.*
 
 # Python/cache
 __pycache__/

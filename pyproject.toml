@@ -1,0 +1,191 @@
+[tool.black]
+line-length = 150
+target-version = ["py311"]
+skip-string-normalization = false
+skip-magic-trailing-comma = false
+force-exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.ruff]
+target-version = "py311"
+line-length = 150
+preview = true
+src = ["src"]
+unsafe-fixes = true
+exclude = [
+  ".git",
+  ".hg",
+  ".image",
+  ".mypy_cache",
+  ".pytest_cache",
+  ".ruff_cache",
+  ".tox",
+  ".venv",
+  "venv",
+  "_build",
+  "buck-out",
+  "build",
+  "dist",
+]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+  # Docstring
+  "D100",
+  "D101",
+  "D102",
+  "D104",
+  "D107",
+  "D205",
+
+  # Type annotation
+  "ANN001",
+  "ANN201",
+  "ANN401",
+
+  # Copyright
+  "CPY001",
+
+  # pathlib ép dùng
+  "PTH103",
+  "PTH118",
+  "PTH123",
+
+  # Refactor
+  "PLR0913", # too many args
+  "PLR1702", # nested block
+  "PLR2004", # magic number
+  "PLR6301", # should be staticmethod
+
+  # Exception
+  "BLE001",
+
+  # Tryceratops
+  "TRY300",
+
+  # String concat
+  "ISC002",
+
+  # Shadow builtin
+  "A002",
+
+  # Unused arg
+  "ARG002",
+
+  # refurb
+  "FURB101",
+  "FURB103",
+
+  "A001",
+  "C901",
+  "PLR0912",
+  "PLR0915",
+  "PLR0917",
+  "S301",
+  "S403",
+  "NPY002",
+  "D103",
+  "F821",
+]
+fixable = ["ALL"]
+unfixable = []
+logger-objects = []
+allowed-confusables = []
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.pep8-naming]
+ignore-names = []
+classmethod-decorators = []
+staticmethod-decorators = []
+
+[tool.ruff.lint.pycodestyle]
+max-doc-length = 150
+ignore-overlong-task-comments = false
+
+[tool.ruff.lint.pylint]
+max-args = 5
+max-bool-expr = 5
+max-branches = 12
+max-locals = 15
+max-nested-blocks = 5
+max-public-methods = 20
+max-returns = 6
+max-statements = 50
+
+[tool.ruff.lint.flake8-annotations]
+mypy-init-return = false
+suppress-dummy-args = false
+suppress-none-returning = false
+allow-star-arg-any = false
+ignore-fully-untyped = false
+
+[tool.ruff.lint.flake8-bandit]
+hardcoded-tmp-directory = ["/tmp", "/var/tmp", "/dev/shm"]
+check-typed-exception = false
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = []
+
+[tool.ruff.lint.flake8-builtins]
+builtins-ignorelist = []
+
+[tool.ruff.lint.flake8-comprehensions]
+allow-dict-calls-with-keyword-arguments = false
+
+[tool.ruff.lint.flake8-errmsg]
+max-string-length = 20
+
+[tool.ruff.lint.flake8-implicit-str-concat]
+allow-multiline = false
+
+[tool.ruff.lint.flake8-import-conventions]
+
+[tool.ruff.lint.flake8-gettext]
+extend-function-names = []
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "double"
+multiline-quotes = "double"
+docstring-quotes = "double"
+avoid-escape = true
+
+[tool.ruff.lint.flake8-self]
+ignore-names = []
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "parents"
+
+[tool.ruff.lint.flake8-type-checking]
+strict = false
+exempt-modules = []
+
+[tool.ruff.lint.flake8-unused-arguments]
+ignore-variadic-names = false
+
+[tool.ruff.lint.pyupgrade]
+keep-runtime-typing = false
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = true
