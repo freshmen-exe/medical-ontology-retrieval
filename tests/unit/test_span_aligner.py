@@ -143,7 +143,7 @@ class TestSpanAligner:
         
         try:
         
-            assert aligner.raw_text == "  sốt   cao  ", "Lỗi SINH TỬ: raw_text đã bị class Aligner ngầm thay đổi, vi phạm nguyên tắc bất biến"
+            assert aligner.raw_text == "  sốt   cao  ", "Lỗi nghiêm trọng: raw_text đã bị class Aligner ngầm thay đổi, vi phạm nguyên tắc bất biến"
         
             assert id(aligner.raw_text) == id(original_string), "Lỗi: raw_text bị copy sang vùng nhớ khác thay vì tham chiếu chuỗi gốc"
         

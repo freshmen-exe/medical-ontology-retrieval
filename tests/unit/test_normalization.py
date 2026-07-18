@@ -73,7 +73,7 @@ class TestNormalization:
             assert norm_text == expected_text, f"Text chưa được chuẩn hóa về Unicode NFC. Nhận được: '{norm_text}'"
         
         except AssertionError as e:
-            pytest.fail(f"Lỗi Sinh Tử (Unicode): {str(e)}")
+            pytest.fail(f"Lỗi Unicode: {str(e)}")
         
         except Exception as e:
             pytest.fail(f"Lỗi Hệ thống (Test 3): {str(e)}")
