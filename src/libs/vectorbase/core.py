@@ -20,8 +20,11 @@ class VectorBase:
 
         norm_vecs = np.ascontiguousarray(vecs / norms, dtype=np.float32)
         start = self.sz
-        self.vecs[start : start + n] = norm_vecs
-        self.sz += n
+        end = start + n
+
+        self.vecs[start:end] = norm_vecs
+        self.codes[start:end] = np.asarray(codes, dtype=np.int32)
+        self.sz = end
 
     def save(self, dir) -> None:
         os.makedirs(dir, exist_ok=True)
