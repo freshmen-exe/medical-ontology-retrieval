@@ -5,44 +5,41 @@ services:
       - path: .env
         required: false
     environment:
+      PYTHONPATH: /workspace/src/libs
       LLM_BASE_URL: http://llm-server:8080/v1
       LLM_API_KEY: ${LLM_API_KEY:-local-internal-key}
-      LLM_MODEL: medical-extractor
+      LLM_MODEL: gcc-medical-llm
       EMBEDDING_BASE_URL: http://embedding-server:8081/v1
       EMBEDDING_API_KEY: ${EMBEDDING_API_KEY:-local-internal-key}
-      EMBEDDING_MODEL: qwen3-embedding-0.6b
+      EMBEDDING_MODEL: diver-retriever
       EMBEDDING_DIMENSION: "1024"
+      RERANKER_BASE_URL: http://reranker-server:8082/v1
+      RERANKER_API_KEY: ${RERANKER_API_KEY:-local-internal-key}
+      RERANKER_MODEL: qwen3-reranker
     volumes:
       - .:/workspace
     working_dir: /workspace
     networks:
       - medical-internal
     command: ["sleep", "infinity"]
-    # Tối ưu hóa I/O và Shared Memory cho PyTorch DataLoader & VectorDB
     tty: true
     stdin_open: true
     ipc: host
     privileged: true
-    # Cấp quyền cho Python Container gọi trực tiếp phần cứng GPU
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
 
   llm-server:
-    image: ghcr.io/ggml-org/llama.cpp:server-cuda13-b9982
+    image: ghcr.io/ggml-org/llama.cpp:server-b9982
     environment:
       LLAMA_CACHE: /models
       HF_TOKEN: ${HF_TOKEN:-}
     command:
       - -hf
-      - unsloth/Qwen3.5-4B-GGUF:Q4_K_M
+      - mradermacher/GCCL-Medical-LLM-Qwen3.5-4B-GGUF
+      - -hff
+      - GCCL-Medical-LLM-Qwen3.5-4B.Q8_0.gguf
       - --no-mmproj
       - --alias
-      - medical-extractor
+      - gcc-medical-llm
       - --host
       - 0.0.0.0
       - --port
@@ -50,7 +47,7 @@ services:
       - --ctx-size
       - "4096"
       - --n-gpu-layers
-      - all
+      - "0"
       - --parallel
       - "1"
       - --batch-size
@@ -74,13 +71,6 @@ services:
       - model-cache:/models
     networks:
       - medical-internal
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
     healthcheck:
       test: ["CMD-SHELL", "curl --fail --silent http://127.0.0.1:8080/health | grep --quiet ok"]
       interval: 15s
@@ -96,9 +86,12 @@ services:
       HF_TOKEN: ${HF_TOKEN:-}
     command:
       - -hf
-      - Qwen/Qwen3-Embedding-0.6B-GGUF:Q8_0
+      - mradermacher/Diver-Retriever-0.6B-GGUF
+      - -hff
+      - Diver-Retriever-0.6B.Q8_0.gguf
+      - --no-mmproj
       - --alias
-      - qwen3-embedding-0.6b
+      - diver-retriever
       - --host
       - 0.0.0.0
       - --port
@@ -121,6 +114,45 @@ services:
       - medical-internal
     healthcheck:
       test: ["CMD-SHELL", "curl --fail --silent http://127.0.0.1:8081/health | grep --quiet ok"]
+      interval: 15s
+      timeout: 5s
+      retries: 60
+      start_period: 60s
+    restart: unless-stopped
+
+  reranker-server:
+    image: ghcr.io/ggml-org/llama.cpp:server-b9982
+    environment:
+      LLAMA_CACHE: /models
+      HF_TOKEN: ${HF_TOKEN:-}
+    command:
+      - -hf
+      - ggml-org/Qwen3-Reranker-0.6B-Q8_0-GGUF
+      - -hff
+      - qwen3-reranker-0.6b-q8_0.gguf
+      - --no-mmproj
+      - --alias
+      - qwen3-reranker
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8082"
+      - --rerank
+      - --ctx-size
+      - "2048"
+      - --n-gpu-layers
+      - "0"
+      - --parallel
+      - "1"
+      - --no-webui
+      - --api-key
+      - ${RERANKER_API_KEY:-local-internal-key}
+    volumes:
+      - model-cache:/models
+    networks:
+      - medical-internal
+    healthcheck:
+      test: ["CMD-SHELL", "curl --fail --silent http://127.0.0.1:8082/health | grep --quiet ok"]
       interval: 15s
       timeout: 5s
       retries: 60

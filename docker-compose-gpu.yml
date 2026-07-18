@@ -1,0 +1,52 @@
+services:
+  dev:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  llm-server:
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda13-b9982
+    command:
+      - -hf
+      - mradermacher/GCCL-Medical-LLM-Qwen3.5-4B-GGUF:GCCL-Medical-LLM-Qwen3.5-4B.Q8_0.gguf
+      - --no-mmproj
+      - --alias
+      - gcc-medical-llm
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8080"
+      - --ctx-size
+      - "4096"
+      - --n-gpu-layers
+      - all
+      - --parallel
+      - "1"
+      - --batch-size
+      - "128"
+      - --ubatch-size
+      - "64"
+      - --flash-attn
+      - auto
+      - --cache-type-k
+      - q8_0
+      - --cache-type-v
+      - q8_0
+      - --jinja
+      - --reasoning
+      - auto
+      - --no-webui
+      - --metrics
+      - --api-key
+      - ${LLM_API_KEY:-local-internal-key}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

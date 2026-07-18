@@ -1,0 +1,53 @@
+{
+    "name": "GPU",
+    "dockerComposeFile": [
+        "../../docker-compose.yml",
+        "../../docker-compose-gpu.yml"
+    ],
+    "service": "dev",
+    "workspaceFolder": "/workspace",
+    "shutdownAction": "stopCompose",
+    "overrideCommand": false,
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.black-formatter",
+                "charliermarsh.ruff",
+                "njpwerner.autodocstring",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.vscode-jupyter-cell-tags",
+                "ms-toolsai.jupyter-renderers",
+                "ms-azuretools.vscode-docker",
+                "redhat.vscode-yaml",
+                "tamasfe.even-better-toml",
+                "docker.docker",
+                "mechatroner.rainbow-csv",
+                "mtxr.sqltools",
+                "mtxr.sqltools-driver-sqlite",
+                "grapecity.gc-excelviewer",
+                "eamodio.gitlens",
+                "mhutchie.git-graph",
+                "donjayamanne.githistory",
+                "esbenp.prettier-vscode",
+                "aaron-bond.better-comments",
+                "formulahendry.auto-close-tag",
+                "google.geminicodeassist",
+                "github.copilot",
+                "github.copilot-chat",
+                "anthropic.claude",
+                "saoudrizwan.claude-dev",
+                "agy.agy",
+                "opencode.opencode",
+                "kilo.kilo"
+            ],
+            "settings": {
+                "editor.inlayHints.enabled": "offUnlessPressed",
+                "files.autoSave": "onFocusChange"
+            }
+        }
+    },
+    "remoteUser": "vscode",
+    "postCreateCommand": "python -m pip install --upgrade pip setuptools wheel && python -m pip install -r requirements.txt && python -m pip check && pre-commit install && pre-commit install --hook-type pre-push",
+    "postAttachCommand": "git config --global --unset-all safe.directory >/dev/null 2>&1 || true; git config --global --add safe.directory /workspace"
+}
