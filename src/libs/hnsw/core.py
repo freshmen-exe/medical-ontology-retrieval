@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 
 import numpy as np
@@ -68,7 +69,7 @@ class HNSWCore:
             for res_idx in range(cnt):
                 res_id = res[res_idx]
                 dist = 1 - np.dot(self.vecs[cand_id], self.vecs[res_id])
-                if dist > cand_dist:
+                if dist <= cand_dist:
                     keep = False
                     break
             if keep:
