@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 
 import numpy as np
@@ -31,7 +32,7 @@ class VectorBase:
 
     def load(self, dir) -> None:
         with open(os.path.join(dir, "meta.txt"), encoding="locale") as f:
-            self.dim.self.sz, self.max_n = map(int, f.read().split(","))
+            self.dim, self.sz, self.max_n = map(int, f.read().split(","))
 
             self.vecs = np.load(os.path.join(dir, "vecs.npy"), mmap_mode="r")
             self.codes = np.load(os.path.join(dir, "codes.npy"), mmap_mode="r")
