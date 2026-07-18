@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import json
 import os
 
@@ -18,7 +19,7 @@ class Collection:
         ids = np.arange(self.sess_id, self.sess_id + n, dtype=np.int32)
         self.vb.add(vecs, ids)
         for i in range(n):
-            self.docs[ids[i]] = docs[i]
+            self.docs[int(ids[i])] = docs[i]
         self.sess_id += n
 
     def build(self) -> None:
