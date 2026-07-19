@@ -81,3 +81,6 @@ black
 isort
 ruff
 pre-commit
+
+deep-translator
+fake-useragent
