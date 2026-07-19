@@ -1,0 +1,58 @@
+icd-10 tiếng việt (ko phải bản who, cm của mỹ)
+
+data:
+(mẫn) - 3 ngày
+- kiếm data
+- crawl web                   /dev/crawl-web-data
+- parse json (tiền xử lý)     /dev/crawl-web-data
+- tạo biến thể                /dev/crawl-web-data
+
+(qthai) - 0 ngày
+- add vào vectorbase .        /feature/add-vectorbase
+
+model: xây dựng vectorbase hnsw (bitset)
+- tạo hàm add .  (qthai)    - 2 ngày   /feature/add-vectorbase
+
+(khang) - 3 ngày
+- tạo hàm query (dense search, cosine distance) .	/feature/query
+- tạo sparse search (bm25)			.	/feature/query
+
+(qthai) - 1 ngày
+- rrf (reranking dựa trên rank của dense và sparse, ko dựa vào score của mỗi hàm) .           /feature/reranking
+- llm reranking (tạo prompt + gọi llm trả output json) kết hợp cái rrf trên -> top 5 result
+
+pipeline:
+(quân) - 2 ngày                /feature/pipeline
+- load text mô tả .
+- tạo rule .
+- rule .   + llm extract
+- llm merge + validate
+- rrf cho mã bệnh (map icd-10), mã thuốc (map rxnorm) .
+- llm chọn top 5 từ rrf cho mỗi mã để map vào ra json cuối cùng cho label
+
+
+
+qa/reviewer:
+(hthai) - 3 ngày
+- tạo unit test cho từng hàm, check logic  (cái nào có . ngay sau là tạo unit test) /test/feature-... -> tạo pr đẩy lên main, mn pull main về có folder test r run
+- check và approve pr trên github
+- streamlit + cli        /feature/UI
+- đẩy prj lên gg colab
+
+-> điều chỉnh llm, text embedding (ko cần, nếu có tgian thì thử nghiệm)
+
+
+vd cli:
+main.py -m "bệnh nhân có tiền sử bị bệnh dạ dày      do rượu"
+
+output: output json đề yêu cầu
+{
+     "TÊN_BỆNH": "bệnh dạ dày do rượu",
+     "icd-10
+....
+
+
+
+trc khi code: pull --rebase
+commit
+github tạo pr
