@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 import pickle
 import re
@@ -53,7 +54,7 @@ class BM25:
 
             for tk, cnt in cnts.items():
                 if tk not in self.vocab:
-                    self.vocab[tk] = len(self.vocav)
+                    self.vocab[tk] = len(self.vocab)
 
                 term_ids.append(self.vocab[tk])
                 doc_ids.append(doc_id)
@@ -65,7 +66,7 @@ class BM25:
         np.add.at(doc_lens, doc_ids, term_freqs)
         avgdl = np.mean(doc_lens)
 
-        doc_freqs = np.zeros(vocab_sz, dtype=np.in32)
+        doc_freqs = np.zeros(vocab_sz, dtype=np.int32)
         np.add.at(doc_freqs, term_ids, 1)
 
         idfs = np.log(1.0 + (self.num_docs - doc_freqs + 0.5) / (doc_freqs + 0.5))

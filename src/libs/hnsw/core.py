@@ -1,12 +1,13 @@
+#!/usr/bin/env python3
 import os
 
 import numpy as np
 from heap import Heap
-from numba import float16, float32, int8, int32, njit, prange, uint16
+from numba import float32, int8, int32, njit, prange, uint16
 from numba.experimental import jitclass
 
 hnsw_core_spec = [
-    ("vecs", float16[:, ::1]),
+    ("vecs", float32[:, ::1]),
     ("g0", int32[:, ::1]),
     ("gh_id", int32[::1]),
     ("gh", int32[:, :, ::1]),
@@ -24,12 +25,12 @@ hnsw_core_spec = [
     ("bd_vis", uint16[::1]),
     ("bd_tag", uint16),
     ("sz", int32),
+    ("MAX_LV", int32),
 ]
 
 
 @jitclass(hnsw_core_spec)
 class HNSWCore:
-    MAX_LV = 5
 
     def __init__(self, vecs, g0, gh_id, gh, lvs, m, m0, efc, efs, ml, vis, vis_tags, bd_vis, sz) -> None:
         self.vecs = vecs
@@ -50,6 +51,7 @@ class HNSWCore:
         self.bd_vis = bd_vis
         self.bd_tag = 1
         self.sz = sz
+        self.MAX_LV = 5
 
     def select(self, cand_ids, cand_dists, max_m):
         idx = np.argsort(cand_dists)
@@ -68,7 +70,7 @@ class HNSWCore:
             for res_idx in range(cnt):
                 res_id = res[res_idx]
                 dist = 1 - np.dot(self.vecs[cand_id], self.vecs[res_id])
-                if dist > cand_dist:
+                if dist <= cand_dist:
                     keep = False
                     break
             if keep:
@@ -254,7 +256,7 @@ class HNSW:
         g0 = np.full((n, m0), -1, dtype=np.int32)
         gh_id = np.full(n, -1, dtype=np.int32)
 
-        max_hn = n // m * 2
+        max_hn = max(n, 1)
         gh = np.full((max_hn, self.MAX_LV, m), -1, dtype=np.int32)
         vis = np.zeros((b_sz, n), dtype=np.uint16)
         vis_tags = np.ones(b_sz, dtype=np.uint16)
@@ -297,6 +299,6 @@ class HNSW:
         self.core.g0 = data["g0"]
         self.core.gh_id = data["gh_id"]
         gh = data["gh"]
-        max_hn = self.vb.max_n // self.core.m * 2
+        max_hn = max(self.vb.max_n, 1)
         self.core.gh = np.full((max_hn, self.MAX_LV, self.core.m), -1, dtype=np.int32)
         self.core.gh[: self.core.h_sz] = gh
