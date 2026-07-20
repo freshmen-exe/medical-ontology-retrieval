@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 
 import numpy as np
@@ -19,8 +20,11 @@ class VectorBase:
 
         norm_vecs = np.ascontiguousarray(vecs / norms, dtype=np.float32)
         start = self.sz
-        self.vecs[start : start + n] = norm_vecs
-        self.sz += n
+        end = start + n
+
+        self.vecs[start:end] = norm_vecs
+        self.codes[start:end] = np.asarray(codes, dtype=np.int32)
+        self.sz = end
 
     def save(self, dir) -> None:
         os.makedirs(dir, exist_ok=True)
@@ -31,7 +35,7 @@ class VectorBase:
 
     def load(self, dir) -> None:
         with open(os.path.join(dir, "meta.txt"), encoding="locale") as f:
-            self.dim.self.sz, self.max_n = map(int, f.read().split(","))
+            self.dim, self.sz, self.max_n = map(int, f.read().split(","))
 
             self.vecs = np.load(os.path.join(dir, "vecs.npy"), mmap_mode="r")
             self.codes = np.load(os.path.join(dir, "codes.npy"), mmap_mode="r")
